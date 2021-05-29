@@ -1,0 +1,187 @@
+---
+title: "InferenciaEstadística2"
+author: "Edgar Leal"
+date: "19/5/2021"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 3
+    toc_float:
+      collapsed: yes
+    cod_folding: hide
+    center: yes
+    theme: sandstone
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
+---
+
+# Comprueba la teoría de los grandes números para un dado de 6 caras
+
+
+
+```{r}
+#install.packages("purrr")
+#install.packages("dplyr")
+```
+
+```{r}
+require(dplyr)
+require(purrr)
+require(ggplot2)
+```
+Genera muestras aleatorias de 10000 experimentos
+
+```{r}
+dado <- function (n=10000){
+  data <- data.frame(num_lanzamiento = 1:n, lanzamiento = sample(1:6, size = n, prob =rep(1/6,times=6),replace=T))
+  mutate(data,frec_rel_odd = cummean(lanzamiento%%2==0), frec_rel_m3 = cummean(lanzamiento%%3==0),
+         frec_rel_6 = cummean(lanzamiento%%6==0))
+  }
+             
+head(dado(10000))
+
+
+
+
+```
+
+Grafica la frecuencia en la que sale un numero cualquiera (1 al 6), números pares y
+múltiplos de 3 (3 y 6) mientras aumentas el número de experimentos
+
+
+```{r}
+set.seed(31287931)
+map_df(1:3, ~dado(), .id = "serie") %>% 
+    ggplot(aes(x = log(num_lanzamiento), y = frec_rel_odd,color = as.character(serie))) +
+        geom_hline(yintercept = 0.5, color = "darkgray") + 
+        geom_line() +
+        scale_x_continuous("lanzamiento", labels = exp, 
+            breaks = log(sapply(0:10, function(i) 2 ^ i))) +
+        labs(color = "serie", y = "frecuencia relativa", title = "10000 lanzamientos de dado par o impar")
+```
+
+La probabilidad de que salga par o impar es 50% y es el valor al que convergen después de muchos experimentos (1000) independientemente de la serie que sea
+Se puede notar como en los primeros experimentos las frecuencias son muy dispares entre sí en cada serie.
+
+
+```{r}
+set.seed(31287931)
+map_df(1:3, ~dado(), .id = "serie") %>% 
+    ggplot(aes(x = log(num_lanzamiento), y = frec_rel_m3,color = as.character(serie))) +
+        geom_hline(yintercept = 0.5, color = "darkgray") + 
+        geom_line() +
+        scale_x_continuous("lanzamiento", labels = exp, 
+            breaks = log(sapply(0:10, function(i) 2 ^ i))) +
+        labs(color = "serie", y = "frecuencia relativa", title = "10000 lanzamientos de dado, multiplos de 3")
+```
+
+La probabilidad de que salgan multiplos de 3 es 33% y es la frecuencia a la que convergen después de muchso experimentos.
+(1/6+1/6)
+```{r}
+set.seed(31287931)
+map_df(1:3, ~dado(), .id = "serie") %>% 
+    ggplot(aes(x = log(num_lanzamiento), y = frec_rel_6,color = as.character(serie))) +
+        geom_hline(yintercept = 0.5, color = "darkgray") + 
+        geom_line() +
+        scale_x_continuous("lanzamiento", labels = exp, 
+            breaks = log(sapply(0:10, function(i) 2 ^ i))) +
+        labs(color = "serie", y = "frecuencia relativa", title = "10000 lanzamientos de dado, 6")
+```
+
+La probabilidad de que salga 6 es 16% y es el numero al que convergen después de muchso experimentos
+
+
+
+Interpreta tus resultados
+
+Se comprueba la ley de los grandes número, que estipula que a medida que vamos aumentando el número de repeticiones de nuestro experimento (hacemos más lanzamientos del dado), la frecuencia con la que se repetirá el evento (nos sale 6, o número par o múltiplo de 3) se acercará cada más a una constante, que tendrá un valor igual a su probabilidad.
+
+# Teorema de Bayes
+
+Una fábrica de piezas para aviones está organizada en tres secciones. La sección A fabrica
+el 25% de las piezas, la sección B el 40% , mientras que el resto se fabrican en la sección
+C. La probabilidad de encontrar una pieza defectuosa es del 0.015, 0.025 y 0.009 según se
+considere la sección A, B o C, respectivamente.
+
+Si juntamos toda la producción calcula:
+
+
+
+
+
+```{r}
+A <- .25
+B <- .4
+C<- 1-A-B
+
+A_d <- .015
+B_d <- .025
+C_d <- .009
+
+
+```
+
+1. La probabilidad de que una pieza al azar sea defectuosa
+
+```{r}
+Pa_d <- A*A_d
+Pb_d <- B*B_d
+Pc_d <- C*C_d
+
+P_d <- Pa_d + Pb_d + Pc_d
+P_d
+```
+La probabilidad de que salga una pieza defectuosa es del 1.6%
+
+2. Dado que una pieza es defectuosa, calcula la probabilidad de que venga de cada
+fábrica
+
+
+```{r}
+Pd_a <- Pa_d/P_d
+message(paste("La probabilidad de que una pieza salga defectuosa dado que es de procedencia de la seccion A es "), Pd_a)
+
+Pd_b <- Pb_d/P_d
+message(paste("La probabilidad de que una pieza salga defectuosa dado que es de procedencia de la seccion B es "), Pd_b)
+
+Pd_c <- Pc_d/P_d
+message(paste("La probabilidad de que una pieza salga defectuosa dado que es de procedencia de la seccion C es "), Pd_c)
+
+
+```
+
+# 3. Con los datos de la tarea anterior Tarea 4, concluye si existe una diferencia entre hombres y mujeres para la característica que escogiste, pero esta vez desde un punto de vista bayesiano, realiza un t test bayesiano.
+
+Interpreta tus resultados. este estudio es
+confiable o existe uno más apropiado? (no es necesario que hagas el análisis adecuado
+solo explica porque)
+
+```{r}
+#install.packages("BayesFactor")
+
+require(BayesFactor)
+```
+```{r}
+setwd("C:/Users/yoroi/OneDrive/Escritorio/CienciaDatos/Tarea 2-20210426")
+cardiovascular <- read.table("cardiovascular_disease.csv",sep = ",",header = T)
+```
+
+La variable a analizar es el peso entre hombres y mujeres
+
+```{r}
+boxplot(weight ~ gender, data = cardiovascular)
+```
+
+En el genero 2 (hombres) los datos de menor peso son outliers, y la media tienen un peso mayor que en mujeres
+
+
+```{r}
+ttestBF(x = cardiovascular$weight[cardiovascular$gender==1], y = cardiovascular$weight[cardiovascular$gender==2], paired=F)
+```
+
+Rechaza la hipótesis a priori (son iguales) es decir los datos (el peso) varía entre ambos géneros concordando con los resultados de la tarea anterior.
+
+Debido a que es el peso y se existe la intución por el biotipo y complexicón física de que va a existir varianza entre las muestras, se prefiere utilizar un ensayo de estadística Bayesiana, ya que se tienen la creencia previa. Además de que en este estudio, las muestras de peso no pueden ser observadas repetidamente como lo marcaría una estrategia frecuentista.
+
+

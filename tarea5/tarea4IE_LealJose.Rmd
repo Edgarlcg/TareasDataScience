@@ -1,0 +1,163 @@
+---
+title: "tarea5_LealJose"
+author: "Edgar Leal"
+date: "12/5/2021"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 3
+    toc_float:
+      collapsed: yes
+    cod_folding: hide
+    center: yes
+    theme: sandstone
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
+---
+
+*Continuando con el trabajo realizado en la tarea 2 (puedes cambiar de características si quieres).*
+
+# Realiza un análisis de varianza entre hombres y mujeres para una de las categorías que escogiste , sin comprobar consideraciones previas sólo los resultados de la tarea 2,  justifica tu elección de prueba e interpreta los resultados
+
+
+Elegí los datos de peso porque son datos numércos  que tienen una distribución parecida a la normal en mujeres segun los resultados de la anterior tarea.
+Precisamente porque se desconoce la distribución en hombres y porque son grandes, además de ser solo 2 grupos utilicé T-test.
+
+
+```{r}
+setwd("C:/Users/yoroi/OneDrive/Escritorio/CienciaDatos/Tarea 2-20210426")
+cardiovascular <- read.table("cardiovascular_disease.csv",sep = ",",header = T)
+
+```
+
+
+
+```{r}
+library(car)
+```
+
+
+```{r}
+attach(cardiovascular)
+```
+
+
+```{r}
+t.test(
+  x=weight[gender=="1"],
+  y=weight[gender=="2"],
+  alternative = "two.sided",
+  var.equal   = TRUE,
+  conf.level  = 0.95,
+  #valor de significancia, 0.5
+  paired = FALSE
+)
+```
+
+El p-value es menor a 0.05 por lo que rechazamos la hipotesis nula, es decir no son iguales y si tienen varianza. concordando con los gráficos de la tarea 2 y es lógico inferir que el peso entre hombres y mujeres varie.
+
+# Realiza un análisis para confirmar las consideraciones previas (normalidad y Homocedasticidad). Interpreta tus resultados y justifica tu elección de prueba. ¿Tu resultado del punto 1 es confiable? ¿Qué análisis es el más adecuado para tus datos?explica.
+
+### Normalidad
+
+Elegí test lillie porque son datos mayor a 50
+
+```{r}
+require(nortest)
+lillie.test(cardiovascular$weight[cardiovascular$gender=="1"])
+
+lillie.test(cardiovascular$weight[cardiovascular$gender=="2"])
+```
+
+Tanto en hombres como en mujeres se debe el p-value es menor al nivel de significancia 0.05, por lo que debemos rechazar H0, es decir los valores no se distribuyen de manera normal.
+
+
+### Homocedasticidad
+
+Debido a que se comprobó que no son datos con distribución normal utilizaré la prueba Levene con mediana como centro
+
+```{r}
+library(car)
+leveneTest(y = weight, group = gender, center = "median")
+```
+
+*hipotesis nula= varianza es igual*
+El valor es mayor a 0.05 por lo que no se puede rechazar H0, es decir no se encuentran diferencias significativas. La varianza es constante.
+
+###### Debido a que no son datos normales el resultado con T-Test, no es confiable. El análisis más adecuado sería el test de Mann–Whitney–Wilcoxon (WMW) Esto porque son datos numéricos que se pueden ordenar, no son datos con distribución normal, el peso entre hombres y mujeres son independientes entre sí y tienen una varianza constante, es decir presentan homocedasticidad.
+
+# concluye si existe una diferencia entre hombres y mujeres para la característica que escogiste y porque crees que es esto.
+
+```{r}
+wilcox.test(weight ~ gender, alternative = "two.sided", mu = 0,
+            paired = FALSE, conf.int = 0.95)
+```
+
+
+el p-value es menor a 0-05 por lo que negamos la hipótesis nula, es decir no son iguales, así que la hipótesis alterna plantea que si hay una varianza.
+
+El peso entre hombres y mujeres varía debido a la constitución corporal y biotipo.
+
+
+# Repite el punto 1 y 2 pero esta vez separa los datos originales por una variable categórica de más de 2 posibilidades y otra categoría que gustes. Justifica tu elección de prueba e interpreta los resultados.
+
+*La variable categórica de más de 3 posibilidades sería el manejo de colesterol y la variable cardio, para que sean variables independientes entre sí* 
+
+##### Análisis de varianza sin consideraciones previas
+Como es entre 3 grupos, utilizaré anova
+```{r}
+ANOVA_CholCard <- aov(weight~cholesterol*cardio)
+summary(ANOVA_CholCard)
+```
+
+
+Con un p-value menor a 0.05 podemos negar la hipótesis nula de que no hay varianza. Podemos concluir que existe una diferencia estadísticamente significativa entre el peso en al menos 2 de nuestras 3 categorías de manejo de colesterol.
+
+##### Consideraciones previas
+
+```{r}
+par(mfrow = c(2,2))
+plot(ANOVA_CholCard)
+```
+
+
+En el grafico 1 se observa falta de homocedasticidad y en el gráfico dos se observa que la distribución en las colas no tiene tendencia normal.
+
+*Comprobar*
+```{r}
+#Comprobamos la normalidad de nuestros datos
+lillie.test(cardiovascular$weight[cardiovascular$cholesterol=="1"])
+lillie.test(cardiovascular$weight[cardiovascular$cholesterol=="2"])
+lillie.test(cardiovascular$weight[cardiovascular$cholesterol=="3"])
+
+lillie.test(cardiovascular$weight[cardiovascular$cardio=="0"])
+lillie.test(cardiovascular$weight[cardiovascular$cardio=="1"])
+
+```
+El p-value es menor en todas, se confirma que no hay distribución normal
+
+Para homocedasticidad 
+
+
+```{r}
+# If y is a linear-model object or a formula, the variables on the right-hand-side of the model must all be factors and must be completely crossed.
+leveneTest(y = cardiovascular$weight~as.factor(cardiovascular$cholesterol)*as.factor(cardiovascular$cardio))
+```
+
+Valor es menor a la referencia, rechazamos hipótesis nula, es decir la varianza no es igual
+
+Debido a que son datos no pareados no se puede utilizar Friedman ni Rangos con signo de Wilcoxon
+Debido a que son datos no paramétricos, anova queda descartado
+Debido a que no presentan homocedasticidad no se puede utilizar Mann Whitney Wilcoxon y una variable es no binaria.
+
+Kruskal-Wallis sería la más adecuada  porque una variable categórica es para 3, aunque los datos no presentan homocedasticidad y no sería del todo confiable.
+
+
+```{r}
+
+kruskal.test(list(weight,cholesterol,cardio))
+
+
+```
+p-value es menor, H alterna: Al menos una muestra proviene de una población con una distribución distinta.
