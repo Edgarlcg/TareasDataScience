@@ -1,0 +1,351 @@
+---
+title: "Regresión Lineal"
+author: "Edgar Leal"
+date: "26/5/2021"
+output: 
+  html_document: 
+    toc: yes
+    toc_depth: 3
+    toc_float:
+      collapsed: true
+    cod_folding: hide
+    center: true
+    theme: sandstone
+---
+```{r}
+library(ggplot2)  # graficas
+library(bestNormalize)  # normalizaciones
+library(predict3d)  # graficas modelos multiples
+```
+
+
+# 1.	Abre el archivo “hersdata_model.csv”. 
+```{r}
+setwd("C:/Users/yoroi/OneDrive/Escritorio/CienciaDatos/Tarea 6-20210526")
+
+hers <- read.csv("hersdata_model.csv")
+head(hers)
+
+#which(is.na(hers))
+#no hubo datos faltantes
+```
+
+
+# 2.	Ajusta un modelo lineal considerando el peso de las pacientes como la variable de respuesta y la medida de la cintura de las pacientes como variable predictora. Recuerda revisar la normalidad de la variable de respuesta y realizar las transformaciones que sean necesarias. Grafica la variable predictora y la variable de respuesta. Interpreta los resultados. 
+
+```{r}
+weight <- hers$weight
+waist <- hers$waist
+
+data <- data.frame(weight,waist)
+head(data)
+
+# prueba distribucion normal para la variable weight
+ggplot(data, aes(sample = weight)) + 
+  stat_qq(alpha = 0.5) + 
+  stat_qq_line(color = "red") + 
+  labs(title = "Grafica cuantil-cuantil peso", x = "Teoréticos", y = "Muestra")
+
+ggplot(data, aes(x = weight)) + 
+  geom_histogram(color = "black", fill = "white") + 
+  labs(title = "Histograma peso", x = "Valor", y = "Frecuencia")
+
+ks.test(data$weight, pnorm, mean(data$weight), sd(data$weight))
+
+
+
+
+```
+En la gráfica cuantil-cuantil podemos observar que los datos no tienen distibución normal, especialmente a los extremos.
+Enb el histograma verificamos la falta de normalidad ya que lso datos se concentran a la izquierda y con el ks.test se observa que existe varianza entre los datos, por lo que no sigue distribución normal.
+
+
+```{r}
+#Normalizar
+set.seed(42)  # utilizamos una semilla para hacer los resultados reproducibles 
+Norm <- bestNormalize(data$weight)
+data$weight2 <- Norm$x.t
+```
+
+```{r}
+# comprobar la transformación a distribucion normal para la variable weight2
+ggplot(data, aes(sample = weight2)) + 
+  stat_qq(alpha = 0.5) + 
+  stat_qq_line(color = "red") + 
+  labs(title = "Grafica cuantil-cuantil peso", x = "Teoréticos", y = "Muestra")
+
+```
+
+
+
+```{r}
+modelo <- lm(data = data, weight2 ~ waist)
+modelo
+```
+$$y= 0.06278x -5.74525$$
+
+Por cada unidad de aumento en la cintura, el peso aumenta 0.06278
+
+
+```{r}
+ggplot(data, aes(x = waist, y = weight2)) +
+  geom_point() +
+  geom_smooth(method = lm) +
+  labs(title = "Grafica de dispersion entre cintura y peso", x = "Cintura", y = "Peso")
+```
+
+Los valores se ahustan a una función lineal, a pesar de algunos outliers, la zona smooth, es angosta (eso no lo supe interpretar)
+```{r}
+summary(modelo)
+```
+
+todos los p-values son muy cercanos a 0, lo que nos indica que es un buen modelo, y que podemos rechazar la hipótesis nula de que las variables no guardan una realción líneal
+R^2 es cercana a uno, por lo que nuestro modelos es bueno
+
+
+# 3.	Considerando el modelo predicho anteriormente, realiza la gráfica de la diferencia entre los valores observados y los esperados. Grafica los residuales contra los índices y verifica que éstos sean normales. Realiza un histograma y haz pruebas de normalidad. Interpreta los resultados. 
+
+```{r}
+data$predicted <- modelo$fitted.values  # valores esperados
+data$residuals <- modelo$residuals  # residuales
+head(data)
+
+```
+
+```{r}
+# ahora graficamos
+ggplot(data, aes(x = waist, y = weight2)) +
+    geom_smooth(method = lm) +  # añadimos la linea de regresion 
+  geom_segment(aes(xend = waist, yend = predicted)) +  # esto añade las lineas de distancia 
+  geom_point(aes(y = predicted)) +  # agregamos los puntos de los valores predichos
+  geom_point(color = "red") +  # agregamos los puntos de las observaciones en color rojo
+  labs(title = "Grafica de residuales", x = "Cintura", y = "Peso")
+```
+
+Observamos que en los extremos existen residuales muy grandes, pero en general, los residuales son cercanos a cero y por ello, los puntos de los valores de los residuales no se perciben, además de que claramente tienen una distribución lineal.
+
+```{r}
+data$index <- 1:nrow(data)  # añadimos los indices
+ggplot(data, aes(x = index, y = sqrt(residuals))) + #sqrt porque son muchos datos 
+  geom_point() +
+  labs(title = "Grafica de residuales", x = "Índice", y = "Residuales")
+```
+No existe un patrón en los residuales
+
+```{r}
+# prueba distribucion normal para la variable weight
+ggplot(data, aes(sample = residuals)) + 
+  stat_qq(alpha = 0.5) + 
+  stat_qq_line(color = "red") + 
+  labs(title = "Grafica cuantil-cuantil peso", x = "Teoréticos", y = "Muestra")
+
+ggplot(data, aes(x = residuals)) + 
+  geom_histogram(color = "black", fill = "white") + 
+  labs(title = "Histograma peso", x = "Valor", y = "Frecuencia")
+```
+
+
+Podemos observar que los residuales siguen una distribución normal, (excepto ligeramente las colas) pero en el histograma se confirma esta distribución.
+
+Por tanto biendo que los residuales vs índices no siguen un patrón y que tienen distribución normal, podemos comprobar que nuestro modelo es bueno
+
+
+# 4.	Predice los valores de peso para personas con las medidas de cintura presentes en el archivo “hersdata_predictions.csv”. Si realizaste una transformación de la variable de respuesta, recuerda devolver los valores a la escala original. 
+
+```{r}
+new_data <- read.csv("hersdata_predictions.csv")
+
+pred <- predict(modelo, newdata = new_data)
+
+set.seed(42)
+#head(predict(Norm, newdata = NULL, inverse = TRUE))
+#head(hers$weight)
+#Los valores si son correctos
+
+
+new_data$prediction <- predict(Norm, newdata = pred, inverse = TRUE)
+head(new_data$prediction)
+head(new_data$weight)
+```
+
+# 5.	Ajusta un modelo lineal múltiple para el peso contra las siguientes variables: age, raceth, smoking, drinkany, exercise, medcond, htnmeds, statins, diabetes, dmpills, insulin, waist, glucose, LDL, HDL, TG, SBP y DBP. Interpreta los resultados devueltos por summary(). No es posible realizar una gráfica para visualizar todas las variables, pero puedes apoyarte de gráficas individuales para tus interpretaciones (tip: compara las gráficas obtenidas con el peso y variables significativas contra las gráficas obtenidas con el peso y variables no significativas).
+
+Ya transformamos el peso 
+
+```{r}
+
+hers$weight2 <- data$weight2
+hers$index <- data$index
+
+```
+
+```{r}
+modelo_multiple <- lm(data = hers, weight2 ~ age + raceth + smoking + drinkany + exercise + medcond + htnmeds + statins + diabetes + dmpills + insulin + waist + glucose + LDL + HDL + TG + SBP + DBP)
+summary(modelo_multiple)
+```
+Las variables significativas son la edad, raza (other), smoking (yes), waist porque su p-value es muy cercano a 0
+Las variables poco significativas  con p-valu cercano a 0 es LDL y DBP (tensión arterial diastolica)
+Las demás variables con P-value no cercnao a 0 no son significativas para el modelo.
+
+el p-value general igual es muy cercano a cero además de R^2 cercano a 1, por lo que el modelo es bueno para al menos alguna variable.
+
+Por cada unidad de aumento de la edad, el peso disminuye 0.015 veces, ser de otra raza diferente al blanco, disminuye en 0.3 veces el peso; el fumar disminuye en 0.21  el peso, por cada unidad de aumento de cintura, el peso aumenta 0.061 veces, por cada unidad de aumento de LDL el peso aumenta 0.00077 veces.
+
+$$ y = -4.906 - 0.015*x1 -0.3*x2 - 0.219 *x3 + 0.0610 *x4 + 0.00025 *x5 $$
+Donde x1, x2, x3, x4, x5 son edad, ser de otra raza, el fumar o no, la cintura, LDL y DBP respectivamente
+
+
+
+```{r}
+ggplot(hers, aes(x = weight2, y = age, color = raceth)) +
+  geom_smooth(method = lm) +  # añadimos la linea de regresion 
+  geom_point(aes(shape = as.factor(smoking))) +  
+  labs(title = "Modelo lineal", x = "Peso (normalizado)", y = "Edad", color = "Raza", shape = "Fuma")
+```
+En esta grafica podemos observar en las zonas smooth la asociación lineal, están los triángulos verdes, que son los que fuman  que son los que raza other, además la función es negativa, porque conforme se aumenta de edad, disminuye el peso.
+
+
+
+
+```{r}
+ggplot(hers, aes(x = weight2, y = waist, color = raceth, size = age)) +
+  geom_smooth(method = lm) +  # añadimos la linea de regresion 
+  geom_point(aes(shape = as.factor(smoking))) +  
+  labs(title = "Modelo lineal", x = "Peso  (normalizado)", y = "cintura", color = "Raza", shape = "Fuma")
+```
+
+En esta gráfica el eje x ahora es la cintura, para poder observar mejor la variable cintura, se observa cómo conforme aumenta la cintura, aumenta el peso en la regresión lineal. Mientras que en edad, las edades menores están en pesos mayores y edades mayores están en pesos menores (los tamaños más pequeños estan en el lado superior de la gráfica)
+
+
+```{r}
+ggplot(hers, aes(x = weight2, y = glucose, color = drinkany, size = insulin)) +
+  geom_smooth(method = lm,) +  # añadimos la linea de regresion 
+  geom_point(aes(shape = as.factor(exercise))) +  
+  labs(title = "Modelo lineal", x = "Peso  (normalizado)", y = "Glucosa", color = "Beber", shape = "Ejercicio")
+```
+
+Podemos ver que no existe asociación lineal entre las variables beber, ejercicio ni glucosa ni insulina. Tamaños, formas y colores dispersos, así como la regresión estar horizontalizada *Me causa conlficto que el ejercicio no fuera de significancia para el modelo*
+
+
+```{r}
+ggplot(hers, aes(x = weight2, y = exercise)) +
+  geom_smooth(method = lm, se =F) +  # añadimos la linea de regresion 
+  labs(title = "Modelo lineal", x = "Peso  (normalizado)", y = "Ejercicio")
+```
+
+# 6.	Grafica los residuales contra los índices. Realiza un histograma y haz pruebas de normalidad. Interpreta los resultados. 
+
+```{r}
+
+hers$residuals <- modelo_multiple$residuals  # residuales
+head(hers)
+
+```
+
+
+```{r}
+ggplot(hers, aes(x = index, y = residuals)) +  
+  geom_point() +
+  labs(title = "Grafica de residuales", x = "Índice", y = "Residuales")
+```
+
+Existe un patrón 
+
+```{r}
+# prueba distribucion normal para la variable weight
+ggplot(hers, aes(sample = residuals)) + 
+  stat_qq(alpha = 0.5) + 
+  stat_qq_line(color = "red") + 
+  labs(title = "Grafica cuantil-cuantil peso", x = "Teoréticos", y = "Muestra")
+
+ggplot(hers, aes(x = residuals)) + 
+  geom_histogram(color = "black", fill = "white") + 
+  labs(title = "Histograma peso", x = "Valor", y = "Frecuencia")
+```
+
+A pesar de que existe un patrón,  el histograma muestra que los residuales son normales, y la gráfica de cuantil-cuantil muestra distribución normal con ligeras colas.
+
+# 6.	Predice los valores de peso para todas las variables usando el archivo “hersdata_predictions.csv”. Si realizaste una transformación de la variable de respuesta, recuerda devolver los valores a la escala original.
+
+```{r}
+pred <- predict(modelo_multiple, newdata = new_data)
+head(pred)
+```
+
+```{r}
+set.seed(42)
+
+new_data$prediction2 <- predict(Norm, newdata = pred, inverse = TRUE)
+head(new_data$weight)
+head(new_data$prediction2)
+```
+
+# 7.	Ajusta un modelo logístico para la variable diabetes contra la variable glucosa. Grafica la variable predictora y la variable de respuesta. Interpreta los resultados. 
+
+
+```{r}
+
+hers$diabetes2 <- sapply(hers$diabetes, FUN = function(x){
+  if (x=="no") x <- 0
+  if (x=="yes") x <- 1
+  return(x)
+})
+
+modelo_logistico <- glm(data = hers, diabetes2 ~ glucose, family = "binomial")
+summary(modelo_logistico)
+```
+
+Ambos coeficientes son significativos
+
+```{r}
+ggplot(hers, aes(x=glucose, y=(diabetes2))) + 
+  geom_point(alpha=.5) +
+  stat_smooth(method = glm, se = FALSE, method.args = list(family = binomial)) +
+  labs(title = "Grafica de dispersion entre diabetes y glucosa", x = "glucosa", y = "diabetes")
+```
+A partir de valores de 126 en adelantes se considera presencia de diabetes, pero en la gráfica se muestra como con un valor aproximado de 160 en glucosa, la gráfica se mueve de ausencia a presencia de diabetes. La asociación es fuerte porque la sigmoide es muy marcada 
+
+# 8.	Calcula la R2 de Hosmer y Lemeshow. ¿Qué tan buena es la variable para predecir la presencia de la enfermedad? 
+
+```{r}
+chi <- modelo_logistico$null.deviance - modelo_logistico$deviance  # calculamos el valor de la chi restando las desviaciones del modelo nulo menos las reales. 
+chi / modelo_logistico$null.deviance  # dividimos el valor de chi entre las desviaciones nulas
+```
+indica que el la glucosa está explicando el 0.54 de la varianza total de la variable de respuesta, es decir, la presencia o ausencia de enfermedad.
+*En sí la glucosa explica casi el 100% de la presencia/ausencia de enfermedad, este valor de la varianza se puede deber a que los pacientes con diabetes ya tienen su glucosa controlada*
+
+# 9.	Grafica los residuales contra los índices y verifica que éstos sean normales. Realiza un histograma y haz pruebas de normalidad. Interpreta los resultados. 
+
+```{r}
+
+hers$residuals2 <- modelo_logistico$residuals
+
+ggplot(hers, aes(x = index, y = sqrt(residuals2))) + #sqrt porque son muchos datos para ver el patrón 
+  geom_point() +
+  labs(title = "Grafica de residuales", x = "Índice", y = "Residuales")
+```
+
+ No existe un patrón
+ 
+```{r}
+ggplot(hers, aes(x = residuals2)) + 
+  geom_histogram(color = "black", fill = "white") + 
+  labs(title = "Histograma diabetes", x = "Valor", y = "Frecuencia")
+
+ks.test(hers$residuals2, pnorm, mean(hers$residuals2), sd(hers$residuals2))
+```
+
+Claramente existe una tendencia que el modelo no esta considerando (residuales vs indice si sigue patrón). Ademas, los residuales no siguen una distribucion normal. Sin embargo, probablemente se deba a que las personas con la enfermedad ya tienen su gucosa bajo control, para esta predicción tal vez convenga un modelo con variables como insulinoterapia y dmpills. Ya que si toman medicamentos para db, esto explicaría el por qúe habría niveles de glucosa bajos o controlados.
+
+
+# 10.	Predice la probabilidad de presentar diabetes para personas con las medidas de glucosa presentes en el archivo “hersdata_predictions.csv”.
+```{r}
+pred <- predict(modelo_logistico, newdata = new_data, type="response")
+head(pred)
+new_data$prediction3 <- pred
+head(new_data$diabetes)
+
+```
+
+ La predicción no es tan buena, ya que para un yes, hubo probabilidad media de .45
+ 

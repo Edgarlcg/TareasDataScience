@@ -1,0 +1,744 @@
+HT,age,raceth,nonwhite,smoking,drinkany,exercise,physact,medcond,htnmeds,statins,diabetes,dmpills,insulin,weight,BMI,waist,WHR,glucose,tchol,LDL,HDL,TG,SBP,DBP,age10
+placebo,64,White,no,yes,yes,no,much less active,1,yes,no,no,no,no,64.40000153,24.38999939,87,0.876999974,94,204,116.1999969,56,159,152,72,6.400000095
+hormone therapy,68,African American,yes,no,yes,no,about as active,0,no,no,no,no,no,60.90000153,29.04999924,96,1,116,212,137.8000031,52,111,174,98,6.800000191
+placebo,70,White,no,no,no,no,about as active,0,no,no,yes,no,yes,89.30000305,34.45000076,114.5,0.973999977,120,314,228.8000031,33,261,119,61,7
+hormone therapy,62,White,no,yes,yes,no,somewhat less active,0,yes,no,no,no,no,112,45.68000031,139.6999969,0.933000028,98,303,220,40,215,111,71,6.199999809
+hormone therapy,73,White,no,no,no,no,somewhat more active,1,yes,no,no,no,no,73.19999695,25.27000046,93,0.885999978,95,201,123.8000031,47,151,158,84,7.300000191
+hormone therapy,57,White,no,yes,no,no,somewhat less active,0,yes,no,no,no,no,68.59999847,28.12000084,95,0.940999985,109,259,153.3999939,49,283,182,95,5.699999809
+placebo,60,African American,yes,yes,no,yes,somewhat more active,0,yes,no,no,no,no,57.70000076,22.01000023,79.5,0.855000019,104,187,116.4000015,57,68,118,75,6
+hormone therapy,64,White,no,yes,no,no,about as active,1,yes,no,yes,yes,no,62.29999924,24.70999908,94,0.921999991,160,165,90,31,220,141,61,6.400000095
+hormone therapy,61,White,no,yes,no,no,about as active,0,no,no,no,no,no,56.40000153,20.92000008,79.19999695,0.790000021,96,264,190.1999969,46,139,149,71,6.099999905
+hormone therapy,53,White,no,no,no,yes,about as active,1,no,no,no,no,no,65.69999695,23.72999954,82,0.837000012,105,319,247,52,100,129,77,5.300000191
+placebo,62,White,no,no,no,no,somewhat less active,1,yes,yes,no,no,no,74.80000305,27.23999977,94,0.861999989,89,216,134.3999939,54,138,148,69,6.199999809
+hormone therapy,67,White,no,no,no,no,about as active,0,yes,yes,no,no,no,56.59999847,25.62999916,86,0.878000021,92,234,134,76,120,110,69,6.699999809
+placebo,64,White,no,no,no,yes,much more active,0,yes,yes,no,no,no,71.5,27.47999954,87.5,0.805999994,119,191,114.4000015,53,118,151,68,6.400000095
+hormone therapy,67,White,no,no,no,no,about as active,0,yes,no,yes,yes,no,83.19999695,32.22000122,110,0.908999979,115,254,173.6000061,40,202,119,80,6.699999809
+hormone therapy,66,White,no,no,yes,yes,somewhat more active,1,yes,yes,yes,no,no,73.40000153,28.20999908,99,0.875999987,203,189,121.1999969,48,99,139,80,6.599999905
+placebo,57,White,no,no,no,no,somewhat less active,0,yes,yes,no,no,no,76.80000305,27.73999977,107,1.014000058,94,123,36.79999924,28,291,145,94,5.699999809
+hormone therapy,63,African American,yes,no,no,no,much more active,0,yes,no,no,no,no,81.40000153,28.73999977,90.5,0.842000008,99,441,345.7999878,48,236,143,94,6.300000191
+hormone therapy,69,White,no,no,no,yes,somewhat more active,0,no,no,no,no,no,93.59999847,37.77999878,109.5,0.875999987,99,248,162,58,140,146,96,6.900000095
+placebo,51,White,no,no,no,yes,somewhat less active,0,yes,no,no,no,no,65,27.05999947,85,0.810000002,90,219,143.6000061,48,137,127,87,5.099999905
+hormone therapy,61,White,no,no,no,no,somewhat less active,1,yes,no,yes,yes,no,63.59999847,28.29999924,104,0.99000001,202,283,210.1999969,37,179,121,79,6.099999905
+hormone therapy,57,African American,yes,no,yes,yes,somewhat more active,0,yes,no,no,no,no,89,32.65000153,102,0.823000014,91,199,129.6000061,55,72,135,85,5.699999809
+hormone therapy,58,White,no,no,no,no,somewhat less active,1,yes,no,no,no,no,93.40000153,39.38000107,115,0.962000012,120,280,202.6000061,36,207,129,65,5.800000191
+placebo,76,White,no,no,no,yes,somewhat more active,1,no,no,no,no,no,55.5,23.89999962,69.5,0.691999972,91,320,216.6000061,67,182,151,74,7.599999905
+placebo,68,White,no,no,no,yes,about as active,0,yes,no,yes,yes,no,66,26.39999962,88,0.859000027,134,203,136.6000061,40,132,132,75,6.800000191
+placebo,48,White,no,no,no,yes,much less active,1,yes,no,no,no,no,66.40000153,25.70999908,97,0.924000025,91,195,136.3999939,32,133,138,60,4.800000191
+hormone therapy,64,White,no,no,no,no,somewhat more active,0,yes,no,no,no,no,80,26.61000061,98,0.961000025,87,217,141,44,160,141,79,6.400000095
+placebo,71,White,no,no,no,no,somewhat less active,1,yes,no,yes,yes,no,91,39.18000031,113.5,0.865999997,170,287,197.8000031,64,126,177,83,7.099999905
+placebo,64,White,no,no,no,no,about as active,1,yes,yes,no,no,no,79.09999847,32.41999817,110,0.931999981,103,165,108.1999969,36,104,140,81,6.400000095
+hormone therapy,69,African American,yes,no,no,no,about as active,0,yes,no,no,no,no,89.09999847,34.25,92.5,0.771000028,86,258,175,55,140,127,69,6.900000095
+placebo,65,White,no,yes,no,no,somewhat more active,0,yes,yes,no,no,no,55,21.47999954,73,0.75999999,110,186,98.19999695,69,94,103,65,6.5
+hormone therapy,55,African American,yes,no,no,yes,somewhat less active,1,yes,yes,no,no,no,70.19999695,28.29999924,87.5,0.845000029,91,171,99,64,40,129,68,5.5
+placebo,72,White,no,yes,yes,no,much less active,1,yes,no,yes,no,no,46.90000153,20.70999908,69,0.762000024,108,171,85.80000305,69,81,185,90,7.199999809
+hormone therapy,77,White,no,no,yes,yes,somewhat more active,0,yes,yes,no,no,no,66.59999847,27.29999924,82.5,0.786000013,94,214,132.8000031,65,81,140,75,7.699999809
+placebo,68,White,no,no,no,yes,somewhat more active,0,no,yes,no,no,no,55,21.47999954,82.5,0.82099998,92,213,131.6000061,50,157,140,80,6.800000191
+placebo,59,White,no,no,no,yes,somewhat more active,1,no,yes,no,no,no,80.40000153,29.70999908,96,0.897000015,89,231,162.8000031,37,156,141,94,5.900000095
+hormone therapy,57,White,no,yes,no,no,much more active,0,yes,no,no,no,no,68.19999695,24.45000076,90.5,0.861999989,101,211,147.6000061,39,122,139,77,5.699999809
+hormone therapy,70,White,no,no,no,yes,somewhat more active,1,no,no,no,no,no,66.40000153,24.75,94,0.912999988,103,170,92,40,190,143,80,7
+placebo,68,White,no,yes,no,no,about as active,1,yes,no,no,no,no,52.09999847,20.02000046,71,0.772000015,87,251,166.6000061,61,117,144,74,6.800000191
+placebo,68,White,no,no,no,yes,about as active,0,yes,no,no,no,no,70,27.54999924,89,0.781000018,99,248,170.1999969,50,139,151,68,6.800000191
+hormone therapy,69,White,no,no,no,yes,about as active,0,yes,no,yes,no,yes,73.19999695,26.05999947,95,0.926999986,175,230,146.3999939,38,228,151,64,6.900000095
+hormone therapy,64,Other,yes,no,no,no,about as active,1,yes,yes,no,no,no,84.80000305,35.34000015,103,0.912,108,285,172.3999939,50,313,168,88,6.400000095
+hormone therapy,65,White,no,no,no,no,somewhat less active,1,yes,yes,no,no,no,47.5,20.11000061,69,0.816999972,93,223,124.5999985,49,247,150,97,6.5
+hormone therapy,57,White,no,no,yes,yes,somewhat more active,1,no,yes,no,no,no,48,19.20000076,68.5,0.769999981,87,212,146.3999939,44,108,98,59,5.699999809
+placebo,62,White,no,no,no,no,somewhat more active,0,yes,yes,yes,no,no,76.40000153,26.78000069,95,0.879999995,154,244,142.1999969,42,299,136,73,6.199999809
+hormone therapy,63,White,no,yes,no,no,somewhat less active,0,yes,yes,no,no,no,121,48.13999939,137,0.856000006,113,158,80,39,195,149,82,6.300000191
+hormone therapy,57,White,no,no,yes,no,somewhat less active,1,yes,no,no,no,no,82.69999695,29.44000053,95,0.879999995,99,304,189.8000031,55,296,119,80,5.699999809
+hormone therapy,78,White,no,no,no,no,somewhat more active,0,yes,no,no,no,no,52.70000076,25.59000015,74,0.744000018,102,192,107.1999969,66,94,121,61,7.800000191
+placebo,72,African American,yes,no,no,yes,somewhat more active,0,yes,yes,yes,no,no,81.80000305,34.09000015,96,0.806999981,139,172,95.40000153,48,143,149,73,7.199999809
+placebo,60,White,no,no,no,yes,much more active,0,no,no,no,no,no,61.40000153,25.17000008,82,0.841000021,114,243,132.3999939,81,148,120,80,6
+hormone therapy,69,White,no,yes,no,yes,somewhat more active,0,yes,no,no,no,no,57,24.89999962,77.5,0.819999993,88,280,181.6000061,43,277,145,76,6.900000095
+hormone therapy,72,White,no,no,no,no,somewhat more active,1,yes,no,yes,yes,yes,61.59999847,23.5,79.09999847,0.833000004,107,236,144.3999939,71,103,110,60,7.199999809
+hormone therapy,76,White,no,yes,no,no,somewhat less active,0,yes,yes,no,no,no,61.59999847,23.12999916,81,0.822000027,94,228,110,58,300,133,66,7.599999905
+placebo,74,African American,yes,no,no,yes,somewhat more active,0,yes,no,no,no,no,98.80000305,35.90000153,104.3000031,0.843999982,94,292,199.6000061,62,152,124,85,7.400000095
+hormone therapy,69,White,no,no,yes,no,about as active,0,yes,yes,yes,no,no,79.59999847,28.20000076,105.5,0.922999978,142,210,123,59,140,131,80,6.900000095
+hormone therapy,66,White,no,yes,no,no,much less active,0,no,no,no,no,no,88.19999695,35.33000183,104.8000031,0.89200002,95,277,179.8000031,42,276,120,71,6.599999905
+placebo,60,White,no,no,no,yes,somewhat less active,1,yes,yes,no,no,no,60,22.71999931,86.5,0.912999988,125,215,124.4000015,48,213,118,70,6
+placebo,63,African American,yes,yes,no,no,somewhat less active,1,yes,no,yes,yes,yes,78.19999695,28.89999962,94,0.893999994,70,197,115.8000031,57,121,171,70,6.300000191
+hormone therapy,62,White,no,no,no,yes,somewhat less active,0,no,yes,no,no,no,66.80000305,24.98999977,78.5,0.83099997,90,196,126.8000031,48,106,120,63,6.199999809
+hormone therapy,79,White,no,no,no,yes,much more active,0,yes,no,no,no,no,54.40000153,24.18000031,72.30000305,0.773000002,93,237,149,42,230,130,69,7.900000095
+hormone therapy,58,African American,yes,yes,no,yes,about as active,1,yes,no,no,no,no,86.80000305,33.70000076,100.8000031,0.811999977,108,240,169,42,145,122,70,5.800000191
+placebo,65,White,no,no,no,no,somewhat more active,1,yes,yes,no,no,no,64.40000153,24.54000092,82,0.824000001,116,243,162.8000031,46,171,118,60,6.5
+hormone therapy,66,White,no,no,no,yes,about as active,0,yes,no,no,no,no,62.90000153,26.70000076,76.5,0.81400001,105,308,191.6000061,86,152,134,77,6.599999905
+hormone therapy,64,White,no,yes,no,no,somewhat less active,0,no,yes,yes,no,no,74.59999847,25.06999969,85,0.833000004,91,214,145.3999939,48,103,134,70,6.400000095
+placebo,67,White,no,no,no,no,about as active,0,yes,yes,yes,no,no,59.79999924,24.88999939,84.19999695,0.842000008,137,437,365.2000122,36,179,166,77,6.699999809
+placebo,71,White,no,no,yes,yes,somewhat more active,0,yes,no,no,no,no,55.29999924,22.01000023,72.59999847,0.768000007,87,307,166.3999939,86,273,165,69,7.099999905
+hormone therapy,64,White,no,no,no,no,about as active,1,yes,no,no,no,no,63.20000076,27.89999962,82.5,0.805000007,106,240,130,54,280,157,81,6.400000095
+hormone therapy,65,White,no,no,yes,yes,about as active,1,yes,yes,no,no,no,67.80000305,26.15999985,72.5,0.700999975,81,228,145.8000031,62,101,131,77,6.5
+hormone therapy,67,White,no,yes,no,no,about as active,0,no,yes,no,no,no,114,42.20000076,126.5,0.931999981,120,208,110.8000031,40,286,150,84,6.699999809
+hormone therapy,61,White,no,no,no,no,about as active,1,yes,no,yes,no,no,93.5,36.06999969,105,0.865999997,126,255,166.6000061,42,232,119,70,6.099999905
+hormone therapy,70,White,no,yes,no,no,somewhat less active,0,yes,no,yes,yes,no,63.20000076,26.81999969,90.5,0.939999998,133,244,139.3999939,50,273,161,74,7
+placebo,69,White,no,no,no,no,about as active,1,yes,no,yes,yes,no,86,33.68000031,109.4000015,0.875,163,248,169.3999939,36,213,123,66,6.900000095
+hormone therapy,77,White,no,no,no,no,somewhat more active,1,yes,no,no,no,no,59.40000153,24.40999985,72.5,0.689999998,95,264,169.1999969,75,99,136,60,7.699999809
+hormone therapy,67,White,no,no,no,yes,somewhat more active,0,yes,yes,yes,yes,no,63.70000076,26.45000076,90.5,0.927999973,136,203,128.3999939,42,163,117,70,6.699999809
+placebo,75,White,no,no,no,no,somewhat less active,0,yes,no,yes,no,no,73,30.30999947,88.69999695,0.828000009,131,238,152.8000031,40,226,120,61,7.5
+hormone therapy,55,White,no,yes,yes,no,about as active,1,yes,no,no,no,no,54.5,22.11000061,72,0.771000028,107,209,89.19999695,92,139,144,82,5.5
+placebo,61,White,no,yes,yes,yes,about as active,1,yes,no,no,no,no,49.40000153,20.51000023,67.5,0.773999989,84,211,130.6000061,45,177,129,74,6.099999905
+hormone therapy,68,White,no,no,no,no,somewhat less active,1,yes,no,yes,yes,no,73,27.81999969,95,0.93900001,107,167,108.8000031,42,81,122,70,6.800000191
+placebo,73,White,no,yes,no,no,about as active,1,yes,no,yes,yes,no,92.19999695,34.20000076,104.6999969,0.878000021,136,261,191.6000061,36,167,130,74,7.300000191
+hormone therapy,68,White,no,yes,no,no,somewhat less active,1,yes,no,no,no,no,85.80000305,34.72000122,100.5,0.809000015,88,210,128.1999969,33,244,149,60,6.800000191
+hormone therapy,70,White,no,no,no,yes,about as active,1,yes,yes,no,no,no,65.80000305,27.04000092,90,0.904999971,89,231,134.8000031,55,206,159,70,7
+hormone therapy,73,White,no,no,no,no,somewhat less active,1,yes,no,no,no,no,68.5,30.44000053,105.5999985,0.986999989,99,243,163.6000061,44,177,130,70,7.300000191
+placebo,67,White,no,no,yes,yes,somewhat less active,0,no,no,no,no,no,68,24.62000084,77.59999847,0.742999971,87,213,126.4000015,66,103,135,79,6.699999809
+hormone therapy,70,White,no,no,yes,no,somewhat more active,0,yes,no,yes,no,no,71.80000305,32.11999893,88.80000305,0.792999983,125,228,119.5999985,68,202,128,57,7
+hormone therapy,61,White,no,no,no,yes,about as active,0,yes,yes,yes,no,no,103,36.84000015,115.1999969,0.971000016,145,177,107.5999985,39,152,141,69,6.099999905
+hormone therapy,62,White,no,no,no,yes,somewhat more active,1,yes,yes,yes,yes,no,63.09999847,23.60000038,87.69999695,0.893000007,140,189,102.4000015,58,143,134,64,6.199999809
+placebo,66,White,no,no,no,no,much less active,0,yes,yes,yes,yes,no,68.09999847,25.37999916,88.19999695,0.861000001,112,266,162.8000031,60,216,130,66,6.599999905
+hormone therapy,66,White,no,no,no,no,much less active,1,yes,yes,yes,yes,no,118,46.77000046,122.6999969,0.887000024,110,204,130.8000031,36,186,97,59,6.599999905
+hormone therapy,68,African American,yes,no,no,yes,somewhat less active,0,yes,no,no,no,no,63.59999847,26.03000069,88.40000153,0.93599999,102,302,237.1999969,38,134,124,82,6.800000191
+hormone therapy,71,White,no,no,no,yes,somewhat more active,0,yes,no,no,no,no,67.5,25.25,91.30000305,0.94599998,93,262,167.1999969,38,284,170,92,7.099999905
+hormone therapy,67,White,no,no,no,no,about as active,1,no,no,no,no,no,86.40000153,30.61000061,115.1999969,0.967999995,102,281,155.8000031,71,271,128,83,6.699999809
+hormone therapy,53,African American,yes,no,no,no,somewhat less active,0,yes,no,no,no,no,77.69999695,29.89999962,93.19999695,0.880999982,124,229,144.1999969,32,264,143,94,5.300000191
+placebo,64,White,no,no,no,yes,much more active,1,no,no,yes,yes,yes,75.5,28.55999947,92.90000153,0.949999988,106,191,134.1999969,31,129,124,70,6.400000095
+hormone therapy,74,White,no,no,no,yes,somewhat more active,0,yes,no,no,no,no,62.90000153,26.01000023,87.19999695,0.89200002,92,248,161,36,255,114,62,7.400000095
+placebo,58,African American,yes,no,no,yes,somewhat more active,1,yes,yes,no,no,no,77,29.88999939,85.30000305,0.783999979,86,215,114.4000015,83,88,140,74,5.800000191
+hormone therapy,73,White,no,yes,no,no,somewhat more active,0,yes,no,no,no,no,52.5,23.57999992,82.59999847,0.947000027,107,249,177.8000031,40,156,155,76,7.300000191
+hormone therapy,54,White,no,no,no,no,somewhat more active,0,yes,no,yes,yes,no,64.40000153,25.46999931,84.19999695,0.88499999,157,369,266.6000061,57,227,152,82,5.400000095
+hormone therapy,68,White,no,no,no,yes,about as active,0,yes,no,no,no,no,73.90000153,27.95000076,102.8000031,0.957000017,90,242,171,43,140,139,81,6.800000191
+placebo,57,White,no,yes,no,no,much less active,1,yes,yes,no,no,no,84.30000305,31.64999962,106.9000015,1.046000004,84,224,141.8000031,54,141,113,59,5.699999809
+placebo,71,White,no,no,no,no,much less active,1,yes,no,no,no,no,66.80000305,27.27000046,90.59999847,0.986999989,96,223,124.1999969,36,314,126,76,7.099999905
+placebo,57,White,no,no,no,no,about as active,0,yes,yes,no,no,no,73.40000153,28.48999977,95.5,0.888000011,91,250,157.1999969,63,149,139,71,5.699999809
+hormone therapy,71,White,no,no,no,no,about as active,0,yes,yes,no,no,no,60.40000153,24.97999954,71.40000153,0.703999996,98,198,102.1999969,74,109,125,71,7.099999905
+placebo,64,White,no,no,yes,yes,somewhat more active,0,yes,yes,no,no,no,64.19999695,25.55999947,91.30000305,0.987999976,92,355,280.7999878,34,201,106,61,6.400000095
+hormone therapy,57,African American,yes,no,no,no,somewhat more active,0,yes,no,no,no,no,66.80000305,29.29999924,93,0.992999971,106,234,160.6000061,24,247,119,80,5.699999809
+hormone therapy,79,White,no,no,no,no,somewhat more active,1,yes,no,no,no,no,71,26.79000092,92.30000305,0.880999982,87,201,113.8000031,52,176,167,71,7.900000095
+hormone therapy,68,White,no,no,no,yes,much more active,1,no,yes,no,no,no,62.20000076,24.70000076,82,0.852999985,106,225,149.8000031,53,111,177,78,6.800000191
+placebo,69,African American,yes,no,no,no,somewhat less active,1,yes,yes,no,no,no,82.30000305,34.47999954,89,0.799000025,95,273,196.6000061,44,162,111,71,6.900000095
+placebo,68,White,no,no,no,no,somewhat more active,1,yes,no,no,no,no,50.5,22,73.40000153,0.833999991,83,202,117.8000031,65,96,150,84,6.800000191
+placebo,61,White,no,no,no,no,somewhat less active,0,yes,no,no,no,no,76.59999847,29.92000008,94.19999695,0.893000007,103,307,216,50,205,137,75,6.099999905
+hormone therapy,64,Other,yes,no,no,no,much less active,1,yes,yes,yes,no,yes,72.40000153,29.67000008,93.80000305,0.944000006,211,209,136,50,115,166,68,6.400000095
+placebo,68,White,no,no,no,no,about as active,0,no,no,no,no,no,75.80000305,34.36999893,87.40000153,0.805999994,82,223,145.1999969,50,139,143,73,6.800000191
+placebo,58,Other,yes,no,no,no,much less active,1,yes,yes,yes,no,yes,64.59999847,26.71999931,107,0.930000007,131,287,189.8000031,44,266,150,70,5.800000191
+placebo,72,White,no,no,yes,yes,about as active,1,yes,no,no,no,no,47.70000076,18.39999962,64.59999847,0.736000001,105,292,197.1999969,58,184,176,83,7.199999809
+placebo,75,White,no,yes,no,no,about as active,0,yes,no,no,no,no,64.80000305,26.79999924,85.09999847,0.810000002,99,243,169.3999939,51,113,129,69,7.5
+placebo,49,Other,yes,no,no,no,much less active,0,yes,no,no,no,no,85.5,31.03000069,97.80000305,0.866999984,100,261,161.1999969,58,209,99,65,4.900000095
+hormone therapy,61,African American,yes,no,no,no,much less active,0,yes,no,yes,no,yes,123,52.47000122,123.5999985,0.853999972,134,209,136.1999969,52,104,115,61,6.099999905
+placebo,71,White,no,no,no,no,about as active,1,yes,no,no,no,no,61.79999924,27.10000038,74.5,0.746999979,95,200,126.4000015,46,138,137,66,7.099999905
+hormone therapy,75,White,no,no,no,no,somewhat more active,1,yes,no,no,no,no,73.5,28.36000061,96.09999847,0.884000003,93,214,135.8000031,44,171,128,61,7.5
+placebo,65,White,no,yes,no,no,about as active,1,yes,yes,no,no,no,61.59999847,22.13999939,77.80000305,0.813000023,71,212,129.3999939,48,173,157,80,6.5
+placebo,73,White,no,no,no,no,somewhat less active,1,yes,yes,no,no,no,47.70000076,21.34000015,81.09999847,0.930000007,92,225,141.6000061,44,197,127,73,7.300000191
+placebo,73,White,no,no,no,no,about as active,1,yes,no,yes,no,no,79.5,34.81999969,101.5999985,0.870000005,138,191,89.19999695,35,334,165,67,7.300000191
+hormone therapy,73,White,no,yes,yes,no,somewhat more active,1,yes,no,no,no,no,57.29999924,22.67000008,76.80000305,0.811999977,90,236,132.3999939,93,53,144,77,7.300000191
+placebo,63,White,no,no,no,yes,somewhat more active,0,no,yes,no,no,no,55.5,23.45999908,69.80000305,0.731999993,89,354,260.2000122,31,314,126,66,6.300000191
+placebo,66,White,no,no,no,no,about as active,0,yes,yes,no,no,no,83,31.43000031,94,0.865999997,94,309,216.3999939,57,178,138,76,6.599999905
+hormone therapy,64,White,no,no,yes,yes,somewhat more active,0,yes,no,no,no,no,60.70000076,23.06999969,77.90000153,0.838,84,233,150.8000031,61,106,120,53,6.400000095
+placebo,53,White,no,yes,no,no,somewhat less active,1,yes,yes,yes,no,no,67.80000305,28.04000092,97.69999695,1.093999982,161,268,142.3999939,69,283,147,80,5.300000191
+hormone therapy,67,White,no,no,no,yes,somewhat less active,0,yes,yes,no,no,no,71,28.62000084,89.30000305,0.846000016,114,175,92,40,215,119,67,6.699999809
+placebo,65,White,no,no,yes,yes,about as active,0,yes,no,no,no,no,72.80000305,24.46999931,85.69999695,0.838,95,219,121.4000015,52,228,107,67,6.5
+hormone therapy,63,White,no,no,yes,yes,somewhat more active,0,yes,no,no,no,no,57.90000153,23.48999977,74.5,0.797999978,91,261,143.1999969,65,264,144,65,6.300000191
+hormone therapy,71,White,no,no,no,no,somewhat less active,0,yes,yes,no,no,no,99.30000305,40.70000076,106.5,0.871999979,101,242,154.1999969,34,269,149,71,7.099999905
+hormone therapy,70,White,no,no,yes,no,somewhat more active,0,yes,no,no,no,no,68.40000153,26.05999947,82,0.764999986,88,228,128.3999939,82,88,141,62,7
+hormone therapy,71,African American,yes,no,no,yes,much more active,0,yes,yes,no,no,no,72,28.47999954,91.19999695,0.893999994,101,240,133,74,165,137,61,7.099999905
+hormone therapy,73,White,no,no,no,yes,much more active,1,yes,yes,yes,no,no,67.5,28.28000069,93,0.876999974,134,188,108.8000031,41,191,129,71,7.300000191
+hormone therapy,69,White,no,no,no,yes,somewhat more active,0,yes,no,no,no,no,55.79999924,22.06999969,72.5,0.785000026,85,219,143,36,200,99,52,6.900000095
+placebo,71,White,no,no,no,yes,about as active,0,no,no,no,no,no,59.20000076,24.47999954,76.69999695,0.799000025,100,196,111.1999969,70,74,129,61,7.099999905
+hormone therapy,75,White,no,no,no,no,about as active,1,no,no,no,no,no,85.30000305,33.52999878,100,0.845000029,92,216,114,36,330,137,60,7.5
+hormone therapy,72,White,no,no,no,no,about as active,0,yes,no,yes,yes,no,81.09999847,34.63999939,104.5,0.879000008,107,255,171,40,220,137,61,7.199999809
+placebo,67,White,no,yes,no,no,somewhat less active,1,yes,no,no,no,no,101,39.52999878,113.5,0.859000027,99,251,164.6000061,32,272,140,72,6.699999809
+hormone therapy,62,White,no,no,yes,no,somewhat more active,0,yes,no,no,no,no,69.5,28.93000031,88,0.879999995,102,324,244.6000061,44,177,131,76,6.199999809
+placebo,68,White,no,yes,no,no,somewhat less active,1,no,no,yes,no,no,54.79999924,23.31999969,84,0.994000018,102,270,190.1999969,31,244,129,75,6.800000191
+placebo,66,African American,yes,yes,no,no,somewhat less active,1,yes,no,yes,yes,no,76.30000305,33.02000046,99,0.971000016,212,189,122,40,135,172,96,6.599999905
+placebo,58,African American,yes,yes,no,no,about as active,0,yes,no,yes,yes,no,81.19999695,33.79999924,111,1.057000041,194,203,121,52,150,126,72,5.800000191
+hormone therapy,75,White,no,no,no,no,somewhat more active,1,no,no,no,no,no,59.09999847,21.27000046,73,0.797999978,88,195,109.5999985,55,152,110,50,7.5
+placebo,69,White,no,no,no,yes,much more active,0,yes,yes,no,no,no,63.20000076,23.93000031,76,0.783999979,89,206,117.5999985,42,232,110,71,6.900000095
+placebo,70,White,no,yes,no,no,about as active,1,yes,yes,no,no,no,53.5,23.15999985,77,0.842000008,87,168,102.1999969,40,129,162,75,7
+placebo,73,White,no,no,yes,yes,much more active,0,no,no,no,no,no,60.40000153,23.29999924,79.80000305,0.839999974,101,172,85.19999695,53,169,122,80,7.300000191
+hormone therapy,64,White,no,no,no,yes,somewhat more active,0,yes,no,no,no,no,66.40000153,22.97999954,74.40000153,0.787,81,254,147,75,160,131,82,6.400000095
+placebo,66,White,no,no,no,no,somewhat less active,1,yes,no,no,no,no,50.90000153,22.03000069,71.5,0.773000002,95,206,136.6000061,54,77,110,61,6.599999905
+hormone therapy,66,White,no,no,no,no,somewhat more active,0,no,no,no,no,no,63.09999847,25.39999962,78,0.779999971,76,285,207,59,95,147,77,6.599999905
+placebo,59,White,no,no,no,yes,about as active,0,yes,no,no,no,no,65.30000305,26.42000008,86,0.874000013,94,181,101.8000031,47,161,121,70,5.900000095
+hormone therapy,64,White,no,no,no,yes,much more active,0,yes,no,no,no,no,54,21.25,75.5,0.84799999,94,213,124.8000031,61,136,120,63,6.400000095
+hormone therapy,62,White,no,yes,no,no,somewhat less active,0,yes,no,no,no,no,74.80000305,33.47000122,93,0.852999985,104,260,188.8000031,30,206,118,75,6.199999809
+hormone therapy,76,African American,yes,no,no,yes,somewhat more active,0,yes,no,no,no,no,57.5,25.21999931,72,0.755999982,86,191,115.1999969,41,174,122,62,7.599999905
+placebo,69,White,no,no,yes,no,somewhat more active,1,yes,yes,no,no,no,76.90000153,30.53000069,87,0.861000001,80,227,118.8000031,69,196,124,74,6.900000095
+placebo,66,Other,yes,no,no,no,much more active,0,yes,yes,no,no,no,74.80000305,36.06999969,93.80000305,0.823000014,112,228,135,58,175,125,79,6.599999905
+placebo,70,White,no,no,yes,no,somewhat more active,1,no,no,no,no,no,55.29999924,21.32999992,76,0.813000023,95,212,109.5999985,38,322,135,72,7
+placebo,77,White,no,no,no,no,about as active,0,yes,no,no,no,no,59.79999924,20.37999916,70.40000153,0.736999989,110,244,151.8000031,69,116,115,72,7.699999809
+hormone therapy,77,White,no,no,no,no,somewhat more active,0,yes,no,no,no,no,61.5,24.32999992,82,0.819000006,89,199,127,49,115,172,75,7.699999809
+placebo,55,White,no,no,yes,yes,somewhat less active,1,yes,yes,no,no,no,88.5,33.88999939,112,0.986999989,102,280,163,57,300,125,69,5.5
+placebo,61,White,no,no,no,no,somewhat less active,1,yes,no,yes,no,yes,54.79999924,21.35000038,67,0.709999979,246,147,84.59999847,42,102,142,64,6.099999905
+placebo,55,White,no,yes,no,yes,much more active,1,yes,no,no,no,no,72.59999847,29.45000076,93.80000305,0.967000008,94,318,223.6000061,46,242,156,90,5.5
+placebo,68,White,no,no,no,yes,about as active,1,yes,no,no,no,no,69,25.80999947,81,0.79400003,103,218,156.6000061,45,82,141,74,6.800000191
+hormone therapy,65,White,no,no,no,yes,about as active,0,yes,no,no,no,no,47.5,17.45000076,68,0.773000002,91,201,126.4000015,39,178,131,70,6.5
+hormone therapy,58,White,no,no,no,no,much less active,0,yes,yes,no,no,no,73.90000153,25.80999947,98.5,0.952000022,96,199,126,36,185,101,70,5.800000191
+placebo,66,White,no,no,no,yes,about as active,1,yes,no,no,no,no,71.5,29.42000008,96.5,0.922999978,103,292,192,73,135,145,90,6.599999905
+placebo,79,White,no,no,no,no,much more active,0,yes,yes,no,no,no,85.30000305,31.32999992,88.5,0.75,104,192,116.4000015,56,98,131,71,7.900000095
+hormone therapy,58,White,no,no,yes,yes,somewhat more active,0,yes,yes,no,no,no,59,23.87999916,85,0.866999984,94,190,106.8000031,51,161,120,60,5.800000191
+placebo,59,White,no,no,yes,no,about as active,0,yes,no,no,no,no,58.09999847,24.43000031,81,0.810000002,84,200,115.4000015,65,98,110,67,5.900000095
+hormone therapy,61,African American,yes,no,no,no,about as active,0,yes,yes,no,no,no,97.09999847,34.40000153,112,0.990999997,105,294,218.3999939,36,198,114,63,6.099999905
+hormone therapy,64,White,no,yes,yes,yes,much less active,1,yes,no,yes,no,no,67.40000153,25.68000031,82,0.819999993,137,110,67.40000153,26,83,103,57,6.400000095
+placebo,73,White,no,no,no,yes,much more active,1,yes,yes,no,no,no,67.59999847,27.78000069,91,0.89200002,91,206,131,51,120,120,64,7.300000191
+placebo,59,African American,yes,yes,yes,no,somewhat less active,0,yes,no,no,no,no,99.80000305,38.97999954,106.5,0.888000011,117,197,125.5999985,42,147,167,94,5.900000095
+placebo,71,White,no,no,yes,no,about as active,1,yes,yes,no,no,no,58.20000076,24.86000061,85.5,0.885999978,118,215,135,51,145,144,82,7.099999905
+hormone therapy,75,White,no,no,no,yes,somewhat more active,1,yes,no,no,no,no,59,23.04999924,71,0.736000001,111,173,96.19999695,57,99,125,76,7.5
+hormone therapy,72,White,no,no,no,yes,somewhat more active,1,yes,no,no,no,no,66.09999847,27.15999985,80,0.768999994,97,199,121.1999969,38,199,115,62,7.199999809
+hormone therapy,67,White,no,no,yes,no,somewhat more active,1,yes,no,no,no,no,83.19999695,31.70000076,98,0.941999972,97,299,193.6000061,74,157,145,79,6.699999809
+placebo,64,White,no,no,yes,no,somewhat less active,0,yes,yes,yes,no,no,83.59999847,30.34000015,95,0.871999979,174,206,120.5999985,29,282,111,58,6.400000095
+placebo,68,White,no,no,no,no,somewhat more active,1,yes,no,no,no,no,106,40.34999847,119,0.95599997,104,289,212.8000031,43,166,123,69,6.800000191
+placebo,60,White,no,no,yes,yes,somewhat more active,0,no,yes,no,no,no,63.90000153,26.87000084,79,0.75999999,96,222,157.6000061,47,87,108,61,6
+hormone therapy,68,White,no,yes,yes,no,much less active,0,yes,yes,yes,no,yes,84.59999847,32.84000015,115,1.105999947,195,181,104.5999985,49,137,107,51,6.800000191
+placebo,67,White,no,yes,no,no,somewhat less active,1,yes,no,no,no,no,61.79999924,23.54999924,86,0.915000021,90,263,183.6000061,55,122,109,75,6.699999809
+hormone therapy,69,White,no,yes,yes,no,somewhat less active,0,yes,no,no,no,no,56.59999847,21.96999931,79,0.862999976,82,213,139.8000031,54,96,135,63,6.900000095
+hormone therapy,74,White,no,yes,no,no,somewhat more active,0,yes,no,no,no,no,78.80000305,26.42000008,106,1.039000034,97,265,175.6000061,57,162,128,70,7.400000095
+placebo,71,White,no,no,no,no,somewhat less active,0,yes,no,no,no,no,82.09999847,31.87000084,100,0.908999979,109,257,161.8000031,43,261,134,63,7.099999905
+placebo,66,White,no,no,no,yes,about as active,0,yes,no,no,no,no,63,25.23999977,73,0.718999982,83,214,124,77,65,133,71,6.599999905
+hormone therapy,56,White,no,yes,yes,no,much less active,0,yes,no,no,no,no,66.59999847,28.07999992,89,0.867999971,94,257,183.8000031,40,166,124,78,5.599999905
+placebo,64,White,no,no,yes,yes,somewhat more active,0,no,no,yes,no,no,80.69999695,33.59000015,98,0.860000014,130,294,208,36,250,98,64,6.400000095
+hormone therapy,72,White,no,no,yes,no,somewhat less active,0,yes,yes,no,no,no,75.19999695,27.54999924,90,0.882000029,109,184,109.8000031,52,111,142,94,7.199999809
+placebo,75,White,no,no,no,no,about as active,1,yes,yes,no,no,no,59.40000153,26.21999931,84,0.893999994,110,167,95.19999695,35,184,152,70,7.5
+placebo,72,White,no,no,yes,no,somewhat more active,1,no,no,no,no,no,51.70000076,22.13999939,73,0.77700001,94,240,150.1999969,57,164,147,69,7.199999809
+hormone therapy,78,White,no,no,yes,no,somewhat more active,0,yes,yes,no,no,no,57.20000076,23.80999947,78.5,0.758000016,97,189,108,69,60,138,62,7.800000191
+hormone therapy,67,White,no,yes,no,no,much less active,1,no,no,yes,no,no,82.59999847,31.09000015,97,0.847000003,130,189,123.1999969,38,139,127,75,6.699999809
+hormone therapy,57,White,no,no,yes,no,somewhat more active,0,yes,yes,no,no,no,76.69999695,28.87000084,89,0.816999972,101,211,138.8000031,38,171,153,77,5.699999809
+placebo,75,White,no,no,no,no,about as active,1,yes,no,no,no,no,66.19999695,27.54999924,89.5,0.869000018,100,245,176.1999969,46,114,146,70,7.5
+hormone therapy,68,White,no,no,no,yes,about as active,1,yes,yes,no,no,no,66.69999695,25.88999939,84,0.856999993,90,191,119.5999985,54,87,123,65,6.800000191
+hormone therapy,61,White,no,no,no,yes,somewhat more active,0,yes,no,no,no,no,74,27.51000023,83,0.805999994,99,305,225.1999969,44,179,100,60,6.099999905
+hormone therapy,59,White,no,no,no,no,about as active,0,no,no,no,no,no,60,27.03000069,80,0.860000014,101,245,152.1999969,46,234,120,71,5.900000095
+placebo,71,White,no,no,yes,no,somewhat less active,0,yes,no,yes,no,yes,84,33.22999954,100,0.966000021,121,195,122.4000015,53,98,128,59,7.099999905
+hormone therapy,66,White,no,no,no,no,about as active,0,yes,no,no,no,no,79.59999847,31.69000053,91.5,0.832000017,97,179,118.8000031,36,121,168,63,6.599999905
+hormone therapy,59,White,no,no,yes,no,much less active,1,yes,no,no,no,no,66.40000153,24.38999939,84,0.815999985,95,226,131,49,230,146,93,5.900000095
+hormone therapy,60,White,no,no,no,no,somewhat more active,0,yes,yes,yes,yes,no,72.19999695,30.44000053,93.40000153,0.916000009,193,183,89.80000305,55,191,160,72,6
+hormone therapy,58,White,no,yes,yes,no,about as active,0,yes,no,no,no,no,85.90000153,33.54999924,89,0.748000026,98,317,232.3999939,54,153,167,83,5.800000191
+hormone therapy,68,White,no,no,yes,yes,about as active,0,yes,yes,no,no,no,61,25.06999969,75,0.735000014,109,188,120.1999969,52,79,128,58,6.800000191
+placebo,72,White,no,no,no,no,about as active,0,yes,no,yes,yes,no,78,28.30999947,86,0.823000014,116,196,130.1999969,50,79,135,70,7.199999809
+placebo,64,White,no,no,no,no,somewhat more active,1,yes,yes,no,no,no,69.19999695,27.03000069,79,0.777999997,96,181,113.5999985,49,92,131,70,6.400000095
+placebo,63,White,no,no,no,yes,about as active,1,yes,yes,no,no,no,99,39.65999985,105,0.861000001,102,205,111,56,190,109,70,6.300000191
+hormone therapy,68,White,no,no,no,no,about as active,0,yes,yes,no,no,no,72.40000153,28.28000069,84,0.808000028,92,268,194,35,195,152,71,6.800000191
+hormone therapy,60,White,no,no,yes,no,somewhat less active,0,no,yes,no,no,no,69.90000153,30.25,82,0.755999982,80,236,140.6000061,66,147,126,83,6
+hormone therapy,74,White,no,no,yes,no,somewhat more active,0,yes,yes,yes,no,no,58.20000076,23.92000008,83,0.933000028,113,255,158.8000031,63,166,128,59,7.400000095
+placebo,64,White,no,no,yes,no,somewhat less active,0,yes,no,yes,no,no,63,25.88999939,81,0.827000022,148,187,119.4000015,48,98,132,82,6.400000095
+placebo,70,White,no,no,no,yes,much more active,0,yes,no,no,no,no,53.59999847,22.60000038,72,0.765999973,92,203,138,46,95,141,72,7
+hormone therapy,64,White,no,no,no,yes,somewhat more active,0,yes,no,no,no,no,74.40000153,28.35000038,80,0.815999985,103,189,117.4000015,27,223,145,73,6.400000095
+hormone therapy,73,White,no,no,no,yes,somewhat less active,0,yes,no,yes,yes,yes,84,31.22999954,96,0.873000026,62,264,190.3999939,52,108,145,70,7.300000191
+placebo,70,White,no,no,yes,yes,somewhat more active,1,yes,no,no,no,no,84,36.36000061,95,0.825999975,102,285,194.3999939,45,228,152,75,7
+placebo,66,White,no,no,yes,yes,about as active,0,yes,yes,no,no,no,73.80000305,27.44000053,89,0.898999989,98,266,181,46,195,138,75,6.599999905
+hormone therapy,67,White,no,no,no,no,somewhat more active,0,yes,no,no,no,no,85.90000153,36.22000122,102,0.879000008,99,221,144.1999969,58,94,120,70,6.699999809
+placebo,64,African American,yes,no,no,no,about as active,0,yes,yes,no,no,no,89,33.09000015,92,0.843999982,99,294,232.3999939,42,98,124,62,6.400000095
+placebo,64,White,no,no,no,yes,about as active,1,yes,no,no,no,no,48.79999924,20.57999992,70,0.787,82,209,105.8000031,79,121,123,60,6.400000095
+placebo,61,White,no,yes,yes,no,about as active,0,yes,yes,no,no,no,81.59999847,31.87000084,100,0.935000002,89,298,211.1999969,41,229,157,82,6.099999905
+placebo,74,White,no,no,yes,no,somewhat less active,0,yes,yes,no,no,no,70,29.52000046,83,0.782999992,117,263,175.8000031,48,196,167,87,7.400000095
+placebo,72,White,no,no,yes,no,about as active,0,yes,no,yes,no,no,60.90000153,24.39999962,77.5,0.802999973,112,241,159.3999939,51,153,138,60,7.199999809
+placebo,62,White,no,no,yes,no,somewhat more active,0,no,yes,no,no,no,56.20000076,23.70000076,71,0.763000011,91,295,215.3999939,55,123,147,81,6.199999809
+placebo,57,White,no,no,no,no,about as active,0,yes,no,no,no,no,64.5,26.5,89,0.880999982,95,224,152,37,175,124,72,5.699999809
+hormone therapy,72,White,no,no,no,no,somewhat less active,0,yes,yes,no,no,no,90.30000305,38.56999969,102,0.879000008,87,225,126.8000031,50,241,157,63,7.199999809
+placebo,73,White,no,no,yes,no,somewhat more active,1,yes,no,yes,yes,yes,82,38.47000122,108,0.963999987,209,195,117.8000031,58,96,108,62,7.300000191
+hormone therapy,62,White,no,no,yes,no,somewhat less active,1,yes,no,yes,no,no,82,28.37000084,104,0.944999993,127,215,143.6000061,48,117,135,70,6.199999809
+placebo,64,White,no,yes,no,no,about as active,1,no,yes,no,no,no,56.59999847,23.87000084,80,0.874000013,98,301,222.1999969,45,169,119,72,6.400000095
+hormone therapy,77,White,no,no,no,no,somewhat less active,1,yes,no,no,no,no,76.40000153,34.88000107,89,0.754000008,97,239,152.3999939,36,253,165,70,7.699999809
+placebo,77,African American,yes,no,no,no,somewhat less active,1,yes,no,yes,yes,no,73.5,27.32999992,89,0.832000017,147,284,168.8000031,100,76,182,96,7.699999809
+placebo,51,White,no,no,no,no,much less active,0,yes,yes,yes,no,yes,88.69999695,33.79999924,105.5,0.934000015,278,239,152.1999969,44,214,105,61,5.099999905
+placebo,68,White,no,no,no,no,about as active,1,yes,yes,yes,yes,no,74,29.63999939,91,0.834999979,115,158,91.59999847,39,137,141,61,6.800000191
+hormone therapy,72,White,no,no,no,no,somewhat more active,0,yes,yes,no,no,no,85.80000305,37.13999939,103,0.912,95,217,129.3999939,43,223,147,62,7.199999809
+placebo,73,White,no,no,no,no,somewhat more active,1,yes,yes,yes,yes,no,74,28.90999985,90,0.908999979,149,263,145.6000061,64,267,224,89,7.300000191
+placebo,76,White,no,no,no,no,about as active,0,yes,yes,no,no,no,64.19999695,27.79000092,82,0.837000012,90,232,152.3999939,40,198,139,79,7.599999905
+hormone therapy,73,White,no,no,yes,yes,about as active,0,yes,yes,no,no,no,72,26.77000046,79,0.75999999,98,215,130.6000061,57,137,147,74,7.300000191
+placebo,61,White,no,no,no,yes,somewhat more active,0,yes,yes,yes,yes,no,85.5,35.13000107,99.5,0.930000007,97,225,138.8000031,45,206,135,75,6.099999905
+hormone therapy,70,White,no,no,no,no,about as active,0,no,no,no,no,no,73.59999847,27.46999931,89.80000305,0.859000027,109,230,129.6000061,54,232,118,64,7
+hormone therapy,57,White,no,no,no,no,about as active,0,no,no,no,no,no,69.19999695,26.20999908,85,0.866999984,97,214,146,44,120,105,63,5.699999809
+placebo,63,White,no,no,yes,yes,much more active,0,no,no,no,no,no,64.90000153,24.76000023,84.80000305,0.867999971,109,204,120.4000015,73,53,121,74,6.300000191
+hormone therapy,64,White,no,no,no,yes,about as active,0,yes,no,no,no,no,56.5,23.79000092,78.69999695,0.833000004,89,230,153,37,200,104,63,6.400000095
+placebo,64,White,no,no,yes,no,somewhat less active,1,yes,no,yes,no,no,78.90000153,30.73999977,99,0.959999979,127,210,146.1999969,39,124,110,64,6.400000095
+hormone therapy,58,White,no,yes,yes,no,much less active,1,no,no,no,no,no,123,48.59000015,109.5,0.82099998,100,250,175.6000061,40,172,149,84,5.800000191
+placebo,72,White,no,no,no,no,about as active,1,yes,no,no,no,no,79.90000153,29.03000069,90.80000305,0.827000022,101,199,127.4000015,44,138,151,76,7.199999809
+hormone therapy,75,White,no,no,no,no,somewhat more active,0,yes,no,no,no,no,58.40000153,22.22999954,76.59999847,0.802999973,92,248,168.8000031,52,136,127,62,7.5
+placebo,64,White,no,no,yes,no,somewhat more active,0,yes,no,no,no,no,81.30000305,32.04000092,95,0.89200002,107,267,187.8000031,45,171,108,55,6.400000095
+placebo,69,White,no,no,no,yes,somewhat more active,0,no,no,no,no,no,84.09999847,32.27999878,99.59999847,0.93599999,95,215,130.1999969,35,249,112,76,6.900000095
+placebo,59,White,no,yes,yes,yes,about as active,0,yes,no,no,no,no,62.29999924,21.96999931,76.5,0.796000004,96,229,154.8000031,45,146,104,71,5.900000095
+hormone therapy,73,White,no,no,no,yes,somewhat more active,0,yes,yes,no,no,no,71.69999695,26.29999924,95.5,0.889999986,83,231,158.8000031,37,176,109,58,7.300000191
+hormone therapy,59,White,no,no,yes,no,somewhat less active,0,no,no,no,no,no,62.29999924,24.37000084,83.5,0.842999995,95,249,170.1999969,52,134,101,54,5.900000095
+hormone therapy,69,White,no,no,no,yes,much more active,1,yes,no,no,no,no,64.5,23.45999908,87.69999695,0.907000005,102,238,164.3999939,56,88,128,81,6.900000095
+placebo,74,White,no,no,no,no,somewhat less active,1,yes,yes,no,no,no,67,27.5,87.90000153,0.845000029,105,204,98.59999847,57,242,123,69,7.400000095
+hormone therapy,67,White,no,no,yes,yes,somewhat more active,0,yes,yes,no,no,no,60.70000076,24.06999969,82.69999695,0.824000001,94,195,108.4000015,43,218,128,61,6.699999809
+hormone therapy,73,White,no,no,no,no,somewhat more active,1,yes,no,no,no,no,86.90000153,31.42000008,99.5,0.912,124,287,199,39,245,105,62,7.300000191
+placebo,58,White,no,no,no,no,somewhat less active,1,yes,yes,yes,no,yes,104,35.63999939,108.8000031,0.86500001,140,167,97,33,185,132,71,5.800000191
+placebo,62,White,no,yes,yes,no,about as active,0,yes,no,no,no,no,70.80000305,26.87999916,96.59999847,0.998000026,94,241,149.3999939,55,183,143,87,6.199999809
+hormone therapy,68,White,no,no,no,yes,somewhat more active,0,no,yes,no,no,no,66.80000305,22.97999954,82.30000305,0.856999993,103,229,136,69,120,116,69,6.800000191
+hormone therapy,51,White,no,no,no,no,about as active,0,yes,no,no,no,no,90.19999695,36.72999954,100.3000031,0.824000001,119,214,151.8000031,34,141,134,79,5.099999905
+hormone therapy,58,White,no,yes,yes,no,somewhat more active,1,yes,no,no,no,no,63.90000153,26.21999931,82.30000305,0.847000003,100,431,350.7999878,42,191,137,48,5.800000191
+placebo,72,White,no,no,no,no,about as active,1,yes,no,no,no,no,69.30000305,27.10000038,97.80000305,1.006000042,105,266,161.1999969,53,259,116,66,7.199999809
+placebo,69,White,no,no,yes,yes,somewhat more active,1,yes,no,no,no,no,58.20000076,24.06999969,82,0.876999974,86,237,155.8000031,48,166,127,77,6.900000095
+hormone therapy,63,White,no,no,no,no,about as active,0,yes,no,yes,no,yes,84,29.62000084,90.69999695,0.808000028,256,176,117.5999985,43,77,101,51,6.300000191
+placebo,58,White,no,yes,yes,no,about as active,1,yes,no,no,no,no,91.69999695,33.15999985,107.8000031,0.855000019,90,257,152.8000031,64,201,151,83,5.800000191
+placebo,61,White,no,no,no,no,much less active,1,no,yes,no,no,no,55.29999924,20.79000092,67.5,0.700999975,87,179,103.5999985,42,167,113,66,6.099999905
+hormone therapy,66,White,no,no,yes,no,somewhat more active,1,yes,yes,no,no,no,66.69999695,25.42000008,84.30000305,0.791999996,104,164,86.19999695,47,154,120,71,6.599999905
+placebo,62,White,no,no,no,yes,somewhat more active,0,yes,yes,no,no,no,57.09999847,24.11000061,82.30000305,0.875999987,83,241,143.3999939,72,128,104,64,6.199999809
+hormone therapy,70,White,no,no,no,no,somewhat more active,1,no,no,no,no,no,67.30000305,24.32999992,89.59999847,0.911000013,91,229,154.6000061,45,147,112,65,7
+placebo,69,White,no,no,yes,no,somewhat more active,0,no,no,no,no,no,90.19999695,35.15000153,107.9000015,0.95599997,97,239,157.8000031,56,126,136,65,6.900000095
+hormone therapy,62,White,no,no,yes,yes,much more active,0,no,yes,no,no,no,74.19999695,25.70000076,82.59999847,0.819999993,95,178,107.4000015,52,93,140,84,6.199999809
+placebo,68,White,no,no,no,no,about as active,0,yes,yes,no,no,no,74.09999847,31.95000076,89.40000153,0.824999988,109,261,177.8000031,55,141,128,67,6.800000191
+hormone therapy,72,White,no,no,yes,no,about as active,1,yes,yes,yes,yes,no,83.80000305,35.29000092,95.09999847,0.861000001,105,243,160.1999969,49,169,135,73,7.199999809
+hormone therapy,73,White,no,no,yes,no,somewhat more active,0,no,no,no,no,no,85.40000153,31.67000008,94.19999695,0.823000014,100,199,117,60,110,121,77,7.300000191
+hormone therapy,62,White,no,no,no,no,somewhat less active,0,yes,yes,no,no,no,116,43.29000092,120.6999969,0.805999994,102,340,259.7999878,41,196,127,73,6.199999809
+hormone therapy,50,White,no,no,no,no,about as active,0,no,no,no,no,no,68,28.12000084,80.09999847,0.754000008,95,228,132.3999939,66,148,134,72,5
+placebo,69,White,no,no,no,yes,somewhat more active,0,yes,yes,yes,no,yes,78.30000305,32.72000122,105.1999969,0.950999975,178,200,123.1999969,42,174,140,72,6.900000095
+placebo,59,White,no,no,no,no,about as active,0,yes,no,no,no,no,113,41.09999847,113.4000015,0.906000018,113,234,136.6000061,51,232,135,71,5.900000095
+hormone therapy,60,White,no,no,yes,yes,somewhat more active,0,no,yes,no,no,no,98.59999847,37.61999893,105.3000031,0.846000016,96,196,122.4000015,54,98,116,70,6
+placebo,73,White,no,no,no,yes,about as active,0,yes,yes,no,no,no,75.59999847,27.17000008,88.59999847,0.77700001,92,181,97,64,100,109,59,7.300000191
+hormone therapy,70,White,no,no,yes,yes,somewhat more active,1,yes,yes,no,no,no,57.79999924,23.14999962,86.09999847,0.933000028,89,246,166.6000061,47,162,104,65,7
+hormone therapy,59,White,no,yes,yes,no,about as active,1,yes,no,yes,no,no,107,36.91999817,100,0.779999971,174,143,80.80000305,46,81,108,72,5.900000095
+placebo,71,White,no,no,no,no,about as active,0,yes,no,no,no,no,77.5,28.29000092,88.80000305,0.874000013,84,188,98.40000153,72,88,126,78,7.099999905
+placebo,65,White,no,no,yes,yes,about as active,0,yes,no,no,no,no,81,31.47999954,89.59999847,0.776000023,110,289,205.1999969,53,154,126,89,6.5
+placebo,77,White,no,no,no,yes,much more active,0,yes,yes,yes,no,no,59.90000153,25.12999916,80.5,0.86500001,143,238,150.6000061,54,167,153,67,7.699999809
+hormone therapy,61,White,no,no,yes,no,about as active,1,yes,no,no,no,no,76,31.35000038,104.5,1.004999995,95,238,173.1999969,37,139,123,59,6.099999905
+placebo,66,White,no,no,yes,yes,about as active,1,yes,yes,no,no,no,79,29.15999985,89.80000305,0.797999978,109,181,90.19999695,70,104,125,82,6.599999905
+hormone therapy,59,White,no,no,no,no,about as active,0,yes,yes,no,no,no,75.40000153,26.14999962,93.09999847,0.874000013,78,201,92.19999695,46,314,101,68,5.900000095
+hormone therapy,64,White,no,no,yes,no,about as active,1,yes,no,yes,no,no,102,35.52000046,111.5,0.917999983,150,225,129.6000061,40,277,142,82,6.400000095
+hormone therapy,75,White,no,no,no,no,somewhat more active,1,yes,no,no,no,no,74.5,27.43000031,97.09999847,0.925000012,99,247,162,65,100,148,78,7.5
+placebo,72,White,no,no,no,no,about as active,1,yes,no,no,no,no,53.70000076,21.15999985,68.5,0.725000024,90,212,119.8000031,61,156,136,69,7.199999809
+hormone therapy,77,White,no,no,no,no,somewhat more active,1,yes,yes,no,no,no,71.40000153,25.42000008,82.5,0.824000001,92,212,124.4000015,66,108,133,58,7.699999809
+hormone therapy,72,White,no,no,yes,no,somewhat less active,1,yes,no,yes,no,yes,86,32.20999908,92.30000305,0.772000015,220,248,162.8000031,58,136,134,62,7.199999809
+hormone therapy,70,White,no,no,no,no,about as active,0,yes,no,no,no,no,66.09999847,28.27000046,89.80000305,0.813000023,102,249,183.1999969,33,164,131,73,7
+placebo,54,White,no,yes,yes,yes,much more active,0,no,no,no,no,no,66.40000153,25.70999908,88,0.816999972,102,218,137,63,90,149,83,5.400000095
+hormone therapy,76,White,no,no,no,yes,about as active,1,yes,no,no,no,no,56.09999847,24.73999977,78.5,0.811999977,97,293,221.1999969,42,149,132,63,7.599999905
+hormone therapy,76,White,no,no,no,no,about as active,0,no,yes,no,no,no,48.5,22.54000092,74.40000153,0.838,102,235,165.6000061,44,127,111,55,7.599999905
+placebo,62,White,no,no,yes,no,much more active,0,yes,yes,no,no,no,60.29999924,24.39999962,88.5,0.925000012,101,177,108.8000031,46,111,116,66,6.199999809
+hormone therapy,58,Other,yes,no,no,no,about as active,0,yes,yes,no,no,no,62.70000076,25.76000023,86.40000153,0.882000029,93,181,77.59999847,44,297,105,59,5.800000191
+placebo,57,White,no,no,yes,no,much less active,0,yes,no,yes,no,no,127,42.50999832,136.3000031,0.943000019,147,299,204.6000061,36,292,133,83,5.699999809
+hormone therapy,56,White,no,yes,yes,no,much more active,0,yes,no,no,no,no,68.80000305,26.21999931,89.59999847,0.924000025,92,244,143.8000031,55,226,142,82,5.599999905
+hormone therapy,66,Other,yes,no,no,no,somewhat more active,1,yes,no,no,no,no,70.30000305,28.55999947,92.19999695,0.90200001,116,237,144.1999969,58,174,123,72,6.599999905
+placebo,55,Other,yes,no,no,no,somewhat less active,1,yes,yes,yes,no,no,67.19999695,27.51000023,92.69999695,0.912999988,147,226,148.6000061,37,202,106,63,5.5
+hormone therapy,61,African American,yes,no,no,no,about as active,1,yes,no,no,no,no,80.09999847,29.75,97,0.898000002,93,249,167,47,175,123,87,6.099999905
+placebo,76,White,no,no,yes,no,about as active,1,yes,no,no,no,no,67.30000305,26.21999931,84.5,0.809000015,108,289,204,51,170,134,71,7.599999905
+placebo,67,Other,yes,no,no,no,somewhat more active,1,yes,yes,no,no,no,64,28.40999985,89.30000305,0.907999992,97,231,129,40,310,178,87,6.699999809
+hormone therapy,54,White,no,no,no,no,somewhat less active,0,yes,yes,yes,no,no,88,39.00999832,111.5,0.889999986,128,170,73,46,255,140,72,5.400000095
+hormone therapy,58,White,no,no,yes,no,much less active,1,yes,no,no,no,no,80.69999695,29.18000031,96.5,0.888000011,97,284,202.6000061,56,127,121,75,5.800000191
+placebo,68,White,no,yes,no,no,about as active,1,yes,yes,no,no,no,57,20.76000023,75.30000305,0.787,91,255,169.3999939,62,118,113,64,6.800000191
+hormone therapy,71,Other,yes,no,no,no,much more active,1,yes,yes,yes,no,no,88.69999695,36.22000122,107.1999969,0.883000016,149,266,149.3999939,56,303,125,70,7.099999905
+placebo,69,White,no,no,no,yes,somewhat more active,0,yes,yes,no,no,no,59.40000153,24.46999931,81.40000153,0.851000011,91,237,166.6000061,52,92,103,57,6.900000095
+hormone therapy,55,African American,yes,no,no,no,much less active,0,yes,no,yes,no,yes,72.5,24.76000023,92.5,0.921000004,140,221,136,64,105,110,85,5.5
+placebo,63,Other,yes,no,no,yes,about as active,0,yes,no,no,no,no,88.80000305,35.38999939,107,0.842999995,113,198,134.6000061,37,132,117,73,6.300000191
+placebo,68,White,no,no,no,yes,somewhat more active,0,yes,yes,no,no,no,87.80000305,31.47999954,104.3000031,0.898999989,101,213,120.4000015,44,243,157,75,6.800000191
+hormone therapy,57,Other,yes,no,yes,yes,somewhat more active,0,yes,no,no,no,no,69.09999847,27.61000061,81.5,0.822000027,117,338,253.1999969,44,204,148,87,5.699999809
+hormone therapy,67,White,no,no,no,no,about as active,0,yes,yes,no,no,no,86.40000153,36.34000015,104,0.80400002,100,237,140.1999969,73,119,126,73,6.699999809
+hormone therapy,67,Other,yes,no,no,no,somewhat less active,1,no,yes,no,no,no,62.79999924,23.98999977,79,0.870000005,87,260,169,57,170,103,63,6.699999809
+placebo,59,White,no,no,yes,no,much more active,0,yes,no,no,no,no,69.19999695,25.70000076,88.5,0.917999983,97,264,182.1999969,62,99,106,72,5.900000095
+placebo,69,White,no,yes,yes,no,somewhat more active,0,yes,yes,no,no,no,78.80000305,26.23999977,88,0.850000024,111,222,137.1999969,39,229,139,73,6.900000095
+placebo,72,White,no,no,yes,yes,much more active,0,yes,yes,no,no,no,52.79999924,19.87000084,69.90000153,0.768000007,87,270,179.6000061,64,132,161,81,7.199999809
+hormone therapy,68,White,no,no,no,no,somewhat more active,0,yes,no,yes,yes,no,77.09999847,31.07999992,103,0.949000001,171,226,142.3999939,48,178,141,72,6.800000191
+placebo,69,Other,yes,no,yes,no,somewhat less active,0,yes,no,no,no,no,72.40000153,28.75,92.59999847,0.874000013,93,276,178.8000031,48,246,142,65,6.900000095
+placebo,79,White,no,no,no,yes,somewhat more active,0,yes,no,yes,yes,no,57.59999847,21.20999908,77.80000305,0.791000009,127,231,144.3999939,70,83,133,64,7.900000095
+placebo,55,White,no,yes,yes,no,about as active,0,no,no,no,no,no,66.30000305,28.51000023,90.5,0.922999978,88,269,190,41,190,127,79,5.5
+placebo,71,White,no,no,no,no,somewhat more active,0,yes,yes,no,no,no,70.80000305,29.88999939,96.40000153,0.917999983,90,190,99.19999695,31,299,122,71,7.099999905
+hormone therapy,64,White,no,no,no,yes,somewhat more active,1,yes,yes,no,no,no,82.69999695,30.75,97.5,0.862999976,105,183,108.1999969,44,154,119,62,6.400000095
+hormone therapy,65,White,no,no,yes,no,about as active,1,yes,yes,no,no,no,93.80000305,36.95999908,102.4000015,0.79400003,83,197,113.8000031,66,86,138,74,6.5
+placebo,67,White,no,no,yes,yes,much more active,1,no,yes,no,no,no,63.5,24.40999985,85.69999695,0.836000025,89,206,119.4000015,52,173,147,88,6.699999809
+placebo,74,White,no,no,no,no,somewhat more active,0,yes,yes,no,no,no,69.90000153,26.56999969,91.69999695,0.882000029,82,197,122.4000015,44,153,110,52,7.400000095
+hormone therapy,67,White,no,no,no,yes,somewhat more active,0,yes,no,no,no,no,67,26.84000015,86.5,0.842000008,86,232,146.1999969,49,184,127,73,6.699999809
+hormone therapy,54,White,no,no,no,yes,about as active,0,yes,no,no,no,no,77.5,28.15999985,82.5,0.75,98,271,193.1999969,43,174,143,72,5.400000095
+placebo,60,White,no,no,no,yes,somewhat more active,1,yes,no,yes,no,yes,108,35.75,116.5,0.908999979,214,166,102.4000015,38,128,133,64,6
+placebo,63,White,no,no,yes,no,somewhat more active,0,yes,yes,no,no,no,67,25.53000069,89.90000153,0.873000026,96,264,200,47,85,137,85,6.300000191
+placebo,73,White,no,no,yes,yes,somewhat less active,0,yes,no,no,no,no,72.80000305,30.86000061,94.5,0.865999997,89,204,131.3999939,58,73,158,73,7.300000191
+hormone therapy,59,White,no,no,yes,no,about as active,0,yes,no,no,no,no,85.30000305,31.70999908,100.1999969,0.88499999,94,246,166.8000031,39,201,147,81,5.900000095
+hormone therapy,56,White,no,no,no,yes,somewhat less active,1,yes,no,no,no,no,105,37.13000107,112.5,0.848999977,76,231,152.3999939,43,178,121,84,5.599999905
+placebo,70,White,no,no,yes,no,somewhat more active,0,yes,no,no,no,no,84.19999695,37.41999817,93.5,0.765999973,91,286,178.6000061,88,97,130,73,7
+hormone therapy,70,White,no,no,yes,yes,about as active,0,yes,no,no,no,no,54.09999847,22.22999954,87.59999847,0.952000022,88,272,182.3999939,32,288,116,62,7
+hormone therapy,72,White,no,no,yes,yes,somewhat more active,0,yes,no,no,no,no,69.30000305,27,91.19999695,0.851999998,97,229,130.8000031,85,66,155,71,7.199999809
+hormone therapy,56,White,no,yes,no,yes,somewhat more active,0,no,no,no,no,no,68.19999695,26.61000061,89.30000305,0.907000005,103,197,121.1999969,37,194,115,85,5.599999905
+placebo,60,White,no,yes,yes,yes,somewhat more active,0,no,no,no,no,no,77.40000153,29.48999977,99,0.875999987,92,282,188,45,245,151,71,6
+placebo,70,White,no,no,no,no,somewhat less active,0,yes,no,yes,no,yes,70.5,30.43000031,99,0.947000027,217,309,200.1999969,60,244,157,68,7
+placebo,70,White,no,no,yes,no,about as active,0,yes,yes,no,no,no,63.90000153,28.81999969,89.19999695,0.800000012,103,218,132,64,110,157,97,7
+hormone therapy,69,White,no,no,yes,yes,about as active,0,yes,no,yes,yes,no,78.80000305,31.96999931,98.5,0.791000009,161,225,150.1999969,43,159,133,70,6.900000095
+placebo,64,White,no,no,no,no,somewhat less active,1,yes,no,no,no,no,80.59999847,30.52000046,93,0.809000015,92,204,131.1999969,47,129,122,67,6.400000095
+hormone therapy,68,White,no,no,yes,yes,about as active,0,yes,no,yes,no,no,85.5,34.25,112,0.981999993,188,221,135,36,250,189,83,6.800000191
+placebo,60,White,no,yes,no,no,somewhat less active,1,yes,no,no,no,no,68.80000305,26.18000031,86.5,0.828999996,95,238,166.1999969,51,104,145,80,6
+placebo,70,White,no,no,no,yes,much more active,0,yes,no,no,no,no,85.80000305,32.13999939,103.3000031,0.984000027,92,222,147.6000061,33,207,102,66,7
+hormone therapy,68,White,no,no,yes,no,somewhat more active,0,yes,no,no,no,no,71.90000153,29.65999985,96,0.898999989,101,239,165.6000061,48,127,103,67,6.800000191
+placebo,58,White,no,no,no,yes,somewhat more active,1,yes,no,no,no,no,78.40000153,29.51000023,97.09999847,0.867999971,92,373,286.3999939,53,168,126,72,5.800000191
+placebo,75,White,no,no,no,yes,somewhat more active,0,yes,no,no,no,no,40.79999924,18.12999916,63,0.773000002,116,239,159.8000031,58,106,172,73,7.5
+hormone therapy,60,White,no,no,yes,no,about as active,1,yes,yes,no,no,no,56.79999924,22.71999931,77.5,0.824000001,83,224,135.8000031,65,116,126,55,6
+placebo,66,White,no,no,yes,yes,about as active,1,yes,no,no,no,no,91.30000305,32.88999939,101.6999969,0.819000006,101,218,151.3999939,43,118,167,76,6.599999905
+placebo,66,White,no,no,no,no,about as active,1,yes,yes,no,no,no,80,32.54000092,104,0.981000006,105,229,134.6000061,40,272,119,61,6.599999905
+hormone therapy,67,White,no,no,no,no,about as active,0,yes,yes,no,no,no,66,27.37000084,84.30000305,0.800000012,96,171,85.80000305,61,121,132,66,6.699999809
+hormone therapy,63,White,no,no,yes,yes,much more active,1,yes,no,no,no,no,61.79999924,23.84000015,80,0.847000003,101,250,152,57,205,122,76,6.300000191
+placebo,61,White,no,no,yes,yes,somewhat more active,0,yes,yes,yes,no,no,68,25.69000053,87,0.888000011,127,221,131.6000061,62,137,111,69,6.099999905
+placebo,59,White,no,no,yes,yes,somewhat more active,0,yes,yes,yes,yes,no,96.09999847,37.95999908,116,0.947000027,142,227,133.6000061,42,257,140,78,5.900000095
+hormone therapy,67,White,no,no,yes,no,somewhat more active,0,yes,no,no,no,no,75.90000153,29.28000069,97,0.865999997,89,252,157.1999969,53,209,130,80,6.699999809
+hormone therapy,74,White,no,no,no,no,about as active,0,yes,no,no,no,no,69.5,28.81999969,82,0.787999988,96,198,115,60,115,125,69,7.400000095
+placebo,71,White,no,no,yes,yes,somewhat more active,0,yes,no,no,no,no,55.29999924,23.5,77,0.81099999,95,166,106.4000015,40,98,126,73,7.099999905
+hormone therapy,58,White,no,no,yes,yes,somewhat more active,0,yes,yes,no,no,no,77.5,28.88999939,101,1.00999999,93,211,116,42,265,128,79,5.800000191
+hormone therapy,63,White,no,no,no,yes,somewhat more active,0,yes,no,no,no,no,63.29999924,24.42000008,75,0.735000014,93,253,147.6000061,66,197,112,81,6.300000191
+hormone therapy,65,White,no,no,yes,no,somewhat more active,0,yes,no,no,no,no,79.19999695,29.54999924,103.8000031,0.989000022,98,236,161.6000061,56,92,126,62,6.5
+hormone therapy,74,White,no,no,no,no,much less active,0,yes,no,yes,yes,no,83.19999695,27.79999924,110,0.647000015,192,207,139.8000031,45,111,174,68,7.400000095
+placebo,57,White,no,no,yes,no,somewhat less active,1,yes,yes,no,no,no,62.79999924,24.02000046,77,0.79400003,77,220,129.8000031,48,211,120,70,5.699999809
+placebo,67,White,no,no,no,no,about as active,1,no,yes,no,no,no,54.5,23.53000069,77.80000305,0.814999998,100,212,115.4000015,46,253,148,90,6.699999809
+hormone therapy,59,White,no,no,no,no,somewhat more active,0,no,no,no,no,no,62.90000153,25.85000038,85,0.837000012,87,181,91.40000153,62,138,121,80,5.900000095
+placebo,69,White,no,no,no,no,somewhat more active,0,yes,yes,no,no,no,60.70000076,23.36000061,82.5,0.851999998,100,229,130.1999969,46,264,154,68,6.900000095
+hormone therapy,56,White,no,no,yes,yes,somewhat more active,0,yes,no,yes,no,no,64.5,25.70999908,88,0.907000005,116,181,108.8000031,43,146,105,65,5.599999905
+hormone therapy,74,White,no,yes,no,no,somewhat less active,1,yes,no,no,no,no,55.90000153,21.96999931,84.69999695,0.887000024,90,249,149.8000031,58,206,166,101,7.400000095
+placebo,68,White,no,no,yes,no,about as active,1,yes,no,yes,no,yes,67,28.06999969,94,0.870000005,154,153,90.80000305,45,86,128,68,6.800000191
+hormone therapy,71,White,no,no,no,yes,somewhat more active,0,no,no,no,no,no,89.69999695,35,102.1999969,0.82099998,107,262,158.6000061,42,307,176,79,7.099999905
+placebo,73,White,no,no,no,no,about as active,0,yes,no,no,no,no,93,36.59999847,114.5999985,1.014999986,114,200,109.8000031,50,201,127,60,7.300000191
+hormone therapy,76,White,no,no,no,no,about as active,1,yes,no,no,no,no,84.40000153,33.68000031,108.4000015,0.911000013,98,244,118.5999985,72,267,128,70,7.599999905
+hormone therapy,69,White,no,no,no,yes,somewhat more active,0,yes,no,no,no,no,66.90000153,27.73999977,87.40000153,0.870999992,114,196,117.4000015,48,153,122,75,6.900000095
+hormone therapy,60,White,no,no,no,yes,about as active,0,no,yes,no,no,no,90.80000305,31.48999977,99,0.890999973,86,202,117,48,185,123,82,6
+placebo,69,White,no,no,yes,yes,somewhat less active,1,yes,no,no,no,no,72,29.96999931,84,0.800000012,82,240,134.8000031,84,106,122,79,6.900000095
+placebo,66,White,no,no,yes,no,about as active,0,yes,yes,no,no,no,74.19999695,31.37000084,106,0.976999998,105,167,79.19999695,34,269,148,80,6.599999905
+hormone therapy,59,White,no,no,no,no,somewhat less active,1,yes,no,yes,no,yes,116,47.13999939,131.3000031,0.964999974,198,278,200.8000031,46,156,165,90,5.900000095
+placebo,75,White,no,no,no,yes,somewhat less active,0,yes,no,no,no,no,55.59999847,21.69000053,69.5,0.708999991,92,203,133.3999939,45,123,150,76,7.5
+placebo,69,White,no,no,yes,no,much more active,0,yes,no,no,no,no,70.30000305,25.97999954,81.5,0.776000023,93,233,155.6000061,60,87,136,80,6.900000095
+placebo,74,White,no,no,no,no,somewhat more active,0,yes,yes,no,no,no,56.79999924,21.71999931,70.19999695,0.779999971,77,185,111.4000015,46,138,114,59,7.400000095
+hormone therapy,57,White,no,yes,no,no,somewhat less active,0,yes,no,no,no,no,63.70000076,22.70000076,79,0.797999978,87,207,149.6000061,42,77,115,68,5.699999809
+hormone therapy,66,White,no,no,yes,no,somewhat more active,0,yes,no,yes,no,yes,83.30000305,30.40999985,98.80000305,0.827000022,177,288,201.1999969,44,214,140,70,6.599999905
+placebo,53,White,no,no,yes,no,about as active,0,yes,no,no,no,no,89.40000153,36.31999969,112.1999969,0.904999971,82,213,140.6000061,49,117,102,68,5.300000191
+hormone therapy,58,White,no,no,yes,no,somewhat less active,0,no,no,yes,yes,no,107,39.18000031,119.1999969,0.885999978,164,140,54.40000153,33,263,134,55,5.800000191
+hormone therapy,75,White,no,no,no,yes,somewhat less active,0,yes,no,no,no,no,50,20.80999947,76.69999695,0.822000027,94,293,190.3999939,54,243,151,84,7.5
+placebo,66,White,no,no,yes,no,about as active,0,yes,no,yes,no,no,92.40000153,31.27000046,107,0.917999983,135,303,212,48,215,130,80,6.599999905
+hormone therapy,54,White,no,no,yes,yes,about as active,0,yes,no,no,no,no,86.5,30.04000092,81,0.651000023,92,172,112,46,70,132,80,5.400000095
+hormone therapy,64,White,no,no,no,no,about as active,1,no,yes,yes,no,no,88.80000305,36.02999878,119,0.95599997,122,264,149.1999969,58,284,137,73,6.400000095
+hormone therapy,77,White,no,no,no,no,about as active,1,yes,yes,yes,no,no,65.59999847,28.12999916,94,0.949000001,129,256,165,36,275,148,90,7.699999809
+hormone therapy,61,White,no,no,yes,no,about as active,0,yes,yes,yes,yes,no,68.90000153,26.31999969,94,0.897000015,162,298,209.6000061,40,242,156,70,6.099999905
+placebo,61,White,no,no,no,yes,somewhat less active,0,yes,no,no,no,no,97.30000305,34.97000122,112.6999969,0.88499999,114,241,167.3999939,41,163,140,79,6.099999905
+placebo,68,White,no,no,no,no,about as active,0,yes,no,no,no,no,102,40.20999908,113.3000031,0.92900002,98,336,242.6000061,51,212,135,76,6.800000191
+hormone therapy,54,White,no,yes,yes,no,about as active,0,no,no,no,no,no,79.30000305,27.46999931,108.6999969,1.001999974,83,252,175.6000061,44,162,135,70,5.400000095
+placebo,64,White,no,no,yes,yes,about as active,0,no,no,no,no,no,69.5,28.29999924,88.40000153,0.814999998,85,199,122.8000031,55,106,116,73,6.400000095
+placebo,59,White,no,no,no,no,about as active,1,yes,yes,yes,no,yes,68.5,27.82999992,98,0.961000025,195,207,119.8000031,34,266,153,82,5.900000095
+placebo,65,White,no,no,yes,yes,somewhat less active,0,yes,yes,no,no,no,92.90000153,36.11000061,104.0999985,0.860000014,85,176,87.59999847,51,187,135,79,6.5
+hormone therapy,79,White,no,no,yes,yes,much more active,0,no,no,no,no,no,73.40000153,27.89999962,101.8000031,0.927999973,87,165,92,59,70,102,54,7.900000095
+hormone therapy,68,White,no,no,no,yes,somewhat more active,1,yes,yes,yes,no,no,84,32.81000137,106,0.906000018,168,253,158.6000061,46,242,132,88,6.800000191
+placebo,75,White,no,no,yes,no,somewhat more active,0,no,no,no,no,no,66.90000153,24.51000023,85.59999847,0.861000001,91,244,144.1999969,79,104,100,70,7.5
+hormone therapy,66,White,no,yes,no,no,somewhat less active,1,yes,no,no,no,no,60.09999847,22.81999969,88,0.879999995,82,239,152.1999969,61,129,147,75,6.599999905
+hormone therapy,58,White,no,no,yes,yes,about as active,1,yes,yes,no,no,no,75,31.26000023,100,0.935000002,81,241,156.1999969,50,174,123,80,5.800000191
+placebo,74,White,no,yes,no,no,somewhat less active,1,yes,no,no,no,no,66.69999695,24.05999947,83,0.838,105,256,182.6000061,42,157,135,78,7.400000095
+placebo,69,White,no,no,yes,no,about as active,0,yes,yes,yes,yes,no,74.19999695,30.48999977,97.5,0.911000013,178,212,118.4000015,53,203,117,71,6.900000095
+hormone therapy,66,White,no,no,yes,yes,much more active,1,yes,no,no,no,no,66.19999695,25.86000061,81,0.843999982,83,150,82.59999847,26,207,116,70,6.599999905
+placebo,55,White,no,yes,yes,no,somewhat less active,0,no,no,no,no,no,69.90000153,28.54000092,87,0.795000017,87,216,139.6000061,53,117,129,91,5.5
+hormone therapy,68,White,no,no,yes,yes,somewhat more active,1,yes,no,no,no,no,82.59999847,28.25,83,0.735000014,96,212,149.6000061,46,82,139,79,6.800000191
+hormone therapy,65,White,no,no,no,no,about as active,0,yes,no,yes,yes,no,59,22.62000084,84,0.875,146,195,124,50,105,141,76,6.5
+placebo,68,White,no,no,yes,no,somewhat more active,1,yes,no,yes,yes,no,62.40000153,23.92000008,83,0.90200001,134,286,180.1999969,48,289,146,76,6.800000191
+placebo,53,White,no,yes,yes,no,somewhat less active,0,yes,no,no,no,no,61.70000076,25.75,82,0.819999993,88,190,118.8000031,34,186,132,73,5.300000191
+placebo,70,White,no,no,yes,no,much less active,0,no,yes,no,no,no,65.19999695,26.59000015,80.80000305,0.805000007,77,219,149.8000031,27,211,142,82,7
+placebo,70,White,no,no,no,no,about as active,1,yes,yes,no,no,no,55.79999924,23.20000076,72,0.769999981,88,184,110.1999969,51,114,136,78,7
+placebo,65,White,no,yes,yes,no,somewhat less active,1,yes,no,yes,yes,no,110,41.27000046,118,0.893999994,180,236,158.3999939,52,128,131,85,6.5
+hormone therapy,65,White,no,no,no,no,about as active,0,yes,no,no,no,no,102,42.45999908,103,0.773999989,124,269,176.1999969,48,224,137,82,6.5
+hormone therapy,64,White,no,no,no,no,much less active,1,yes,no,yes,yes,no,104,38.70000076,110,0.846000016,151,219,130.6000061,63,127,138,62,6.400000095
+hormone therapy,74,White,no,no,no,no,about as active,1,yes,no,no,no,no,49,21.35000038,62,0.742999971,92,241,173.8000031,42,126,109,76,7.400000095
+placebo,60,White,no,no,yes,no,about as active,0,no,no,no,no,no,71.19999695,27.87999916,78,0.742999971,81,249,153.3999939,73,113,108,76,6
+placebo,67,White,no,no,yes,yes,somewhat more active,1,no,no,no,no,no,71.69999695,29.23999977,93,0.927999973,89,199,111.1999969,61,134,125,68,6.699999809
+hormone therapy,62,White,no,yes,yes,no,about as active,0,no,no,no,no,no,56.40000153,24.67000008,79,0.845000029,82,245,165.6000061,48,157,135,85,6.199999809
+placebo,77,White,no,no,no,yes,much more active,1,no,no,no,no,no,60.79999924,27.05999947,81,0.768000007,91,223,149.3999939,49,123,127,62,7.699999809
+hormone therapy,67,White,no,no,no,no,about as active,0,yes,yes,no,no,no,68,30.05999947,86,0.834999979,105,239,142.8000031,49,236,116,71,6.699999809
+placebo,63,White,no,no,no,no,about as active,0,yes,yes,no,no,no,60.79999924,23.89999962,80,0.847000003,101,154,67.80000305,38,241,112,64,6.300000191
+hormone therapy,78,White,no,no,no,no,much less active,1,yes,no,yes,yes,no,79.80000305,31.76000023,100,0.870000005,143,276,180.8000031,46,246,168,97,7.800000191
+hormone therapy,78,White,no,no,no,yes,about as active,1,yes,no,no,no,no,59.20000076,23.86000061,84,0.893999994,84,260,168,34,290,125,72,7.800000191
+placebo,75,White,no,no,yes,no,somewhat less active,0,yes,no,no,no,no,69.59999847,27.73999977,83.80000305,0.838,96,182,102.4000015,30,248,149,74,7.5
+hormone therapy,73,White,no,no,yes,yes,somewhat more active,0,no,no,no,no,no,63.20000076,25.31999969,80,0.842000008,95,208,136,45,135,120,76,7.300000191
+placebo,67,White,no,yes,yes,yes,about as active,0,no,yes,no,no,no,69.40000153,25.68000031,90,0.887000024,110,198,117.4000015,56,123,125,50,6.699999809
+placebo,67,White,no,no,yes,yes,somewhat more active,1,yes,yes,no,no,no,75.90000153,28.01000023,96,0.959999979,102,253,158.8000031,52,211,139,62,6.699999809
+placebo,72,White,no,no,no,no,somewhat more active,0,yes,yes,yes,no,yes,59.09999847,25.02000046,85.59999847,0.913999975,135,188,108.1999969,40,199,130,69,7.199999809
+hormone therapy,69,White,no,no,yes,no,somewhat less active,0,yes,no,yes,no,no,73.30000305,30.15999985,104.5,0.995000005,133,223,137.8000031,46,196,132,83,6.900000095
+hormone therapy,65,White,no,no,yes,no,somewhat more active,0,yes,yes,no,no,no,86.40000153,30.06999969,96,0.940999985,102,213,117.4000015,54,208,140,81,6.5
+hormone therapy,74,White,no,no,yes,no,somewhat more active,0,yes,no,no,no,no,73.19999695,26.69000053,88,0.81099999,94,207,96,82,145,110,70,7.400000095
+hormone therapy,65,White,no,no,yes,yes,somewhat more active,0,yes,yes,yes,no,yes,92,34.66999817,117,1.088000059,112,240,166,41,165,140,73,6.5
+hormone therapy,72,White,no,no,yes,no,somewhat less active,1,no,no,no,no,no,72.90000153,32.61999893,100,0.893000007,100,251,158,56,185,169,89,7.199999809
+hormone therapy,69,White,no,no,yes,yes,somewhat more active,1,yes,yes,no,no,no,93.5,40.04999924,112.5,0.833000004,90,200,106,48,230,140,75,6.900000095
+placebo,66,White,no,no,no,no,somewhat more active,0,yes,yes,no,no,no,75,26.42000008,90,0.917999983,74,218,139.3999939,41,188,90,62,6.599999905
+placebo,77,White,no,no,yes,yes,much more active,1,yes,yes,no,no,no,47.70000076,20.78000069,73,0.81099999,103,252,121.1999969,106,124,140,70,7.699999809
+hormone therapy,61,White,no,yes,yes,no,about as active,0,yes,no,no,no,no,63.90000153,25.18000031,91,0.989000022,115,254,167.6000061,59,137,170,92,6.099999905
+hormone therapy,66,White,no,no,yes,yes,somewhat more active,0,yes,yes,no,no,no,65.90000153,26.36000061,93.5,0.953999996,112,201,118.8000031,56,131,120,70,6.599999905
+hormone therapy,76,White,no,no,yes,yes,much more active,1,yes,no,yes,no,yes,94.59999847,35.81999969,111,0.906000018,98,206,126.1999969,65,74,140,67,7.599999905
+hormone therapy,71,White,no,no,yes,no,much more active,0,yes,no,yes,no,no,66.40000153,25.48999977,81,0.786000013,88,220,113.4000015,87,98,159,90,7.099999905
+placebo,72,White,no,no,yes,no,somewhat less active,0,yes,yes,yes,yes,no,60.29999924,21.78000069,88.5,0.947000027,160,180,105.5999985,53,107,155,75,7.199999809
+hormone therapy,67,Other,yes,no,no,no,somewhat less active,0,yes,no,no,no,no,67.30000305,28.37999916,92,0.920000017,95,216,118.1999969,38,299,140,72,6.699999809
+hormone therapy,61,White,no,no,yes,yes,somewhat less active,0,yes,yes,yes,no,no,108,34.90000153,95,0.633000016,163,218,151.1999969,45,109,130,80,6.099999905
+hormone therapy,65,White,no,no,no,no,somewhat less active,1,yes,yes,no,no,no,121,44.25999832,113,0.796000004,83,204,100.8000031,56,236,107,64,6.5
+placebo,48,Other,yes,yes,no,no,about as active,0,yes,no,yes,no,no,74,29.82999992,98,0.972000003,150,200,114.8000031,24,306,118,63,4.800000191
+placebo,74,White,no,no,no,no,somewhat less active,0,yes,yes,no,no,no,58,23.12000084,79,0.805999994,113,203,124.8000031,57,106,152,86,7.400000095
+hormone therapy,72,White,no,no,yes,yes,much more active,1,yes,yes,no,no,no,71.80000305,26.12000084,88,0.853999972,86,189,110,64,75,135,69,7.199999809
+hormone therapy,75,White,no,no,yes,no,somewhat more active,0,yes,no,no,no,no,71.80000305,23.77000046,97.5,0.95599997,90,258,178.6000061,32,237,135,80,7.5
+hormone therapy,72,White,no,no,no,no,somewhat less active,1,yes,yes,no,no,no,77,37.02999878,100,0.901000023,96,176,117.4000015,40,93,137,71,7.199999809
+hormone therapy,70,White,no,no,no,no,about as active,1,yes,yes,yes,no,yes,81.40000153,29.46999931,104,1.039999962,165,172,90.80000305,37,221,115,60,7
+hormone therapy,69,White,no,no,yes,no,about as active,1,yes,yes,yes,no,no,82.69999695,32.59000015,107,0.990999997,107,221,142,54,125,130,76,6.900000095
+placebo,78,White,no,no,yes,no,about as active,1,yes,yes,no,no,no,81.69999695,35.88000107,112.5,0.990999997,98,266,147.3999939,79,198,119,59,7.800000191
+placebo,66,Other,yes,no,yes,no,about as active,0,yes,no,no,no,no,76,27.21999931,90,0.75,97,167,102.1999969,42,114,115,71,6.599999905
+hormone therapy,61,Other,yes,no,no,yes,about as active,0,yes,no,no,no,no,55.70000076,22.92000008,78,0.84799999,94,178,76.59999847,49,262,125,72,6.099999905
+placebo,71,White,no,no,yes,yes,somewhat more active,0,no,yes,no,no,no,60.79999924,25.73999977,75.5,0.716000021,107,243,154,78,55,148,64,7.099999905
+placebo,67,White,no,no,no,yes,much more active,0,yes,no,yes,no,no,63.79999924,24.25,86,0.869000018,125,291,205.3999939,46,198,120,75,6.699999809
+hormone therapy,63,White,no,no,yes,no,about as active,0,no,yes,no,no,no,104,40.61999893,170,1.133000016,116,232,131.1999969,50,254,150,80,6.300000191
+hormone therapy,67,Other,yes,no,no,yes,about as active,0,yes,yes,no,no,no,63.79999924,26.69000053,84,0.888999999,92,235,135.8000031,56,216,134,75,6.699999809
+hormone therapy,71,White,no,no,no,yes,somewhat more active,0,yes,yes,yes,yes,no,63.20000076,26.13999939,96,0.834999979,151,176,105.8000031,44,131,160,75,7.099999905
+placebo,62,Other,yes,no,yes,yes,somewhat more active,0,yes,yes,yes,no,no,68.09999847,24.56999969,84.5,0.837000012,108,219,129,42,240,137,72,6.199999809
+hormone therapy,69,White,no,no,yes,no,somewhat less active,0,yes,no,yes,yes,no,72.59999847,29.76000023,112,1.167000055,260,263,168,36,295,120,75,6.900000095
+placebo,75,White,no,no,no,no,somewhat more active,0,yes,no,no,no,no,61.29999924,25.90999985,86.5,0.851999998,94,289,172,76,205,138,69,7.5
+hormone therapy,79,White,no,no,yes,no,about as active,0,no,no,no,no,no,63.79999924,23.62999916,89,0.936999977,113,173,67.19999695,60,229,120,75,7.900000095
+placebo,78,White,no,no,yes,yes,much more active,0,yes,yes,no,no,no,57.79999924,23.06999969,87,0.95599997,116,266,175.1999969,50,204,135,62,7.800000191
+placebo,75,African American,yes,no,no,no,about as active,1,yes,no,yes,no,yes,72.30000305,26.55999947,93,0.97299999,161,240,159.3999939,46,173,180,82,7.5
+hormone therapy,58,White,no,no,no,yes,somewhat more active,0,no,no,no,no,no,88.5,32.81999969,107.1999969,1.047000051,95,232,150.8000031,49,161,139,89,5.800000191
+placebo,70,White,no,no,yes,yes,much more active,0,yes,yes,no,no,no,59.79999924,23.23999977,94.59999847,0.970000029,100,175,99.80000305,57,91,110,67,7
+placebo,71,White,no,no,no,no,much more active,0,yes,no,no,no,no,80.5,28.62000084,107.4000015,0.963,92,196,123.4000015,56,83,150,78,7.099999905
+hormone therapy,70,White,no,no,no,yes,somewhat more active,0,yes,yes,no,no,no,71.69999695,24.93000031,103.5,1.011000037,92,203,113.1999969,61,144,125,71,7
+hormone therapy,70,White,no,yes,no,yes,somewhat more active,0,yes,yes,no,no,no,62.09999847,22.95000076,101,1.085999966,92,231,138.1999969,38,274,156,54,7
+hormone therapy,56,White,no,no,no,no,much more active,0,no,no,no,no,no,76.80000305,28.18000031,111.4000015,0.996999979,84,241,156.6000061,50,172,123,89,5.599999905
+placebo,51,White,no,no,no,no,somewhat less active,1,yes,yes,yes,no,no,106,44.38000107,118,0.880999982,142,202,114.1999969,40,239,111,67,5.099999905
+placebo,63,White,no,yes,no,no,somewhat less active,1,yes,yes,no,no,no,88.30000305,30.87999916,110.5999985,0.927999973,95,205,129,46,150,101,70,6.300000191
+hormone therapy,62,White,no,no,yes,no,somewhat more active,0,yes,no,yes,yes,no,71.69999695,27.79999924,108.3000031,1.14199996,107,192,103.8000031,58,151,150,72,6.199999809
+hormone therapy,70,White,no,no,yes,no,somewhat more active,0,yes,no,no,no,no,79.40000153,34.59000015,104.5999985,0.898999989,94,278,175.3999939,76,133,143,77,7
+placebo,75,African American,yes,no,no,no,somewhat more active,1,yes,no,no,no,no,74.30000305,31.70000076,102.5999985,1.088999987,67,209,105.8000031,96,36,106,66,7.5
+hormone therapy,70,White,no,no,no,no,somewhat less active,1,yes,no,no,no,no,68.59999847,26.5,104,1.02699995,100,233,141.1999969,37,274,157,65,7
+placebo,54,White,no,no,no,yes,somewhat more active,0,yes,no,no,no,no,70.09999847,26.05999947,96.5,0.954999983,89,206,137,36,165,137,79,5.400000095
+placebo,65,White,no,no,no,no,about as active,1,yes,yes,no,no,no,92.90000153,36.15000153,120.4000015,1.026000023,110,221,113.1999969,50,289,144,84,6.5
+hormone therapy,50,African American,yes,yes,no,no,much more active,0,yes,no,no,no,no,59.29999924,22.98999977,87.5,0.921999991,89,224,143.3999939,45,178,140,88,5
+placebo,73,White,no,no,no,no,somewhat more active,1,yes,yes,no,no,no,61.20000076,24.88999939,104.5,1.019999981,99,240,136.3999939,68,178,123,64,7.300000191
+placebo,65,White,no,no,no,yes,about as active,0,no,yes,no,no,no,68.40000153,24.46999931,97.40000153,0.992999971,84,173,89,30,270,120,67,6.5
+placebo,64,White,no,yes,no,no,much more active,1,yes,no,no,no,no,60.5,23.84000015,94.5,0.984000027,100,232,139.6000061,49,217,135,79,6.400000095
+placebo,70,White,no,no,no,no,somewhat less active,1,yes,no,no,no,no,79.90000153,31.25,98,0.866999984,93,244,170.3999939,44,148,156,89,7
+placebo,58,African American,yes,no,no,no,much less active,0,yes,no,yes,no,yes,74.90000153,28.61000061,111.3000031,1.077000022,156,238,166.8000031,56,76,136,80,5.800000191
+placebo,52,African American,yes,no,no,no,somewhat less active,0,yes,no,yes,no,yes,64.19999695,26.86000061,98.90000153,1.044999957,145,175,100,35,200,140,75,5.199999809
+hormone therapy,62,White,no,no,yes,no,somewhat less active,0,yes,no,no,no,no,99.40000153,35.77000046,122.4000015,0.986000001,106,257,178,46,165,111,71,6.199999809
+hormone therapy,74,African American,yes,no,no,no,about as active,0,yes,no,no,no,no,79.19999695,33.91999817,123.6999969,1.032999992,96,202,124.4000015,43,173,122,71,7.400000095
+placebo,76,African American,yes,no,no,no,somewhat more active,0,yes,yes,no,no,no,65.5,28.92000008,104.1999969,1.090000033,99,265,181.1999969,56,139,120,53,7.599999905
+hormone therapy,76,White,no,no,no,no,about as active,1,yes,no,yes,no,yes,72,29.05999947,96.19999695,0.916000009,84,155,83.80000305,44,136,123,72,7.599999905
+hormone therapy,69,White,no,no,yes,yes,somewhat more active,0,yes,no,no,no,no,48.5,18.38999939,66,0.744000018,78,201,123.1999969,52,129,175,80,6.900000095
+placebo,60,White,no,no,no,yes,about as active,0,no,yes,no,no,no,52.29999924,21.90999985,86.80000305,0.958999991,90,242,164.8000031,32,226,149,77,6
+placebo,66,African American,yes,no,yes,yes,much more active,0,yes,no,no,no,no,102,36,99.09999847,0.762000024,87,212,144,51,85,123,74,6.599999905
+hormone therapy,69,White,no,no,no,yes,much more active,0,yes,no,no,no,no,60,24.39999962,89.30000305,0.926999986,90,308,230.6000061,54,117,141,80,6.900000095
+placebo,62,White,no,yes,yes,no,somewhat more active,0,no,no,no,no,no,81.40000153,31.52000046,109.5,0.978999972,108,241,141,56,220,165,83,6.199999809
+hormone therapy,60,White,no,no,no,yes,about as active,0,yes,no,no,no,no,51.20000076,23,71.80000305,0.787,93,226,154.6000061,49,112,157,92,6
+hormone therapy,69,White,no,no,yes,yes,somewhat less active,0,no,yes,yes,no,yes,91.80000305,38.70999908,116.6999969,1.055999994,180,147,86.19999695,31,149,151,71,6.900000095
+placebo,73,White,no,no,no,yes,about as active,1,yes,no,yes,yes,no,84,32.13000107,101.1999969,0.926999986,232,227,133.6000061,44,247,128,73,7.300000191
+placebo,76,White,no,no,no,no,somewhat more active,1,yes,no,no,no,no,71.80000305,27.90999985,98.30000305,1.029999971,113,219,153.1999969,35,154,139,63,7.599999905
+placebo,77,White,no,no,no,yes,somewhat less active,0,yes,yes,no,no,no,54,23.34000015,84.19999695,0.876999974,83,206,129.1999969,51,129,115,45,7.699999809
+hormone therapy,69,White,no,no,no,yes,much more active,0,yes,no,no,no,no,75.19999695,28.97999954,111.9000015,1.036000013,99,213,136.3999939,41,178,149,65,6.900000095
+hormone therapy,72,White,no,no,no,no,about as active,0,no,no,no,no,no,78.40000153,35.02999878,107.5999985,0.927999973,87,280,194,56,150,135,69,7.199999809
+placebo,71,White,no,no,no,yes,somewhat less active,0,yes,no,yes,no,yes,53,21.14999962,94.69999695,1.026000023,181,154,81.59999847,43,147,185,93,7.099999905
+placebo,75,White,no,no,yes,no,much less active,1,yes,no,yes,no,yes,93.19999695,40.18000031,131.8000031,1.184999943,174,167,104.5999985,29,167,164,64,7.5
+hormone therapy,72,White,no,no,no,yes,about as active,1,no,no,no,no,no,65.90000153,25.89999962,88.59999847,0.869000018,96,261,162.3999939,56,213,158,78,7.199999809
+placebo,71,White,no,no,no,no,much more active,1,yes,yes,no,no,no,66.40000153,21.86000061,93.5,0.975000024,90,181,105,51,125,146,68,7.099999905
+placebo,74,White,no,no,no,no,somewhat more active,0,no,yes,no,no,no,71.90000153,27.97999954,105.0999985,1.072000027,86,169,79.59999847,43,232,169,75,7.400000095
+hormone therapy,72,White,no,no,no,yes,somewhat more active,0,yes,yes,no,no,no,63.29999924,23.68000031,108.0999985,1.059999943,94,291,215.1999969,44,159,115,70,7.199999809
+placebo,68,African American,yes,no,no,no,much less active,0,yes,no,no,no,no,105,35.77999878,118.6999969,0.999000013,104,233,166,40,135,125,80,6.800000191
+hormone therapy,61,White,no,no,no,no,much less active,0,no,no,yes,no,yes,92.80000305,39.63999939,121.9000015,1.103000045,207,252,170.3999939,58,118,165,76,6.099999905
+hormone therapy,63,White,no,no,yes,no,somewhat less active,0,yes,yes,no,no,no,66.30000305,24.70999908,84,0.856999993,108,182,78.40000153,57,233,157,78,6.300000191
+hormone therapy,70,White,no,no,yes,yes,somewhat more active,0,yes,no,no,no,no,66.19999695,25.88999939,87,0.845000029,101,274,167.3999939,78,143,131,64,7
+placebo,69,White,no,no,yes,no,much less active,1,yes,yes,yes,no,no,67.59999847,25.15999985,82,0.80400002,138,217,104.1999969,79,169,140,81,6.900000095
+placebo,70,African American,yes,no,no,yes,much more active,1,yes,no,yes,no,yes,67,28.46999931,87,0.906000018,127,203,126.8000031,56,101,180,96,7
+hormone therapy,58,White,no,no,no,yes,about as active,0,yes,yes,no,no,no,90.5,34.90999985,97,0.808000028,89,213,126.5999985,67,97,129,80,5.800000191
+placebo,74,White,no,no,no,yes,somewhat more active,1,yes,yes,no,no,no,79.40000153,29.52000046,94,0.907999992,100,212,125.5999985,44,212,139,59,7.400000095
+placebo,69,White,no,yes,yes,no,about as active,1,yes,yes,no,no,no,64.69999695,26.93000031,90,0.899999976,93,212,109,43,300,133,66,6.900000095
+placebo,54,White,no,no,yes,no,somewhat less active,0,yes,yes,no,no,no,94,38.13999939,105,0.861000001,109,170,75,36,295,141,89,5.400000095
+hormone therapy,64,White,no,no,yes,no,about as active,0,yes,no,no,no,no,49,22.82999992,75,0.851999998,96,179,102,31,230,106,68,6.400000095
+placebo,64,White,no,no,no,no,somewhat less active,1,yes,yes,yes,no,yes,82.30000305,32.15000153,112,0.973999977,113,180,107,45,140,129,70,6.400000095
+hormone therapy,65,White,no,no,yes,yes,much more active,1,yes,yes,no,no,no,57.5,21.12000084,73,0.75999999,77,246,124.8000031,106,76,115,80,6.5
+placebo,70,White,no,no,no,yes,somewhat less active,1,yes,no,no,no,no,78.30000305,29.46999931,95.5,0.964999974,84,217,144.8000031,46,131,143,73,7
+placebo,75,White,no,no,no,no,somewhat less active,0,yes,yes,yes,yes,no,82.30000305,37.06999969,110,0.977999985,144,152,90,31,155,121,54,7.5
+hormone therapy,69,White,no,no,yes,no,somewhat less active,0,yes,yes,no,no,no,61.29999924,23.36000061,88,0.893000007,124,225,129.3999939,60,178,147,64,6.900000095
+placebo,65,White,no,yes,yes,no,about as active,0,no,no,no,no,no,75,30.43000031,94,0.855000019,90,255,169.6000061,54,157,119,75,6.5
+hormone therapy,71,White,no,no,no,yes,somewhat more active,0,yes,no,no,no,no,65.19999695,25.46999931,78,0.816999972,96,198,130.6000061,41,132,124,66,7.099999905
+hormone therapy,64,White,no,no,yes,no,somewhat more active,0,no,no,yes,no,yes,57.79999924,23.14999962,74.5,0.800999999,203,209,128.1999969,66,74,143,74,6.400000095
+hormone therapy,62,White,no,no,yes,yes,somewhat more active,0,yes,no,no,no,no,64.5,25.20000076,76,0.779999971,101,263,173.3999939,50,198,99,56,6.199999809
+placebo,77,White,no,no,yes,no,about as active,0,yes,yes,no,no,no,64.40000153,25.79999924,81.59999847,0.81400001,81,210,111.5999985,69,147,123,71,7.699999809
+placebo,73,White,no,no,yes,no,about as active,0,yes,yes,no,no,no,96.40000153,35.40999985,100.3000031,0.809000015,108,169,86.80000305,49,166,169,87,7.300000191
+placebo,74,White,no,no,no,yes,somewhat more active,1,yes,no,yes,no,no,95,36.20000076,108.3000031,0.91900003,156,223,143.6000061,30,247,130,71,7.400000095
+placebo,76,White,no,yes,yes,no,much less active,1,yes,no,no,no,no,73,26.32999992,87.19999695,0.828999996,80,222,114.8000031,66,206,146,71,7.599999905
+placebo,73,White,no,no,yes,no,about as active,0,yes,yes,no,no,no,94.90000153,37.06999969,104.3000031,0.865999997,96,231,156.8000031,36,191,127,66,7.300000191
+hormone therapy,65,White,no,yes,no,no,about as active,0,yes,no,no,no,no,99.19999695,35.56999969,104.0999985,0.878000021,91,291,217.1999969,47,134,145,81,6.5
+hormone therapy,71,White,no,no,yes,yes,somewhat more active,1,no,no,no,no,no,63.70000076,25.20000076,77.40000153,0.787999988,85,307,223.3999939,66,88,101,58,7.099999905
+placebo,79,White,no,no,yes,no,much more active,1,yes,yes,no,no,no,69.69999695,29.01000023,96.69999695,0.906000018,104,269,122.8000031,86,301,128,71,7.900000095
+hormone therapy,79,White,no,no,no,no,somewhat less active,1,no,no,no,no,no,70,30.29999924,96.90000153,0.958000004,104,364,272.6000061,54,187,155,73,7.900000095
+hormone therapy,75,White,no,no,yes,no,about as active,0,yes,yes,no,no,no,65,24.31999969,87.59999847,0.898999989,85,219,133.6000061,54,157,120,76,7.5
+hormone therapy,68,White,no,no,yes,no,somewhat less active,1,yes,yes,no,no,no,90.90000153,36.97000122,101,0.860000014,109,173,90.40000153,30,263,147,76,6.800000191
+hormone therapy,71,White,no,no,no,yes,somewhat more active,0,yes,no,no,no,no,62.5,22.81999969,81.19999695,0.834999979,100,225,147,55,115,153,65,7.099999905
+placebo,58,White,no,no,yes,yes,much more active,0,yes,no,no,no,no,52.79999924,21.26000023,68.19999695,0.771000028,87,290,179.8000031,66,221,87,54,5.800000191
+placebo,72,White,no,no,no,no,somewhat less active,0,yes,yes,yes,yes,yes,113,41.84000015,131.6999969,0.917999983,142,221,121.4000015,48,258,150,67,7.199999809
+hormone therapy,50,White,no,yes,no,no,somewhat less active,0,no,no,no,no,no,58.5,21.22999954,72.30000305,0.745000005,98,216,156.3999939,35,123,89,63,5
+placebo,74,White,no,no,yes,no,somewhat more active,0,yes,no,no,no,no,86.80000305,34.20000076,99,0.824999988,103,194,111.1999969,59,119,170,78,7.400000095
+placebo,68,White,no,no,yes,yes,about as active,1,yes,no,no,no,no,45.90000153,18.69000053,68.69999695,0.801999986,104,234,118.5999985,102,67,146,71,6.800000191
+hormone therapy,56,White,no,no,no,yes,somewhat more active,0,yes,no,no,no,no,91,34.97999954,97,0.791999996,101,220,138.3999939,52,148,125,72,5.599999905
+placebo,67,White,no,no,yes,yes,somewhat more active,0,yes,no,no,no,no,61.5,26.17000008,81,0.805999994,98,210,140.3999939,50,98,118,70,6.699999809
+placebo,69,White,no,no,yes,yes,about as active,1,no,yes,no,no,no,60.40000153,23.95000076,79.30000305,0.805000007,99,261,162.3999939,46,263,129,70,6.900000095
+hormone therapy,69,White,no,no,yes,no,somewhat more active,0,yes,no,no,no,no,71.19999695,26.03000069,89.19999695,0.880999982,90,256,156,69,155,145,97,6.900000095
+hormone therapy,52,White,no,yes,yes,no,somewhat less active,1,yes,yes,no,no,no,59,25.97999954,84,0.861000001,92,237,134.3999939,72,153,126,60,5.199999809
+placebo,70,African American,yes,no,no,no,somewhat more active,0,yes,no,no,no,no,72.09999847,27.13999939,90.5,0.811999977,102,226,148.8000031,49,141,190,84,7
+placebo,71,White,no,no,no,no,somewhat more active,0,yes,no,no,no,no,54.79999924,21.92000008,71.90000153,0.754000008,104,298,212.8000031,45,201,138,72,7.099999905
+hormone therapy,62,White,no,no,yes,yes,about as active,0,yes,yes,no,no,no,84.5,29.76000023,99.5,0.861000001,113,207,130.8000031,49,136,108,64,6.199999809
+hormone therapy,69,White,no,no,yes,no,much more active,0,yes,no,no,no,no,70,25.10000038,83.90000153,0.848999977,95,255,174.6000061,37,217,108,64,6.900000095
+placebo,66,White,no,no,no,no,about as active,0,yes,no,no,no,no,98.19999695,31.52000046,106,0.888000011,90,243,171.3999939,49,113,130,78,6.599999905
+hormone therapy,65,White,no,no,no,yes,much less active,1,no,no,no,no,no,96.30000305,35.15999985,112.5,0.930000007,94,197,130.3999939,49,88,138,77,6.5
+hormone therapy,63,White,no,no,no,yes,somewhat less active,0,yes,yes,no,no,no,70.59999847,26.89999962,93.69999695,0.833000004,100,216,126.5999985,53,182,140,79,6.300000191
+hormone therapy,62,White,no,no,no,no,somewhat less active,1,yes,no,no,no,no,93.59999847,34.13000107,112,0.865999997,101,256,169.8000031,48,191,181,87,6.199999809
+placebo,67,White,no,no,no,yes,somewhat less active,0,yes,yes,yes,no,yes,98.90000153,40.22999954,118,0.952000022,201,198,114.4000015,43,203,136,72,6.699999809
+hormone therapy,62,White,no,no,yes,no,about as active,0,no,yes,no,no,no,95,34.43000031,106,0.910000026,86,205,125,47,165,148,88,6.199999809
+hormone therapy,65,White,no,yes,no,no,about as active,0,yes,no,no,no,no,60.70000076,26.62000084,86,0.842999995,97,308,193.8000031,78,181,165,82,6.5
+placebo,69,White,no,no,no,yes,much more active,0,yes,yes,yes,no,no,65.59999847,27.72999954,91.30000305,0.949000001,106,254,152.6000061,42,297,122,67,6.900000095
+placebo,57,White,no,no,no,yes,somewhat less active,0,no,no,no,no,no,99.59999847,41.18999863,111.4000015,0.800000012,114,164,87.40000153,44,163,152,84,5.699999809
+hormone therapy,74,White,no,no,yes,no,somewhat more active,0,yes,no,no,no,no,74.80000305,32.97999954,99,0.859000027,103,262,185.6000061,49,137,148,85,7.400000095
+placebo,59,Other,yes,yes,no,yes,about as active,0,no,no,no,no,no,87.19999695,32.11000061,108.6999969,0.953999996,99,246,158.8000031,36,256,134,76,5.900000095
+placebo,79,White,no,no,no,no,somewhat less active,1,yes,no,yes,no,no,95.40000153,35.34000015,111,0.880999982,147,280,163.6000061,52,322,121,63,7.900000095
+hormone therapy,71,White,no,yes,yes,no,much less active,0,yes,no,yes,no,no,75,27.88999939,92.59999847,0.823000014,130,266,191.6000061,33,207,136,64,7.099999905
+placebo,70,White,no,no,no,no,about as active,0,yes,no,no,no,no,91.59999847,31.03000069,103.5,0.84799999,91,248,172.1999969,37,194,139,76,7
+placebo,70,White,no,no,yes,yes,about as active,1,no,no,no,no,no,65.19999695,25.62999916,87.5,0.888999999,96,194,131,38,125,160,65,7
+hormone therapy,66,White,no,no,no,no,somewhat more active,1,yes,no,no,no,no,71,28.51000023,96.40000153,0.926999986,92,250,177.6000061,45,137,139,75,6.599999905
+placebo,64,White,no,no,yes,yes,much more active,0,no,no,no,no,no,53.40000153,21.46999931,67,0.769999981,109,250,144.8000031,95,51,144,70,6.400000095
+placebo,65,White,no,no,no,no,somewhat more active,0,yes,yes,yes,yes,no,68.40000153,25.25,88.90000153,0.897000015,180,184,87.59999847,38,292,123,60,6.5
+placebo,64,White,no,no,yes,no,much more active,1,yes,no,no,no,no,84.69999695,34.97999954,101.6999969,0.838,83,257,176.1999969,52,144,130,72,6.400000095
+hormone therapy,75,White,no,no,yes,no,about as active,1,yes,yes,yes,no,no,96.59999847,38.20999908,112.5999985,0.893000007,129,268,157.1999969,70,204,154,62,7.5
+hormone therapy,71,White,no,no,no,no,about as active,0,yes,yes,yes,no,yes,70.5,29.15999985,96.09999847,0.93599999,163,157,88,37,160,121,47,7.099999905
+hormone therapy,72,White,no,no,yes,no,somewhat more active,0,no,yes,no,no,no,57,24.35000038,77.40000153,0.779999971,97,262,152,72,190,151,74,7.199999809
+hormone therapy,77,White,no,no,yes,no,somewhat more active,1,yes,yes,no,no,no,61.20000076,24.72999954,89.90000153,0.910000026,111,204,117.4000015,51,178,139,73,7.699999809
+placebo,75,White,no,no,yes,yes,somewhat more active,0,yes,yes,no,no,no,70.30000305,26.59000015,80.59999847,0.779999971,121,256,140.3999939,85,153,131,69,7.5
+placebo,77,White,no,no,no,no,somewhat less active,1,no,yes,no,no,no,65.5,30.11000061,82.80000305,0.814999998,106,229,157,42,150,136,73,7.699999809
+hormone therapy,68,White,no,no,yes,yes,much more active,1,yes,yes,no,no,no,63.29999924,26.94000053,76.69999695,0.728999972,89,208,99.19999695,93,79,108,73,6.800000191
+hormone therapy,76,White,no,yes,yes,yes,somewhat more active,0,no,no,no,no,no,70.69999695,27.96999931,92,0.836000025,105,180,112.8000031,53,71,142,80,7.599999905
+placebo,73,White,no,no,yes,yes,somewhat less active,0,yes,yes,no,no,no,45.90000153,20.39999962,67,0.797999978,98,248,162.8000031,64,106,152,61,7.300000191
+hormone therapy,74,White,no,no,no,yes,about as active,0,yes,no,no,no,no,53.79999924,23.29000092,77.5,0.861000001,100,315,220,57,190,146,81,7.400000095
+hormone therapy,56,White,no,no,yes,no,about as active,0,yes,no,no,no,no,60.20000076,21.32999992,74.5,0.800999999,89,269,159,55,275,133,74,5.599999905
+hormone therapy,58,White,no,no,no,no,about as active,0,no,no,no,no,no,121,43.49000168,128,0.883000016,116,220,135.3999939,47,188,166,90,5.800000191
+placebo,60,White,no,no,yes,no,much less active,0,yes,yes,no,no,no,87.19999695,34.49000168,103,0.912,100,247,152,34,305,140,90,6
+placebo,66,White,no,no,yes,no,about as active,0,yes,no,no,no,no,71,29.17000008,85.5,0.769999981,103,279,167,73,195,127,80,6.599999905
+hormone therapy,74,White,no,no,no,no,somewhat less active,1,yes,no,no,no,no,73,30.38999939,81.5,0.734000027,88,274,198,52,120,150,69,7.400000095
+hormone therapy,63,White,no,no,no,yes,somewhat more active,0,yes,yes,no,no,no,79.5,29.20000076,88.5,0.855000019,102,240,153.6000061,44,212,149,81,6.300000191
+hormone therapy,63,White,no,no,no,no,about as active,1,yes,yes,yes,no,no,86.5,34.86999893,108,0.896000028,138,184,103.5999985,30,252,131,70,6.300000191
+placebo,57,White,no,no,yes,no,somewhat more active,1,no,no,no,no,no,64.5,25.51000023,83.5,0.814999998,104,224,142.3999939,56,128,125,77,5.699999809
+hormone therapy,74,White,no,no,no,no,about as active,0,yes,no,no,no,no,61.5,24.32999992,83.5,0.834999979,90,200,128.1999969,59,64,138,70,7.400000095
+placebo,75,White,no,no,no,no,much less active,0,yes,yes,no,no,no,65,28.70000076,87.5,0.865999997,112,267,182.8000031,53,156,157,78,7.5
+placebo,59,White,no,no,no,no,somewhat less active,1,yes,yes,yes,yes,no,97.5,41.65000153,112,0.836000025,193,176,110.5999985,42,117,190,90,5.900000095
+hormone therapy,69,White,no,no,no,no,somewhat less active,0,yes,no,yes,no,yes,116,48.70000076,112,0.76700002,171,207,132.1999969,54,104,142,76,6.900000095
+placebo,71,White,no,no,no,yes,somewhat more active,1,yes,yes,yes,no,no,87,37.16999817,107.5,0.874000013,116,196,91.19999695,78,134,160,70,7.099999905
+hormone therapy,78,White,no,no,no,no,much more active,1,yes,yes,no,no,no,64,22.95000076,84.5,0.870999992,94,222,155.1999969,42,124,125,80,7.800000191
+placebo,68,White,no,no,no,no,somewhat more active,0,no,yes,no,no,no,63,26.21999931,79.5,0.768000007,100,210,137.8000031,43,146,156,79,6.800000191
+hormone therapy,57,White,no,no,no,no,somewhat less active,0,yes,no,no,no,no,78,30.09000015,98.5,0.903999984,100,265,173.8000031,52,196,159,80,5.699999809
+placebo,68,White,no,no,no,no,much less active,1,yes,no,yes,no,yes,71,30.32999992,98.5,0.921000004,140,211,146.3999939,26,193,151,74,6.800000191
+placebo,59,White,no,no,no,no,much less active,1,yes,no,yes,yes,no,71.5,25.03000069,91,0.904999971,128,253,152.1999969,37,319,140,80,5.900000095
+placebo,57,White,no,no,yes,no,about as active,0,no,yes,yes,no,no,99.5,40.36999893,116,0.871999979,127,217,132.8000031,42,211,178,87,5.699999809
+hormone therapy,77,White,no,no,no,no,somewhat more active,0,yes,no,yes,yes,no,80.5,36.75,100.5,0.791000009,112,204,114.5999985,40,247,143,80,7.699999809
+hormone therapy,73,White,no,no,no,yes,much more active,1,yes,no,yes,no,no,54.5,19.36000061,72,0.765999973,129,190,98,52,200,181,88,7.300000191
+placebo,63,African American,yes,yes,no,no,about as active,0,yes,no,no,no,no,64,25.12999916,86,0.860000014,91,260,180,44,180,139,79,6.300000191
+hormone therapy,68,African American,yes,no,no,no,much less active,0,yes,yes,no,no,no,82.19999695,27.69000053,89,0.816999972,100,206,129.3999939,38,193,115,59,6.800000191
+placebo,60,African American,yes,no,no,no,somewhat less active,0,yes,no,no,no,no,101,38.81999969,102,0.864000022,116,285,184.3999939,50,253,143,88,6
+placebo,77,White,no,no,no,no,somewhat more active,1,yes,no,no,no,no,57.79999924,24.34000015,83,0.847000003,92,227,142.8000031,59,126,137,68,7.699999809
+placebo,67,White,no,no,yes,no,much more active,1,yes,no,no,no,no,82.90000153,31.89999962,103,0.940999985,114,232,144.8000031,30,286,119,72,6.699999809
+hormone therapy,69,White,no,no,yes,yes,somewhat more active,1,yes,yes,no,no,no,63,25.20000076,82,0.781000018,105,189,98,40,255,149,78,6.900000095
+placebo,79,White,no,no,yes,yes,about as active,0,yes,no,no,no,no,60.90000153,23.90999985,82,0.859000027,98,176,96.80000305,43,181,102,57,7.900000095
+hormone therapy,78,White,no,no,yes,yes,about as active,1,yes,no,no,no,no,48.5,20.15999985,69,0.792999983,84,208,105,90,65,119,71,7.800000191
+hormone therapy,76,White,no,no,yes,no,about as active,0,yes,no,no,no,no,60.40000153,21.68000031,77,0.786000013,115,212,111,68,165,114,67,7.599999905
+placebo,70,White,no,no,no,yes,somewhat more active,1,yes,no,no,no,no,64,25.15999985,88,0.940999985,95,188,115.5999985,39,167,127,72,7
+hormone therapy,70,White,no,no,yes,yes,about as active,0,no,no,no,no,no,75.30000305,31.54999924,99,0.943000019,94,263,175.1999969,59,144,119,70,7
+hormone therapy,70,White,no,no,no,no,somewhat less active,0,yes,yes,no,no,no,76.69999695,28.06999969,86,0.774999976,97,259,166.1999969,42,254,106,60,7
+placebo,57,White,no,yes,no,yes,somewhat less active,1,no,no,no,no,no,71.80000305,30.38999939,100.5,1.004999995,90,216,111.5999985,53,257,115,70,5.699999809
+hormone therapy,73,African American,yes,no,no,no,somewhat less active,0,yes,no,yes,yes,no,82.69999695,33.25,108.5,0.986000001,168,303,216.8000031,54,161,145,82,7.300000191
+placebo,75,African American,yes,no,no,yes,about as active,0,yes,no,no,no,no,63.29999924,23.34000015,84,0.84799999,96,205,117.1999969,51,184,114,60,7.5
+hormone therapy,75,White,no,no,no,no,about as active,0,yes,no,yes,no,yes,91.80000305,34.16999817,107,0.876999974,182,272,172.1999969,58,209,148,70,7.5
+placebo,68,White,no,no,no,yes,somewhat less active,1,no,yes,no,no,no,55.70000076,26.05999947,76,0.768000007,98,174,84.59999847,71,92,103,69,6.800000191
+hormone therapy,56,White,no,no,no,no,somewhat more active,0,yes,no,yes,no,yes,97.69999695,42.29000092,120.5,0.922999978,176,193,113.1999969,40,199,129,60,5.599999905
+hormone therapy,72,African American,yes,no,no,yes,much more active,0,yes,yes,no,no,no,60.09999847,22.35000038,80.80000305,0.824000001,81,194,128,43,115,126,69,7.199999809
+hormone therapy,63,White,no,yes,no,no,about as active,0,yes,yes,no,no,no,64.69999695,24.95999908,80,0.77700001,88,182,123.5999985,36,112,154,78,6.300000191
+hormone therapy,58,African American,yes,no,no,no,much less active,1,yes,yes,no,no,no,90.90000153,37.84000015,102,0.836000025,84,241,161.1999969,58,109,150,88,5.800000191
+hormone therapy,65,White,no,no,yes,yes,somewhat more active,0,yes,yes,no,no,no,72.80000305,27.90999985,84.5,0.809000015,97,213,136.8000031,38,191,122,64,6.5
+placebo,67,White,no,no,no,yes,about as active,0,yes,yes,yes,yes,no,71.80000305,27.87000084,93,0.898999989,227,265,182.8000031,50,161,165,77,6.699999809
+placebo,74,White,no,no,yes,no,much less active,1,yes,yes,no,no,no,66.69999695,26.21999931,86.5,0.86500001,100,253,128.1999969,78,234,131,68,7.400000095
+placebo,59,White,no,no,yes,no,somewhat more active,0,yes,no,no,no,no,64.09999847,24.12999916,79,0.751999974,94,234,149,56,145,142,72,5.900000095
+hormone therapy,65,White,no,yes,yes,yes,somewhat more active,1,yes,no,no,no,no,66,26.70999908,79,0.741999984,84,208,127.4000015,67,68,161,77,6.5
+hormone therapy,55,White,no,yes,no,yes,about as active,1,yes,yes,yes,yes,no,68.59999847,27.17000008,83,0.818000019,84,230,144.6000061,64,107,154,81,5.5
+hormone therapy,68,African American,yes,no,yes,no,somewhat more active,1,yes,yes,no,no,no,66.40000153,28.54999924,79,0.774999976,91,246,168.1999969,62,79,127,64,6.800000191
+placebo,57,White,no,no,no,no,somewhat less active,0,yes,yes,no,no,no,90,36.50999832,98,0.790000021,98,153,83.40000153,44,128,135,72,5.699999809
+placebo,64,African American,yes,no,no,no,much more active,1,yes,no,yes,yes,no,97.69999695,35.88999939,119,1.013000011,122,190,105,40,225,142,66,6.400000095
+placebo,61,White,no,yes,yes,no,about as active,1,yes,no,no,no,no,55.90000153,22.68000031,67.5,0.758000016,100,214,139.8000031,53,106,126,69,6.099999905
+hormone therapy,66,White,no,no,no,no,somewhat less active,1,yes,no,yes,no,yes,92.30000305,33.29000092,101,0.913999975,180,303,227.6000061,42,167,143,61,6.599999905
+hormone therapy,71,White,no,no,no,no,somewhat more active,0,yes,no,no,no,no,72.30000305,25.62000084,87.5,0.884000003,92,263,167.1999969,56,199,161,80,7.099999905
+hormone therapy,59,Other,yes,yes,no,no,somewhat less active,0,yes,no,no,no,no,52.29999924,21.77000046,77,0.81099999,87,210,152.8000031,30,136,132,82,5.900000095
+hormone therapy,67,African American,yes,yes,no,no,somewhat more active,0,yes,no,yes,no,yes,71.80000305,28.57999992,97,0.970000029,149,247,152.3999939,58,183,139,79,6.699999809
+placebo,61,African American,yes,no,no,no,somewhat less active,1,yes,no,yes,no,yes,68.59999847,29.96999931,90.5,0.874000013,144,240,158,54,140,182,83,6.099999905
+placebo,65,White,no,yes,no,no,about as active,1,yes,no,no,no,no,62.29999924,23.45000076,78,0.813000023,103,211,123.8000031,33,271,135,69,6.5
+placebo,59,Other,yes,no,yes,no,somewhat less active,0,yes,yes,no,no,no,51.40000153,21.12000084,82,0.936999977,112,206,123.1999969,38,224,134,72,5.900000095
+hormone therapy,56,White,no,no,no,no,somewhat less active,0,yes,yes,yes,no,no,74.09999847,28.59000015,88,0.870999992,112,224,142.1999969,55,134,125,76,5.599999905
+hormone therapy,69,White,no,no,yes,no,about as active,0,yes,no,no,no,no,90.90000153,31.09000015,96,0.800000012,106,209,138.8000031,47,116,127,64,6.900000095
+placebo,72,White,no,no,yes,no,about as active,0,no,yes,no,no,no,82.69999695,29.29999924,90,0.833000004,98,237,134.1999969,51,259,135,68,7.199999809
+placebo,63,African American,yes,no,no,no,much less active,1,yes,yes,yes,no,no,121,44.29999924,115.0999985,0.824999988,187,225,150.3999939,54,103,130,72,6.300000191
+placebo,75,White,no,no,no,no,somewhat more active,0,yes,no,yes,no,no,65,27.22999954,94,0.968999982,126,204,126.1999969,44,169,185,77,7.5
+placebo,68,African American,yes,no,no,yes,about as active,1,yes,no,no,no,no,107,40.38999939,111.5,0.944999993,99,246,154.1999969,62,149,139,79,6.800000191
+placebo,78,White,no,no,no,yes,about as active,0,yes,no,no,no,no,62.29999924,26.23999977,89.09999847,0.954999983,103,190,110.8000031,38,206,127,61,7.800000191
+placebo,70,Other,yes,no,no,yes,about as active,1,yes,no,yes,no,yes,70.5,31.54000092,92.5,0.864000022,163,197,127.4000015,44,128,135,70,7
+hormone therapy,62,African American,yes,no,no,no,about as active,1,yes,yes,yes,no,yes,77.69999695,28.20000076,93.5,0.935000002,204,203,127,53,115,125,76,6.199999809
+hormone therapy,69,White,no,no,no,yes,about as active,1,yes,yes,no,no,no,48.59999847,20.76000023,72,0.809000015,95,222,150.1999969,44,139,135,69,6.900000095
+hormone therapy,75,White,no,no,no,yes,about as active,1,yes,no,yes,yes,no,63.79999924,25.17000008,80.5,0.867999971,93,197,120.4000015,33,218,151,58,7.5
+placebo,72,Other,yes,no,no,yes,somewhat less active,1,yes,no,yes,yes,no,62.70000076,24.04000092,82,0.811999977,127,175,95,50,150,121,60,7.199999809
+placebo,73,White,no,no,yes,yes,about as active,0,yes,yes,no,no,no,57.29999924,25.12999916,73,0.745000005,90,262,146.3999939,72,218,143,68,7.300000191
+placebo,65,African American,yes,no,no,no,much more active,1,yes,no,no,no,no,68.59999847,25.20000076,91,0.904999971,99,181,87.59999847,36,287,110,64,6.5
+placebo,75,White,no,no,no,no,about as active,0,yes,no,no,no,no,109,48.41999817,105.5,0.735000014,109,253,185.3999939,42,128,145,81,7.5
+placebo,78,White,no,no,no,no,somewhat less active,1,yes,no,no,no,no,55.90000153,25.52000046,81.5,0.861999989,102,164,75.40000153,60,143,147,70,7.800000191
+placebo,76,White,no,no,no,no,somewhat less active,0,yes,no,yes,yes,no,86.40000153,34.18000031,107,0.911000013,132,224,145.3999939,35,218,126,64,7.599999905
+hormone therapy,67,White,no,no,yes,yes,somewhat more active,0,no,no,no,no,no,61.5,23.72999954,83.19999695,0.806999981,47,270,187.8000031,51,156,139,81,6.699999809
+placebo,74,African American,yes,no,no,no,somewhat less active,1,yes,no,no,no,no,50.90000153,18.92000008,66.5,0.768999994,91,194,113.8000031,62,91,126,70,7.400000095
+placebo,71,Other,yes,no,no,no,somewhat less active,0,no,yes,yes,no,yes,62.70000076,26.78000069,82,0.796000004,159,187,82.19999695,66,194,172,72,7.099999905
+placebo,72,White,no,yes,no,no,about as active,1,yes,no,no,no,no,96.80000305,39.77999878,112.5,0.848999977,103,188,117.8000031,36,171,151,77,7.199999809
+hormone therapy,71,White,no,no,no,no,about as active,0,yes,yes,yes,yes,no,89.09999847,33.09000015,112,1.003999949,150,276,194.1999969,38,219,152,78,7.099999905
+hormone therapy,62,Other,yes,yes,no,no,about as active,1,yes,no,yes,yes,no,63.59999847,31.10000038,91.5,0.870999992,235,301,215.8000031,59,131,152,80,6.199999809
+placebo,70,White,no,no,no,no,much more active,0,yes,no,no,no,no,50,20.40999985,76.5,0.879000008,93,228,159.3999939,43,128,159,80,7
+placebo,54,White,no,no,yes,no,much less active,1,yes,no,no,no,no,106,37.29999924,97.5,0.739000022,81,199,120.8000031,58,101,134,80,5.400000095
+hormone therapy,71,White,no,no,no,yes,about as active,0,yes,yes,yes,no,no,69.5,25.53000069,81.5,0.795000017,135,184,93.59999847,34,282,128,66,7.099999905
+placebo,73,White,no,no,no,no,somewhat more active,0,yes,yes,no,no,no,61.40000153,23.54000092,99.5,1.024000049,89,186,99.40000153,64,113,120,70,7.300000191
+placebo,68,White,no,no,no,yes,somewhat more active,0,yes,yes,yes,yes,no,82.90000153,30.40999985,97,0.893999994,298,194,121.4000015,56,83,127,74,6.800000191
+placebo,65,White,no,no,no,no,somewhat less active,1,yes,yes,yes,no,yes,68.59999847,31.11000061,101,0.981000006,130,257,181.8000031,43,161,142,72,6.5
+hormone therapy,57,White,no,no,yes,no,about as active,0,yes,yes,no,no,no,79.5,29.17000008,88,0.800000012,98,190,119,50,105,138,75,5.699999809
+placebo,77,African American,yes,no,no,no,somewhat more active,1,yes,yes,no,no,no,72.90000153,26.32999992,87,0.809000015,102,234,150.8000031,60,116,136,70,7.699999809
+placebo,66,White,no,no,yes,no,about as active,0,yes,yes,no,no,no,73.40000153,26.93000031,92,0.875999987,109,244,140.8000031,46,286,141,83,6.599999905
+placebo,66,White,no,no,no,no,somewhat more active,0,yes,no,no,no,no,68.80000305,27.07999992,85,0.824999988,93,251,155.1999969,71,124,148,75,6.599999905
+placebo,67,White,no,no,yes,yes,somewhat more active,0,yes,yes,no,no,no,66.19999695,26.93000031,84,0.856999993,91,187,103.8000031,53,151,143,78,6.699999809
+placebo,64,White,no,no,yes,no,about as active,1,yes,no,no,no,no,87.30000305,34.65999985,105,0.981000006,103,197,116,37,220,129,76,6.400000095
+hormone therapy,75,White,no,no,no,no,about as active,0,yes,no,yes,no,yes,89.30000305,36.31999969,103.5,0.82099998,182,226,132,66,140,135,70,7.5
+hormone therapy,59,White,no,no,no,no,somewhat less active,0,yes,no,yes,no,yes,48.90000153,20.70000076,68,0.768000007,29,207,141.8000031,54,56,134,63,5.900000095
+hormone therapy,76,White,no,no,yes,yes,somewhat more active,0,no,no,no,no,no,58.79999924,22.96999931,81,0.818000019,82,180,82.59999847,84,67,162,84,7.599999905
+hormone therapy,59,White,no,no,yes,no,about as active,0,yes,no,no,no,no,87.30000305,34.65999985,91,0.791000009,108,342,250,44,240,165,89,5.900000095
+hormone therapy,57,White,no,no,no,no,about as active,0,yes,yes,no,no,no,83.59999847,29.10000038,94,0.816999972,99,192,95.59999847,50,232,139,78,5.699999809
+placebo,63,White,no,no,yes,yes,somewhat more active,1,yes,yes,no,no,no,51.79999924,22.87000084,77,0.819000006,94,219,125,67,135,111,69,6.300000191
+hormone therapy,62,Other,yes,no,no,yes,about as active,0,yes,no,yes,no,yes,65.90000153,27.46999931,96,0.980000019,146,191,107.4000015,48,178,142,71,6.199999809
+hormone therapy,76,White,no,no,yes,yes,about as active,0,yes,no,no,no,no,74.5,30.03000069,98,0.941999972,92,204,120.1999969,50,169,156,70,7.599999905
+placebo,70,White,no,no,no,no,about as active,0,yes,yes,no,no,no,58.90000153,27.14999962,83,0.883000016,104,250,156.8000031,44,246,140,77,7
+placebo,73,White,no,no,yes,no,about as active,0,yes,no,yes,yes,no,66.30000305,30.55999947,98,0.941999972,236,274,159.8000031,58,281,127,81,7.300000191
+hormone therapy,70,White,no,no,no,yes,much more active,0,yes,no,yes,no,yes,73.19999695,34.00999832,87,0.757000029,187,197,122.8000031,28,231,155,72,7
+placebo,78,White,no,no,no,no,about as active,1,yes,no,no,no,no,78.19999695,35.13000107,111,0.949000001,110,280,189.8000031,39,256,151,84,7.800000191
+placebo,77,White,no,no,no,yes,somewhat more active,0,yes,yes,yes,yes,yes,68.59999847,29.29999924,91,0.924000025,119,180,91.59999847,42,232,147,70,7.699999809
+placebo,68,White,no,no,yes,no,about as active,1,yes,no,no,no,no,82.90000153,36.31000137,111,0.894999981,94,177,127.8000031,27,111,181,78,6.800000191
+placebo,76,White,no,yes,no,no,somewhat more active,1,no,no,no,no,no,64.5,26.87999916,83,0.847000003,78,267,181.3999939,55,153,167,102,7.599999905
+placebo,73,White,no,no,yes,yes,somewhat more active,1,yes,yes,no,no,no,71.40000153,27.68000031,87,0.805999994,87,225,152.6000061,47,127,136,79,7.300000191
+placebo,69,White,no,no,yes,yes,somewhat more active,1,yes,no,yes,yes,no,84.5,31.95999908,101,0.926999986,93,233,160.1999969,49,119,139,76,6.900000095
+hormone therapy,70,White,no,no,yes,yes,somewhat more active,1,yes,no,no,no,no,64.09999847,25.63999939,87,0.916000009,82,187,118.5999985,42,132,135,72,7
+placebo,59,White,no,no,no,no,somewhat less active,1,yes,no,yes,no,no,85.90000153,33.02000046,104,0.936999977,124,226,140.6000061,51,172,160,79,5.900000095
+placebo,76,White,no,no,no,no,somewhat less active,0,yes,no,yes,no,no,72.30000305,30.12999916,95,0.978999972,298,222,114,76,160,141,74,7.599999905
+placebo,60,White,no,no,no,yes,about as active,0,yes,no,no,no,no,49.79999924,21.84000015,74,0.813000023,86,188,97.40000153,38,263,129,74,6
+placebo,70,White,no,no,no,yes,much more active,1,yes,no,no,no,no,55.90000153,22.20000076,85,0.934000015,75,153,68.80000305,30,271,150,67,7
+placebo,72,White,no,no,yes,no,about as active,0,yes,yes,no,no,no,78.40000153,32.13000107,98,0.860000014,98,256,160.6000061,59,182,168,83,7.199999809
+placebo,76,White,no,no,yes,no,somewhat more active,0,yes,no,no,no,no,57.29999924,24.67000008,87,0.888000011,104,242,161.6000061,58,112,129,61,7.599999905
+hormone therapy,77,White,no,no,no,no,somewhat more active,0,yes,no,no,no,no,57.70000076,23.26000023,79,0.81400001,109,230,93.80000305,119,86,130,88,7.699999809
+hormone therapy,78,White,no,no,no,no,somewhat more active,1,yes,yes,yes,no,no,51.79999924,22.87000084,80,0.879000008,134,227,115,74,190,146,71,7.800000191
+hormone therapy,65,White,no,no,yes,no,about as active,0,yes,yes,no,no,no,63.59999847,25.63999939,85,0.842000008,85,190,109,48,165,111,66,6.5
+placebo,69,White,no,no,yes,yes,about as active,0,yes,no,yes,no,no,66.80000305,25.67000008,94,0.939999998,133,162,104.8000031,33,121,153,82,6.900000095
+hormone therapy,63,White,no,no,yes,no,about as active,0,no,yes,no,no,no,77.30000305,30.20000076,86,0.819000006,97,155,71.40000153,38,228,111,65,6.300000191
+hormone therapy,74,White,no,no,yes,yes,much more active,1,yes,yes,no,no,no,71.59999847,28.64999962,101,1.024999976,101,188,102,52,170,123,70,7.400000095
+placebo,75,White,no,no,no,no,somewhat more active,0,yes,no,no,no,no,66.80000305,26.09000015,91,0.910000026,114,219,147.8000031,46,126,158,90,7.5
+hormone therapy,75,Other,yes,no,no,yes,much more active,0,yes,no,no,no,no,79.80000305,32.45999908,105,0.938000023,105,197,108.8000031,77,56,154,78,7.5
+placebo,56,White,no,no,no,yes,somewhat less active,1,yes,no,no,no,no,95.5,38.5,105,0.839999974,96,190,118.8000031,40,156,115,61,5.599999905
+placebo,51,White,no,no,yes,no,about as active,1,yes,no,yes,yes,no,81.40000153,29.64999962,103.5,1.050999999,147,155,73,30,260,139,78,5.099999905
+hormone therapy,76,White,no,no,yes,no,somewhat less active,1,no,no,no,no,no,62,24.98999977,85,0.875999987,88,259,136.8000031,88,171,138,70,7.599999905
+hormone therapy,68,White,no,no,no,no,much more active,1,yes,yes,no,no,no,78,32.22000122,99,0.916999996,106,187,93.19999695,58,179,142,67,6.800000191
+placebo,68,White,no,no,no,no,about as active,1,no,no,yes,no,no,60.90000153,23.40999985,86,0.925000012,97,311,232.6000061,47,157,145,77,6.800000191
+hormone therapy,70,White,no,no,yes,no,much more active,1,no,yes,no,no,no,64.5,24.39999962,79,0.790000021,90,225,155.6000061,48,107,152,82,7
+placebo,73,African American,yes,no,no,no,much more active,0,yes,no,no,no,no,59.59999847,24.62000084,84,0.917999983,92,225,149.3999939,50,128,139,84,7.300000191
+placebo,77,White,no,no,no,no,somewhat more active,1,yes,no,no,no,no,50.90000153,19.11000061,74,0.796000004,87,216,121.8000031,76,91,126,76,7.699999809
+placebo,67,White,no,no,no,yes,about as active,0,yes,no,yes,yes,no,73.40000153,30.07999992,93.5,0.878000021,108,228,123,46,295,143,77,6.699999809
+placebo,75,White,no,no,no,no,somewhat less active,1,yes,no,no,no,no,60.90000153,25.78000069,83.5,0.851999998,107,214,139.1999969,29,229,159,64,7.5
+placebo,73,White,no,no,no,yes,somewhat more active,0,yes,no,yes,no,yes,89.30000305,38.15000153,101,0.814999998,114,243,164.8000031,57,106,136,75,7.300000191
+placebo,77,White,no,no,no,no,about as active,0,yes,no,no,no,no,75,29.29999924,96.5,0.906000018,99,215,111.8000031,68,176,155,73,7.699999809
+placebo,76,White,no,no,no,no,much less active,1,yes,no,yes,yes,no,89.09999847,39.65000153,115,0.912999988,185,304,216,50,190,136,70,7.599999905
+hormone therapy,75,White,no,no,no,no,somewhat less active,0,yes,no,no,no,no,69.09999847,27.20000076,89,0.873000026,99,261,163.1999969,47,254,130,69,7.5
+hormone therapy,53,White,no,no,no,no,about as active,0,yes,no,yes,yes,no,87.69999695,35.09000015,110.1999969,1.026000023,209,233,160.6000061,45,137,132,93,5.300000191
+hormone therapy,54,African American,yes,yes,yes,no,about as active,0,yes,no,no,no,no,64.5,25.29000092,95.09999847,0.957000017,75,257,184.8000031,50,111,119,80,5.400000095
+placebo,45,White,no,yes,no,yes,about as active,1,yes,no,yes,no,yes,93.30000305,38.83000183,108.5,0.912,256,293,201.8000031,55,181,105,70,4.5
+placebo,45,African American,yes,yes,yes,no,much less active,1,yes,no,no,no,no,117,38.97999954,116.4000015,0.90200001,93,237,151,66,100,155,95,4.5
+placebo,66,White,no,no,no,no,somewhat more active,1,yes,no,no,no,no,71.59999847,32.50999832,92.5,0.845000029,87,232,152.6000061,57,112,129,73,6.599999905
+hormone therapy,73,White,no,no,yes,yes,about as active,1,no,no,no,no,no,79.40000153,31.02000046,98,0.980000019,94,180,120.8000031,39,101,130,75,7.300000191
+placebo,69,African American,yes,no,no,no,much less active,0,yes,yes,yes,yes,no,59.29999924,23.87000084,91.30000305,0.968999982,146,181,111.1999969,51,94,121,64,6.900000095
+placebo,70,White,no,no,no,no,somewhat less active,0,yes,no,yes,yes,no,88.80000305,33.06000137,112.1999969,1.044999957,98,272,202.8000031,50,96,178,76,7
+hormone therapy,49,Other,yes,no,yes,no,much less active,1,yes,no,no,no,no,71.09999847,28.40999985,86,0.855000019,119,205,130.1999969,28,234,130,87,4.900000095
+hormone therapy,65,White,no,no,no,no,somewhat more active,0,yes,no,no,no,no,52,22.78000069,79.5,0.869000018,80,191,115,55,105,130,80,6.5
+hormone therapy,64,White,no,yes,yes,no,somewhat less active,0,no,no,no,no,no,72.80000305,31.10000038,99.19999695,1,86,266,155.3999939,85,128,155,85,6.400000095
+placebo,57,White,no,no,yes,no,somewhat more active,0,yes,yes,no,no,no,69.69999695,27.63999939,83.19999695,0.828999996,98,172,108.1999969,43,104,159,90,5.699999809
+hormone therapy,61,White,no,no,no,no,somewhat more active,0,yes,no,no,no,no,82,29.26000023,98,0.893999994,84,187,121.8000031,28,186,124,72,6.099999905
+placebo,56,White,no,no,yes,no,somewhat more active,0,yes,no,no,no,no,75,30.35000038,95.40000153,0.913999975,103,244,145,44,275,120,72,5.599999905
+placebo,59,White,no,no,yes,yes,about as active,0,yes,yes,no,no,no,64.80000305,27.46999931,79,0.731000006,85,260,180.1999969,44,179,92,64,5.900000095
+hormone therapy,62,African American,yes,no,yes,no,about as active,0,no,no,no,no,no,75.5,27.70000076,98,1.004999995,97,191,122.5999985,48,102,139,86,6.199999809
+placebo,72,African American,yes,no,yes,no,somewhat more active,0,no,yes,no,no,no,83.40000153,33.40999985,89.59999847,0.782999992,79,365,264.7999878,62,191,139,84,7.199999809
+placebo,74,White,no,no,yes,no,about as active,1,yes,yes,no,no,no,90.19999695,38.84000015,107.1999969,0.901000023,92,185,101.5999985,50,167,128,71,7.400000095
+hormone therapy,65,White,no,no,no,no,somewhat more active,1,yes,yes,yes,no,no,65.5,25.59000015,92.40000153,0.924000025,100,145,71.19999695,46,139,156,80,6.5
+placebo,61,White,no,no,yes,yes,somewhat more active,1,yes,no,yes,no,yes,57.09999847,23.97999954,84.19999695,0.889999986,169,223,145.3999939,54,118,134,67,6.099999905
+placebo,67,White,no,no,yes,yes,much more active,0,no,yes,no,no,no,79.59999847,29.20000076,101,0.926999986,103,192,108.1999969,48,179,160,85,6.699999809
