@@ -1,0 +1,459 @@
+---
+title: "Tarea3_LealEdgar"
+author: "Edgar Leal"
+date: "5/5/2021"
+output: 
+  html_document: 
+    toc: yes
+    toc_depth: 3
+    toc_float:
+      collapsed: true
+    cod_folding: hide
+    center: true
+    theme: sandstone
+---
+
+# Llamar librerias 
+Llamamos a la librerias requeridas para los analisis
+```{r}
+#install.packages("qdap")
+library(ggplot2) # graficas
+library(qdap) # manipulacion de datos el error era por no tener instalado java
+library(e1071) # asimetria
+library(bestNormalize) # transformacion de datos 
+library(fitdistrplus) # grafica Cullen-Frey
+library(dslabs) # datos PCA
+library(factoextra) # graficas PCA
+```
+
+
+  1.	Abre el archivo hersdata.csv usado en la clase de la primera sesión. 
+```{r}
+setwd("C:/Users/yoroi/OneDrive/Escritorio/CienciaDatos/NotebookClase2")
+hers <- read.csv("hersdata.csv")
+```
+  
+# 2.	Elimina todos los NAs del archivo. ¿Cuántas observaciones se eliminaron de los datos?
+
+```{r}
+#head(hers)
+dim(hers)
+hers <- na.omit(hers)
+dim(hers)
+```
+Se eliminaron 20 observaciones
+Al final elimine 22 observaciones, ver ejercicio 5
+
+# 3.	Crea un intervalo de las edades de 5 en 5 y realiza una gráfica de barras de la frecuencia de cada uno. ¿Cómo es la distribución de estos grupos de edades?
+
+```{r}
+#summary(hers$age)
+#min =44, max= 79
+
+hers$age_group <- findInterval(hers$age, seq(40, 80, by =5))
+#head(hers)
+
+hers$age_group <- multigsub(sort(unique(hers$age_group)), # patron a buscar
+                           c("40-45", "45-50", "50-55", "55-60", "60-65", "65-70", "70-75", "75-80"), # reemplazo
+                           hers$age_group) # objeto sobre el cual reemplazar
+head(hers)
+
+```
+
+```{r}
+age_group <- as.data.frame(table(hers$age_group))
+
+ggplot(age_group, aes(x = Var1, y = Freq, fill = Var1)) + # graficamos 
+  geom_bar(stat = "identity") +
+  theme(legend.position = "none") +
+  labs(title = "Frecuencia de grupos de edades", x = "Grupo de edad", y = "Frecuencia")
+
+```
+
+La mayor frecuencia de edad se encuentra mayormente en los grupos de 60-65, 65-70, 70-75.
+
+
+# 4.	Crea un intervalo para el valor de BMI para obtener una variable discreta que indique los subgrupos encontrados en la siguiente [página:](http://www.clinicavespucio.cl/calculo-del-imc/) (con subgrupos me refiero a los que se encuentran en blanco en la tabla). Realiza una gráfica de barras donde indiques la frecuencia de cada grupo. ¿Cuáles son los grupos más frecuentes? ¿Cuáles los menos?
+
+
+```{r}
+#summary(hers$BMI)
+#min=15.21, max=54.13
+
+hers$IMC <- findInterval(hers$BMI, c(15.99,16.99,18.49,24.99,29.99,34.99,39.99,55))
+
+#Cuando usas multigsub en el remplazo no es recomendable usar numeros porque se pone el nombre de la casilla de ese numero en el vector
+#Si Ponia Obesidad 1, el nombre era Obesidad Delgadez severa
+
+hers$IMC <- multigsub(sort(unique(hers$IMC)), # patron a buscar
+                           c("Delgadez severa", "Delgadez moderada", "Delgadez leve", "Normal", "Sobrepeso", "Obesidad I", 
+                             "Obesidad II", "Obesidad III"), # reemplazo #Preobesidad es para prevenir pero no se me hace educado. 
+                                                          #Elegí dejarlo en sobrepeso
+                      
+                           hers$IMC) # objeto sobre el cual reemplazar
+
+
+IMC <- as.data.frame(table(hers$IMC)) # obtenemos frecuencia con table
+
+ggplot(IMC, aes(x = Var1, y = Freq, fill = Var1)) + # graficamos 
+  coord_flip() +
+  geom_bar(stat = "identity") +
+  theme(legend.position = "none") +
+  labs(title = "Frecuencia de IMC", x = "Clasificación IMC", y = "Frecuencia")
+```
+Los grupos más frecuentes son Sobrepeso y Normal, mientras que los grupos menos frecuentes son Delgadez severa y Delgadez moderada
+
+
+# 5.	Codifica todas las variables binarias que tienen “yes” y “no” a 0 y 1 con multigsub(). Crea una función que automáticamente reemplace estos valores de las columnas que selecciones para que no tengas que correr la misma línea muchas veces. 
+
+```{r}
+### Modifiqué el código del ejercicio 5 porque como lo entregué fue para poder ver por qué salía error. Pero ya no puedo modificar el envío.
+catego_bin.ind <- function(column){
+  
+  #column variable of data object to change
+  #output column with values changed
+  #1= yes, 0=no
+
+  column <- as.factor(multigsub(sort(unique(column)), 
+                                  c(0, 1),
+                                  column))
+  return(column)
+}
+
+catego_bin <- function(data,columns){
+  #data     data.frame data to be changed
+  #columns  vector of columns to be changed
+  #output   data changed
+  
+  for (i in columns){
+    data[,i] <- catego_bin.ind(data[,i])
+  }
+  return(data)
+}
+
+
+#Sale error en drinkany porque hay datos vacios
+#which(hers$drinkany=="")
+hers$drinkany[189] <- NA
+hers$drinkany[203] <- NA
+hers <- na.omit(hers)
+#dim(hers)
+#Volví a eliminar NA 
+
+
+#Es la posición en hers de los datos binarios yes y no
+vector_change <- c(4:7,10:14)
+
+
+hers <- catego_bin(hers,vector_change)
+
+
+
+head(hers)
+
+ 
+```
+
+
+# 6.	Crea una distribución normal de la misma longitud de los datos, con la media y la desviación estándar de la columna glucosa. Combina estos datos normales y los datos de la columna glucosa en un dataframe.
+
+```{r}
+set.seed(15)
+datos_norm <- rnorm(n = length(hers$glucose), mean = mean(hers$glucose), sd = sd(hers$glucose)) # creamos una distribucion normal
+
+datos<- data.frame(datos_norm = datos_norm, datos_reales = hers$glucose)
+
+head(datos)
+```
+
+
+# 7.	Realiza un histograma para estos dos datos, una gráfica cuantil-cuantil, una gráfica Cullen-Frey y obtén su asimetría. ¿Qué observas?
+
+```{r}
+#Histograma
+ggplot(data = datos, aes(datos_norm)) + 
+  geom_histogram(aes(y = ..density..), bins = 100, color = "black", fill = "white") +
+  geom_density(alpha = 0.2, fill = "blue") + 
+  geom_vline(xintercept = mean(datos$datos_norm), color = "red", size = 1) +
+  geom_vline(xintercept = median(datos$datos_norm), color = "forestgreen", size = 1) +
+  labs(title = "Histograma datos normales", x = "Valores", y = "Frecuencia")
+
+ggplot(data = datos, aes(datos_reales)) + 
+  geom_histogram(aes(y = ..density..), bins = 100, color = "black", fill = "white") +
+  geom_density(alpha = 0.2, fill = "blue") + 
+  geom_vline(xintercept = mean(datos$datos_reales), color = "red", size = 1) +
+  geom_vline(xintercept = median(datos$datos_reales), color = "forestgreen", size = 1) +
+  labs(title = "Histograma datos reales", x = "Valores", y = "Frecuencia")
+
+
+
+```
+Se ve la campana y simetría característica de una distribución normal, donde la mediana y media coincide.
+Por otro lado en los datos reales se observa que los datos están desviados hacia la izquierda y por tanto la mediana no coincide con la media
+
+```{r}
+#Grafica Cuantil Cuantil
+ggplot(datos, aes(sample = datos_norm)) + 
+  stat_qq(alpha = 0.5) + 
+  stat_qq_line(color = "red") + 
+  labs(title = "Grafica cuantil-cuantil datos normales", x = "Teoréticos", y = "Muestra")
+
+ggplot(datos, aes(sample = datos_reales)) + 
+  stat_qq(alpha = 0.5) + 
+  stat_qq_line(color = "red") + 
+  labs(title = "Grafica cuantil-cuantil datos reales", x = "Teoréticos", y = "Muestra")
+```
+
+En los datos con distribución normal se ven claramente como la distribución es gradual y coincide en cada cuantil.
+En los datos reales se ve cómo no existe la diagonal porque los cuantiles no coinciden.
+
+
+```{r}
+descdist(datos$datos_norm)
+descdist(datos$datos_reales)
+```
+
+Se observa como lo esperado, que la distribución normal tiene un comportamiento normal según la gráfica de Cullen y Frey.
+Los datos reales muestran una distribución beta 
+
+
+```{r}
+# Asimetría
+skewness(datos$datos_norm) 
+skewness(datos$datos_reales) 
+```
+Se observa que los datos normales son casi simétricos como lo esperado.
+Mientras que los valores reales son muy asimétricos hacia la izquiera
+
+
+
+# 8.	Utiliza la función bestNormalize() para encontrar la mejor forma de normalizar los datos. Utiliza esta función para normalizarlos y realiza los mismos pasos del punto 7. ¿Cómo cambiaron los datos?
+
+```{r}
+set.seed(15)
+bestNormalize(datos$datos_reales)
+#Nos sugiere que utilicemos orderNorm (ORQ)
+
+#orderNorm regresa una lista 
+transformados <- orderNorm(datos$datos_reales)
+#x.t son los datos transformados
+datos$transformados <- transformados$x.t
+head(datos$transformados)
+
+```
+
+```{r}
+#Histograma
+ggplot(data = datos, aes(transformados)) + 
+  geom_histogram(aes(y = ..density..), bins = 100, color = "black", fill = "white") +
+  geom_density(alpha = 0.2, fill = "blue") + 
+  geom_vline(xintercept = mean(datos$transformados), color = "red", size = 1) +
+  geom_vline(xintercept = median(datos$transformados), color = "forestgreen", size = 1) +
+  labs(title = "Histograma datos transformados", x = "Valores", y = "Frecuencia")
+```
+Vemos como la transformación funcionó y ahora se ve la curva característica y la media y mediana coinciden
+
+```{r}
+#Grafica Cuantil Cuantil
+ggplot(datos, aes(sample = transformados)) + 
+  stat_qq(alpha = 0.5) + 
+  stat_qq_line(color = "red") + 
+  labs(title = "Grafica cuantil-cuantil datos transformados", x = "Teoréticos", y = "Muestra")
+
+```
+Vemos como ahora los datos siguen la diagonal y los cuantiles coinciden entre sí
+
+```{r}
+descdist(datos$transformados)
+```
+
+Observamos como la media y la mediana están muy proximas a cero por lo que casi coinciden.
+y en la gráfica se obserca como la observación cae en el rango de la distribución normal
+
+
+```{r}
+# Asimetría
+skewness(datos$transformados)
+```
+El valor es muy cercano a cero por lo queon simétricos.
+En conjunto podemos decir que la transformación si funcionó.
+
+
+# 9.	Descarga los datos encontrados en la siguiente liga: http://archive.ics.uci.edu/ml/machine-learning-databases/00401/. El archivo llamado “data.csv” contiene datos de expresión para 20531 genes y 801 muestras de 5 diferentes tipos de cáncer obtenidos de la base de datos de The Cancer Genome Atlas (TCGA). El archivo llamado “labels.csv” contiene el nombre del tipo de cáncer al que pertenece cada una de las 801 muestras (en la página de TCGA puedes encontrar el nombre completo del tipo de cáncer por abreviatura: https://gdc.cancer.gov/resources-tcga-users/tcga-code-tables/tcga-study-abbreviations). En la página de cursos encontrarás un archivo llamado “TCGA_genes.txt”, el cual contiene el nombre e identificador de los 20531 genes (algunos no tienen nombre, pero puedes consultar qué región genómica es con el identificador en NCBI gene: https://www.ncbi.nlm.nih.gov/gene/). 
+
+```{r}
+#Fingiremos que es chunk de bash, mi rstudio no corre codigos de python ni bash
+
+#wget http://archive.ics.uci.edu/ml/machine-learning-databases/00401/TCGA-PANCAN-HiSeq-801x20531.tar.gz
+
+#tar -xvf TCGA-PANCAN-HiSeq-801x20531.tar.gz
+
+```
+
+
+# 10.	Realiza un PCA con los datos dados. Grafícalo y agrupa las observaciones por tipo de cáncer. Coloca elipses a la gráfica. 
+
+```{r}
+
+TCGA <- read.csv("../Tarea 3-20210505/TCGA-PANCAN-HiSeq-801x20531/data.csv")
+#head(TCGA)
+#dim(TCGA)
+#20532 genes de 801 muestras 
+```
+
+```{r}
+#TCGA <- na.omit(TCGA)
+TCGA_l <- TCGA$X
+TCGA$X <- NULL
+head(TCGA[,1:5])
+```
+
+```{r}
+PCA <- prcomp(TCGA)
+
+```
+
+```{r}
+#Obtener el tipo de cancer de cada muestra
+labels <- read.csv("../Tarea 3-20210505/TCGA-PANCAN-HiSeq-801x20531/labels.csv")
+head(labels)
+cancer <- labels$Class
+```
+
+
+```{r}
+PrinComps <- as.data.frame(PCA$x) # convertimos los componentes en un dataframe
+PrinComps$Cancer <- cancer # agregamos los grupos de cancer (sample)
+```
+
+```{r}
+ggplot(PrinComps, aes(x = PC1, y = PC2, color = Cancer)) +
+  geom_point() +
+  stat_ellipse() +
+  labs(title = "PCA Cancer", x = "PC1", y = "PC2", color = "Cancer")
+```
+
+
+# 11.	Obtén la proporción de la varianza explicada por cada componente principal y grafícala. 
+
+```{r}
+set.seed(15)
+color <- sample(rainbow(1000), length(PCA$sdev))
+
+exp_var <- PCA$sdev^2
+exp_var <- (exp_var / sum(exp_var)) * 100 # Proporcion de la varianza explicada
+PC <- 1:length(PCA$sdev) # Numero de componentes
+exp_var <- data.frame(exp_var, PC) # Lo unimos en un dataframe
+head(exp_var, n=15) 
+
+ggplot(exp_var, aes(x = PC, y = exp_var)) +
+  geom_bar(stat = "identity", fill = color) +
+  labs(title = "Proporcion de la varianza explicada por cada PC", x = "Componente Principal", y = "Varianza explicada (%)")
+
+
+```
+
+Con 7 componentes se explica 51% de la varianza de los datos. Sin embargo a partir del 4 componente, la varianza deja de ser significativa
+
+# 12.	Obtén la proporción de la varianza cumulativa explicada por cada componente principal. ¿Cuántos componentes expresan el 65% de la varianza? ¿Cuántos el 85%? ¿Cuántos el 90%? Realiza una gráfica donde coloques 3 líneas horizontales de diferente color, una para cada porcentaje. 
+
+```{r}
+exp_var$var_cum <- cumsum(exp_var$exp_var) # suma cumulativa con funcion cumsum()
+
+for(lim in c(65, 85, 90)){ # vamos a obtener el numero de componentes y a graficarlos para los valores solicitados
+  print(exp_var[exp_var$var_cum >= lim, 2][1]) # vemos cual es el componente que otorga la proporcion de la varianza esperada
+                                                # el 2 es porque queremos el PC que está en la columna 2 del df
+                                                # el 1 es porque queremos sólo el primer elemento
+}
+plot <- ggplot(exp_var, aes(x = PC, y = var_cum)) + # graficamos
+  geom_bar(stat = "identity", fill = color) +
+  labs(title = "Varianza cumulativa explicada por cada PC", x = "Componente Principal", y = "Varianza cumulativa explicada") + 
+  geom_hline(yintercept = 65) + # colocamos una linea en la proporcion esperada
+  geom_hline(yintercept = 85) +
+  geom_hline(yintercept = 90) 
+
+print(plot)
+
+```
+
+la diferencia entre el 85 y 90% de la varianza son aproximadamente 100 componente, demasiados y no es un cambio sustancial en la varianza representada.
+
+# 13.	Grafica la contribución de las variables al PCA. Da una interpretación biológica a las variables que consideres pertinentes. 
+```{r}
+fviz_pca_var(PCA, col.var = "contrib") + # graficamos
+  scale_color_gradient(low = "light blue", high = "black") + # escala de color para la contribucion
+  labs(title = "Contribución de cada variable al PCA", 
+       x = paste("PC1 ", "(", round(exp_var$exp_var[1], 2), "%)", sep =""),
+       y = paste("PC2 ", "(", round(exp_var$exp_var[2], 2), "%)", sep =""),
+       color = "Contribución")
+```
+
+Explicacion biologica
+BRCA carcinoma invasivo de mama
+COAD colon adeno carcinoma
+KIRC Carcinoma de células claras renales
+LUAD    Adenocarcinoma de pulmón
+PRAD    Prostate Adenocarcinoma
+
+Los genes 9175 y 9176 explican la mayor varianza para el componente 1
+Por otro lado el gen 16169 y 3439 explican la mayor varianza para el componente 2
+
+
+los genes 9176 y 9175 corresponden a KLK3 y KLK2, antigenos especificos de prostata, que se han asociado previamente a cancer en este tejido, lo cual es contundente con los resultados. Por otro lado, el gen 16169 codifica para un gen de la familia SLC, y el gen 3439 para una cadherina especificamente expresada en riñon y que se ha asociado a tumorigenesis.
+
+
+# 14.	Realiza el PCA a mano para los mismos datos y compara tus resultados con el creado con prcomp().
+
+*CENTRAR*
+```{r}
+#tcga_centered <- apply(TCGA, 2, function(x){ x - mean(x) }) # centramos las variables utilizando, cada variable menos su media. 
+##summary(apply(tcga_centered, 2, mean)) # obtenemos la media de cada columna. 
+#round(summary(apply(tcga_centered, 2, mean)), 12) # comprobar que es 0
+```
+
+*COVARIANZAS*
+```{r}
+#tcga_covar <- cov(tcga_centered)
+#tcga_covar[1:7, 1:7] # visualizamos 
+
+```
+
+*EIGENVALORES y EIGENVECTORES*
+
+```{r}
+#tcga_eigen <- eigen(tcga_covar)
+#names(tcga_eigen)
+#tcga_eigen$values[1:7] # primeros 7 eigenvalores
+#tcga_eigen$vectors[1:7, 1:7] # primeros 7 eigenvectores, con sus 7 primeras filas.
+```
+
+*PRINCIPAL COMPONENT SCORE*
+
+```{r}
+#tcga_scores <- t(tcga_eigen$vectors) %*% t(tcga_centered)
+#tcga_pca <- t(tcga_scores)
+#tcga_pca[1:7, 1:7]
+```
+
+*COMPARAR*
+```{r}
+#PCA$x[1:7, 1:7] # primeras 7 filas y columnas del PCA realizado con prcomp
+#tcga_pca[1:7, 1:7] # primeras 7 filas y columnas del PCA realizado a mano
+```
+```{r}
+#PCA$sdev[1:7] # primeros 7 valores de desviacion estandar de cada PC 
+#apply(tcga_pca, 2, sd)[1:7] # el PCA que realizamos a mano no tiene las desviaciones estandar asociadas. Hay obtener la desviacion estandar de cada columna de nuestro PCA con un apply. 
+
+```
+```{r}
+#PCA$center[1:7]
+#apply(TCGA, 2, mean)[1:7]
+```
+```{r}
+#PCA$rotation[1:7, 1:7] # PCA generado con prcomp()
+#tcga_eigen$vectors[1:7, 1:7] # a mano
+```
+
+
+Espero que los resultados sean muy parecidos.
+
