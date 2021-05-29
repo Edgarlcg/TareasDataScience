@@ -1,0 +1,208 @@
+---
+title: "ExploracionDatos_LealJose"
+author: "Edgar Leal"
+date: "28/4/2021"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 3
+    toc_float:
+      collapsed: yes
+    cod_folding: hide
+    center: yes
+    theme: sandstone
+  pdf_document:
+    toc: yes
+    toc_depth: '3'
+---
+```{r}
+setwd("C:/Users/yoroi/OneDrive/Escritorio/CienciaDatos/Tarea 2-20210426")
+cardiovascular <- read.table("cardiovascular_disease.csv",sep = ",",header = T)
+```
+
+
+# Separa tus datos por género (genera 2 conjuntos).**
+
+```{r}
+#head(cardiovascular)
+#table para ver la cantidad de los datos 
+table(cardiovascular$gender)
+```
+```{r}
+cardiovascular_women <- cardiovascular[cardiovascular$gender==1,]
+
+cardiovascular_men <- cardiovascular[cardiovascular$gender==2,]
+
+#Corroborar que los datos fueron seleccionados correctamente
+dim(cardiovascular_women)
+dim(cardiovascular_men)
+```
+
+# Escoger 3 características (válidas para los análisis) y realiza lo siguiente:
+*Weight, cholesterol, gluc*
+```{r}
+#Eliminar los valores nulos para no tener errores
+
+weight_women <- na.omit(cardiovascular_women$weight)
+weight_men <- na.omit(cardiovascular_men$weight)
+chol_women <- na.omit(cardiovascular_women$cholesterol)
+chol_men <- na.omit(cardiovascular_men$cholesterol)
+sys_women <- na.omit(cardiovascular_women$ap_hi)
+sys_men <- na.omit(cardiovascular_men$ap_hi)
+```
+
+# 1.	Calcula las medidas de tendencia central, cuartiles y la desviación estándar para tus 3 características. 
+
+```{r}
+# MEAN, quartiles, median
+summary_ww <- summary(weight_women)
+summary_wm <- summary(weight_men)
+#summary_cw <- summary(chol_women)
+#summary_cm <- summary(chol_men)
+summary_sw <- summary(sys_women)
+summary_sm <- summary(sys_men)
+
+summary_d <- data.frame(c(summary_ww), c(summary_wm), c(summary_cw), c(summary_cm),
+                        c(summary_sw), c(summary_sm))
+
+summary_d
+
+
+```
+Para el peso en mujeres, el valor mínimo es de 21kg, por lo que habría que checar cual es el valor de la edad de las pacientes. El 75% de los datos está por debajo de 80, y el primer cuartil es 63, por lo que el valor mínimo y máximo son outliers. Muy seguramente porque la edad de estas pacientes está subrepresentada. Por otro lado, lo mismo ocurre con el peso en hombres, los valores minimos y máximos son outliers.
+
+Para el colesterol en ambos conjuntos, la mediana está en 1,y el tercer cuartil igual es 1, por lo que la mayoría de las muestras tienen un buen control de colesterol.
+
+En los datos de presión sistólica, me pregunto por qué hay valores negativos, los datos están centrados para 120-130, lo que es esperado ya que la hipertensión arterial es un signo para enfermedades cardiovasculares.
+
+```{r}
+#Moda
+
+modaT_ww <- data.frame(table(weight_women))
+moda_ww <- modaT_ww[which.max(modaT_ww$Freq),1]
+
+
+modaT_wm <- data.frame(table(weight_men))
+moda_wm <- modaT_wm[which.max(modaT_wm$Freq),1]
+
+modaT_cw <- data.frame(table(chol_women))
+moda_cw <- modaT_cw[which.max(modaT_cw$Freq),1]
+
+
+modaT_cm <- data.frame(table(chol_men))
+moda_cm <- modaT_cm[which.max(modaT_cm$Freq),1]
+
+
+
+modaT_sw <- data.frame(table(sys_women))
+moda_sw <- modaT_sw[which.max(modaT_sw$Freq),1]
+
+modaT_sm <- data.frame(table(sys_men))
+moda_sm <- modaT_sm[which.max(modaT_sm$Freq),1]
+
+
+moda_dt <- data.frame(moda_ww, moda_wm, moda_cw, moda_cm, moda_sw, moda_sm)
+moda_dt
+```
+
+La moda repite el mismo patrón que la mediana, la mayoría de los datos para peso es muy parecido entre ambos sexos, la mayoría de ambos grupos tienen buen control de colesterol, y la mayoría tienen una TA sistólica elevada, 120.
+
+```{r}
+# SD
+sd_ww <- sd(weight_women)
+sd_wm <- sd(weight_men)
+#sd_cw <- sd(chol_women)
+#sd_cm <- sd(chol_men)
+sd_sw <- sd(sys_women)
+sd_sm <- sd(sys_men)
+
+sd_dt <- data.frame(sd_ww, sd_wm, sd_cw, sd_cm, sd_sw, sd_sm)
+sd_dt
+```
+
+Los datos de sd indican que en ambos conjuntos los datos tienen una dispersión parecida. Es muy notio que los datos de la TA sistólica está muy dispersos en ambos conjuntos.
+
+
+# 2.	Genera un gráfico para observar la distribución de datos.
+
+```{r}
+#Dividir el espacio de los gráficos
+
+par(mfrow=c(3, 2))
+
+boxplot(weight_women, main="Weight Women")
+
+boxplot(weight_men, main="Weight Men")
+
+boxplot(chol_women, main="Control of Cholesterol Women")
+
+boxplot(chol_men, main="Control of Cholesterol Men")
+
+boxplot(sys_women, main="Systolic Pressure Women")
+
+boxplot(sys_men, main="Systolic Pressure Men")
+
+```
+Se puede notar que en el peso los datos están más concentrados a valores menores con valores atípicos en valores muy grandes y muy pequeños, En colesterol en mujeres es muy notorio que la caja de de rango intercuartil es muy amplia porque el primer y tercer cuartil no corresponden al mismo valor, a diferencia de hombres. 
+La TA sistólica muestra una gran concentración hacia valores normales y outliers muy grandes.
+Tal vez este parámetro haya sido un error en la toma de los signos.
+
+# 3.	Compara los resultados de tus 2 conjuntos, ¿existe alguna diferencia entre hombres y mujeres?
+
+Para las 3 características los datos son muy parecidos para ambos conjuntos, excepto en el colesterol. El primer cuartil en mujeres es 1, mientras que el tercer cuartil es 2. A diferencia de hombres en el que ambos es 1. Esto indica que más hombres tienen un buen control de colesterol, lo que es raro, ya que clínicamente las mujeres tienen protección por las hormonas, a menos que las muestras provengan de pacientes con una edad avanzada.
+
+# 4.	Genera correlación entre tus 3 características para uno de los conjuntos y genera un gráfico para observar. Interpreta tus resultados y comenta ¿por qué crees que hay o no correlación?
+
+```{r}
+
+corr_w.df <- data.frame(weight_women, chol_women, sys_women)
+cor(corr_w.df, method = "s")
+```
+```{r}
+pairs(corr_w.df)
+```
+
+Utilicé el método de Spearman porque las variables dependen del tiempo, la TA es muy variable dependiendo el tiempo y las circunstancias que se ven.
+No existe correlación ya que hay personas con síndrome metabólico y peso bajo. Además el colesterol, predispone a enfermedades cardiovasculares pero no para todas. Se tiene que explorar los datos para corroborar que entre las enfermedades, la aterosclerosis no fue un dato común.
+
+# 5.	Con los datos (media y ds) de una de tus características genera una distribución normal y compárala con tus datos.  
+
+```{r}
+#Women weight
+
+set.seed(10)
+mean_ww <- summary_ww[4]
+
+#Generar un arreglo de longitud n con una distribucion normal con una media (mean) y desviacion estandar (sd)
+Dnormal <- rnorm(n=length(weight_women), mean = mean_ww, sd = sd_ww)
+
+#qnorm calcula el cuantil p, en este caso calcula los cuartiles
+quar_norm <- qnorm(p=seq(0, 1, 1/4), mean = mean_ww, sd = sd_ww)
+
+#pnorm calcula la probabilidad de que una variable aleatoria sea menor que q
+quar_data <- quantile(weight_women, prob=seq(0, 1, 1/4))
+
+probNorm_data <- pnorm(q=quar_data, mean = mean_ww, sd = sd_ww)
+
+probNorm_normal <- pnorm(q=quar_norm, mean = mean_ww, sd = sd_ww)
+
+comparisonNorm <- data.frame(probNorm_data, probNorm_normal)
+
+comparisonNorm
+```
+Se puede observar que los cuartiles en los datos están recorridos hacia la izquiera o hacia valores menores, especialmente desde en segundo y tercer cuartil.
+
+```{r}
+#calcula la funcion de densiada
+x<-seq(0,length(weight_women), length = length(weight_women))
+distNorm<-dnorm(x=x, mean = mean_ww, sd = sd_ww)
+
+par(mfrow=c(1, 2))
+hist(Dnormal,main = "normal",freq = F,ylim =  c(0,0.035))
+lines(x,distNorm,col = "blue", lty = 1, lwd = 2)
+hist(weight_women,main = "Datos",freq = F,ylim =  c(0,0.035))
+lines(x,distNorm,col = "blue", lty = 1, lwd = 2)
+```
+
+La distribucion de los datos, al ser leptocúrtica, indica que hay mayor concentración de los datos con respecto a la media. Aunque era esperado por las exploraciones anteriores (boxplot) clínicamente es sorprendente ya que el peso suele ser muy variable.
+Es probable que al tener una enfermedad cardiovascular, tengan un peso controlado. Se tiene que verificar que los datos provengan de estudios sobre el control de enfermedades cardiovasculares y no sobre su incidencia.
